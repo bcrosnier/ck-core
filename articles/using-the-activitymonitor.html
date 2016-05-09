@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Using the ActivityMonitor | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Using the ActivityMonitor | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="articles-using-the-activitymonitor">
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/DocFX/articles/using-the-activitymonitor.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <h1 id="using-the-activitymonitor">Using the ActivityMonitor</h1>
+              
+<p>The <a class="xref" href="../api/CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor" title="CK.Core.ActivityMonitor">ActivityMonitor</a> serves as a <em>logger</em>, and is the object you send logs to.</p>
+<p>It is meant to follow and log a chain of logical operations in one thread, which we call an <em>activity</em>. You can spawn as many <a class="xref" href="../api/CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor" title="CK.Core.ActivityMonitor">ActivityMonitor</a> instances as you like.</p>
+<p>It is actually meant to be used with extension methods on <a class="xref" href="../api/CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor" title="CK.Core.ActivityMonitor">IActivityMonitor</a>, like the ones contained in <a class="xref" href="ck-activitymonitor-standardsender.html#articles_ck_activitymonitor_standardsender">CK.ActivityMonitor.StandardSender</a>. These extension methods translate the call to <a class="xref" href="../api/CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_UnfilteredLog_CK_Core_ActivityMonitorLogData_">IActivityMonitor.UnfilteredLog(ActivityMonitorLogData)</a>.</p>
+<div class="alert alert-info"><p>The code in this article uses both the <a href="https://www.nuget.org/packages/CK.ActivityMonitor/">CK.ActivityMonitor</a> and  <a href="https://www.nuget.org/packages/CK.ActivityMonitor.StandardSender/">CK.ActivityMonitor.StandardSender</a> NuGet packages.<br>The <a href="https://www.nuget.org/packages/CK.ActivityMonitor.StandardSender/">CK.ActivityMonitor.StandardSender</a> package contains everyday extension methods used to log information: <a class="xref" href="../api/CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Trace_CK_Core_IActivityMonitor_System_Int32_System_String_">Trace()</a>, <a class="xref" href="../api/CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Info_CK_Core_IActivityMonitor_System_Int32_System_String_">Info()</a>, <a class="xref" href="../api/CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Warn_CK_Core_IActivityMonitor_System_Int32_System_String_">Warn()</a>, <a class="xref" href="../api/CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Error_CK_Core_IActivityMonitor_System_Int32_System_String_">Error()</a> and <a class="xref" href="../api/CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Fatal_CK_Core_IActivityMonitor_System_Int32_System_String_">Fatal()</a></p>
+</div>
+<h2 id="logging-with-the-activitymonitor">Logging with the ActivityMonitor</h2>
+<p>Use the <a class="xref" href="../api/CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Trace_CK_Core_IActivityMonitor_System_Int32_System_String_">Trace()</a>, <a class="xref" href="../api/CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Info_CK_Core_IActivityMonitor_System_Int32_System_String_">Info()</a>, <a class="xref" href="../api/CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Warn_CK_Core_IActivityMonitor_System_Int32_System_String_">Warn()</a>, <a class="xref" href="../api/CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Error_CK_Core_IActivityMonitor_System_Int32_System_String_">Error()</a> and <a class="xref" href="../api/CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Fatal_CK_Core_IActivityMonitor_System_Int32_System_String_">Fatal()</a> extension methods from <a class="xref" href="ck-activitymonitor-standardsender.html#articles_ck_activitymonitor_standardsender">CK.ActivityMonitor.StandardSender</a> to prepare a special object (an <a class="xref" href="../api/CK.Core.IActivityMonitorLineSender.html#CK_Core_IActivityMonitorLineSender">IActivityMonitorLineSender</a>), then call <a class="xref" href="../api/CK.Core.ActivityMonitorSendExtension.html#CK_Core_ActivityMonitorSendExtension_Send_CK_Core_IActivityMonitorGroupSender_System_String_">Send()</a> on it.</p>
+<pre><code class="lang-csharp">IActivityMonitor m = new ActivityMonitor();
+m.Trace().Send(&quot;My trace message&quot;);
+m.Info().Send(&quot;My info message&quot;);
+m.Warn().Send(&quot;My warn message&quot;);
+m.Error().Send(&quot;My error message&quot;);
+m.Fatal().Send(&quot;My fatal message&quot;);
+</code></pre>
+<div class="alert alert-info"><p><strong>Why does sending take <em>two</em> calls, and not one? Why not eg. <code>m.Info(&quot;My message&quot;)</code>?</strong>
+The first call uses optional parameters containing caller information. These optional parameters are resolved at compile time, and replaced with information about the file and line that called the method. More information: <a href="https://msdn.microsoft.com/en-us/library/mt653988.aspx">(MSDN) Caller Information (C#)</a></p>
+</div>
+<h3 id="composite-formatting-and-syntax">Composite formatting and syntax</h3>
+<p>The call to the <a class="xref" href="../api/CK.Core.ActivityMonitorSendExtension.html#CK_Core_ActivityMonitorSendExtension_Send_CK_Core_IActivityMonitorGroupSender_System_String_">Send()</a> extension methods use composite format strings (the same syntax used by <code>string.Format()</code>).</p>
+<pre><code class="lang-csharp">// Output: My info message 1 2 3
+m.Info().Send(&quot;My info message {0} {1} {2}&quot;, 1, 2, 3);
+</code></pre>
+<p>More information: <a href="https://msdn.microsoft.com/en-us/library/txafckwd(v=vs.110).aspx">(MSDN) Composite Formatting</a></p>
+<h3 id="exception-logging">Exception logging</h3>
+<p>You can log an exception by passing it to a <a class="xref" href="../api/CK.Core.ActivityMonitorSendExtension.html#CK_Core_ActivityMonitorSendExtension_Send_CK_Core_IActivityMonitorGroupSender_System_String_">Send()</a> method, before the message.</p>
+<pre><code class="lang-csharp">Exception e;
+m.Error().Send(e, &quot;My error&quot;);
+</code></pre>
+<p>Alternatively, you can log only the exception itself. The log entry&#39;s message will be the exception&#39;s message.</p>
+<pre><code class="lang-csharp">Exception e;
+m.Error().Send(e);
+</code></pre>
+<h3 id="tags-cktrait-xref-ck-core-cktrait-">Tags (<a class="xref" href="../api/CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a>)</h3>
+<p>You can add a tag (<a class="xref" href="../api/CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a>) to the log entry by passing it to a <a class="xref" href="../api/CK.Core.ActivityMonitorSendExtension.html#CK_Core_ActivityMonitorSendExtension_Send_CK_Core_IActivityMonitorGroupSender_System_String_">Send()</a> method, before the message.</p>
+<pre><code>CKTrait tag = ActivityMonitor.Tags.Register( &quot;MyTag&quot; );
+m.Info().Send(tag, &quot;Message&quot;);
+</code></pre><div class="alert alert-danger"><p>This documentation is not written yet. Help us by improving it!</p>
+</div>
+<h2 id="activitymonitor-output">ActivityMonitor output</h2>
+<h3 id="output-per-activitymonitor-iactivitymonitorclient-xref-ck-core-iactivitymonitorclient-">Output per ActivityMonitor: <a class="xref" href="../api/CK.Core.IActivityMonitorClient.html#CK_Core_IActivityMonitorClient">IActivityMonitorClient</a></h3>
+<div class="alert alert-danger"><p>This documentation is not written yet. Help us by improving it!</p>
+</div>
+<h3 id="centralized-output-for-all-activitymonitor-instances-grandoutput-xref-ck-monitoring-grandoutput-">Centralized output for all ActivityMonitor instances: <a class="xref" href="../api/CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a></h3>
+<div class="alert alert-warning"><p>The <a class="xref" href="../api/CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a> is part of <a class="xref" href="ck-monitoring.html#articles_ck_monitoring">CK.Monitoring</a>, and is not part of CK.ActivityMonitor.</p>
+</div>
+<div class="alert alert-danger"><p>This documentation is not written yet. Help us by improving it!</p>
+</div>
+<h2 id="thread-safety">Thread safety</h2>
+<p>The <a class="xref" href="../api/CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor" title="CK.Core.ActivityMonitor">ActivityMonitor</a> class itself is <strong>not thread-safe</strong>.</p>
+<p>If your activity spawns multiple threads, you can get a token from the parent monitor, and use it to create <em>child monitors</em>: </p>
+<pre><code class="lang-csharp">ActivityMonitor parentMonitor = new ActivityMonitor();
+
+// In your main ActivityMonitor thread:
+ActivityMonitor.DependentToken token = parentMonitor.DependentActivity().CreateToken();
+
+// In other threads:
+using( var childMonitor = token.CreateDependentMonitor() )
+{
+    childMonitor.Trace().Send( &quot;Whatever&quot; );
+}
+</code></pre>
+<p>This child monitor will be linked to its parent monitor through a common topic sent to both.</p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

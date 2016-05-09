@@ -24,6 +24,9 @@ references:
 - uid: articles-intro
   name: CK-Core components
   href: articles/intro.html#articles_intro
+- uid: articles-using-the-activitymonitor
+  name: Using the ActivityMonitor
+  href: articles/using-the-activitymonitor.html#articles_using_the_activitymonitor
 - uid: CK.Core
   name: CK.Core
   href: api/CK.Core.html#CK_Core
