@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SystemActivityMonitor
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SystemActivityMonitor
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L33" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Core_SystemActivityMonitor" data-uid="CK.Core.SystemActivityMonitor">Class SystemActivityMonitor
+              </h1>
+              <div class="markdown level0 summary"><p>This <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a> logs errors in a directory (if the static <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> property is not null) and 
+raises <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_OnError">OnError</a> events.
+Its main goal is to be internally used by the Monitor framework but can be used as a &quot;normal&quot; monitor (if you believe it is a good idea).
+The easiest way to configure it is to set an application settings with the key &quot;CK.Core.SystemActivityMonitor.RootLogPath&quot; and the root path 
+for logs as the value.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a></div>
+                  <div class="level2"><span class="xref">SystemActivityMonitor</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Core</h6>
+              <h6><strong>Assembly</strong>:CK.ActivityMonitor.dll</h6>
+              <h5 id="CK_Core_SystemActivityMonitor_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public sealed class SystemActivityMonitor : ActivityMonitor, IActivityMonitorImpl, IActivityMonitor, IUniqueId</code></pre>
+              </div>
+              <h5 id="CK_Core_SystemActivityMonitor_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>The RootLogPath uses the Application configuration (if it exists):</p>
+<pre><code>
+    <appsettings>
+         <add key="CK.Core.SystemActivityMonitor.RootLogPath" value="..."></add>
+     </appsettings>
+</code></pre>
+If the setting is not there, the Critical errors will NOT be logged
+except if it is explicitly set:
+<pre><code>
+    SystemActivityMonitor.RootLogPath = "...";
+</code></pre>
+</div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor__ctor_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor.%23ctor(System.Boolean%2CSystem.String)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L308">View Source</a>
+              </span>
+              <h4 id="CK_Core_SystemActivityMonitor__ctor_System_Boolean_System_String_" data-uid="CK.Core.SystemActivityMonitor.#ctor(System.Boolean,System.String)">SystemActivityMonitor(Boolean, String)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor">SystemActivityMonitor</a> that can behave as a standard monitor (when
+automatic configurations applies).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SystemActivityMonitor(bool applyAutoConfigurations, string topic)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>applyAutoConfigurations</em></td>
+                    <td><p>True to apply automatic configurations and, hence, behave like any other <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a>.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>topic</em></td>
+                    <td><p>Optional initial topic (can be null).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor_AppSettingsKey.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor.AppSettingsKey%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L163">View Source</a>
+              </span>
+              <h4 id="CK_Core_SystemActivityMonitor_AppSettingsKey" data-uid="CK.Core.SystemActivityMonitor.AppSettingsKey">AppSettingsKey</h4>
+              <div class="markdown level1 summary"><p>The key in the application settings used to initialize the <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> if it exists in <a class="xref" href="CK.Core.AppSettings.html#CK_Core_AppSettings_Default">Default</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly string AppSettingsKey</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor_SubDirectoryName.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor.SubDirectoryName%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L168">View Source</a>
+              </span>
+              <h4 id="CK_Core_SystemActivityMonitor_SubDirectoryName" data-uid="CK.Core.SystemActivityMonitor.SubDirectoryName">SubDirectoryName</h4>
+              <div class="markdown level1 summary"><p>The directory in <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> into which errors file will be created is &quot;CriticalErrors/&quot;.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly string SubDirectoryName</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor_AppSettingsRootLogPath.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor.AppSettingsRootLogPath%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L207">View Source</a>
+              </span>
+              <h4 id="CK_Core_SystemActivityMonitor_AppSettingsRootLogPath" data-uid="CK.Core.SystemActivityMonitor.AppSettingsRootLogPath">AppSettingsRootLogPath</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> that is configured in application settings (null otherwise).
+Getting this property ensures that this type&#39;s static information is initialized.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string AppSettingsRootLogPath
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor_RootLogPath.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor.RootLogPath%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L233">View Source</a>
+              </span>
+              <h4 id="CK_Core_SystemActivityMonitor_RootLogPath" data-uid="CK.Core.SystemActivityMonitor.RootLogPath">RootLogPath</h4>
+              <div class="markdown level1 summary"><p>Gets or sets (it can be set only once) the log folder to use (setting multiple time the same path is accepted). 
+Once set, the path is <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_NormalizePathSeparator_System_String_System_Boolean_">NormalizePathSeparator(String, Boolean)</a>.
+See remarks.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Core_SystemActivityMonitor_RootLogPath_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>
+When setting it, the path must be valid (when it is not an absolute path, it is combined 
+with the AppDomain.CurrentDomain.BaseDirectory or the application base path).
+</p>
+<p>
+The subordinate directory &quot;CriticalErrors&quot; is created (if not already here) and a test file is created (and deleted) inside it 
+to ensure that (at least at configuration time), no security configuration prevents us to create log files: all errors files will be created in this sub directory.
+</p>
+<p>
+It is recommended to use this directory to store all other logs and/or files related to activity tracking.
+</p>
+<p>
+When not null, it necessarily ends with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/12hzbdxy(v=vs.110).aspx">System.IO.Path.DirectorySeparatorChar</a>.
+</p>
+<p>
+When not sets, the first get initializes it with the value of <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_AppSettingsKey">AppSettingsKey</a> in <a class="xref" href="CK.Core.AppSettings.html#CK_Core_AppSettings_Default">Default</a> if it exists.
+</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string RootLogPath
+{
+    get;
+    set;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor_TrackActivityMonitorLoggingError.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor.TrackActivityMonitorLoggingError%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L184">View Source</a>
+              </span>
+              <h4 id="CK_Core_SystemActivityMonitor_TrackActivityMonitorLoggingError" data-uid="CK.Core.SystemActivityMonitor.TrackActivityMonitorLoggingError">TrackActivityMonitorLoggingError</h4>
+              <div class="markdown level1 summary"><p>Gets or sets whether <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_CriticalErrorCollector">CriticalErrorCollector</a> are tracked (this is thread safe).
+When true, LoggingError events are tracked, written to a file (if <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> is available) and ultimately 
+published again as a <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_OnError">OnError</a> events.
+Defaults to true.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool TrackActivityMonitorLoggingError
+{
+    get;
+    set;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor_AssertRootLogPathIsSet.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor.AssertRootLogPathIsSet%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L284">View Source</a>
+              </span>
+              <h4 id="CK_Core_SystemActivityMonitor_AssertRootLogPathIsSet" data-uid="CK.Core.SystemActivityMonitor.AssertRootLogPathIsSet">AssertRootLogPathIsSet()</h4>
+              <div class="markdown level1 summary"><p>Checks that <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> is correctly configured by throwing a detailed exception if not. </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void AssertRootLogPathIsSet()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor_EnsureStaticInitialization.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor.EnsureStaticInitialization%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L146">View Source</a>
+              </span>
+              <h4 id="CK_Core_SystemActivityMonitor_EnsureStaticInitialization" data-uid="CK.Core.SystemActivityMonitor.EnsureStaticInitialization">EnsureStaticInitialization()</h4>
+              <div class="markdown level1 summary"><p>Touches this type to ensure that its static information is initialized.
+This does nothing except that, since the Type is solicited, the type constructor is called if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool EnsureStaticInitialization()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>Always true.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor_EnsureSystemClient_CK_Core_IActivityMonitor_.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor.EnsureSystemClient(CK.Core.IActivityMonitor)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L294">View Source</a>
+              </span>
+              <h4 id="CK_Core_SystemActivityMonitor_EnsureSystemClient_CK_Core_IActivityMonitor_" data-uid="CK.Core.SystemActivityMonitor.EnsureSystemClient(CK.Core.IActivityMonitor)">EnsureSystemClient(IActivityMonitor)</h4>
+              <div class="markdown level1 summary"><p>Registers the internal system client that routes errors and fatals as ActivityMonitor errors.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable EnsureSystemClient(IActivityMonitor monitor)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>The monitor that can be temporary works as a <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor">SystemActivityMonitor</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.idisposable(v=vs.110).aspx">IDisposable</a></td>
+                    <td><p>A disposable object that will unregister the system client (if it has been actually added).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="events">Events
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_SystemActivityMonitor_OnError.md&amp;value=---%0Auid%3A%20CK.Core.SystemActivityMonitor.OnError%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/SystemActivityMonitor.cs/#L176">View Source</a>
+              </span>
+              <h4 id="CK_Core_SystemActivityMonitor_OnError" data-uid="CK.Core.SystemActivityMonitor.OnError">OnError</h4>
+              <div class="markdown level1 summary"><p>Event that enables subsequent handling of errors.
+Raising this event is protected: a registered handler that raises an exception will be automatically removed and the
+exception will be added to the <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_CriticalErrorCollector">CriticalErrorCollector</a> collector to give other participants a chance 
+to handle it and track the culprit.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static event EventHandler&lt;SystemActivityMonitor.LowLevelErrorEventArgs&gt; OnError</code></pre>
+              </div>
+              <h5 class="eventType">Event Type</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/db0etb8x(v=vs.110).aspx">EventHandler</a>&lt;<a class="xref" href="CK.Core.SystemActivityMonitor.LowLevelErrorEventArgs.html#CK_Core_SystemActivityMonitor_LowLevelErrorEventArgs">SystemActivityMonitor.LowLevelErrorEventArgs</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

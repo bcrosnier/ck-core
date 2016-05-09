@@ -1,0 +1,746 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LogReader
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LogReader
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L13" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Monitoring_LogReader" data-uid="CK.Monitoring.LogReader">Class LogReader
+              </h1>
+              <div class="markdown level0 summary"><p>A log reader acts as an enumerator of <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a> that are stored in a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.stream(v=vs.110).aspx">System.IO.Stream</a>.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">LogReader</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Monitoring</h6>
+              <h6><strong>Assembly</strong>:CK.Monitoring.dll</h6>
+              <h5 id="CK_Monitoring_LogReader_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public sealed class LogReader : IEnumerator&lt;ILogEntry&gt;, IDisposable, IEnumerator</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader__ctor_System_IO_Stream_System_Int32_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.%23ctor(System.IO.Stream%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L47">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader__ctor_System_IO_Stream_System_Int32_System_Int32_System_Boolean_" data-uid="CK.Monitoring.LogReader.#ctor(System.IO.Stream,System.Int32,System.Int32,System.Boolean)">LogReader(Stream, Int32, Int32, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader">LogReader</a> on an uncompressed stream with an explicit version number.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LogReader(Stream stream, int streamVersion, int headerLength, bool mustClose = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.stream(v=vs.110).aspx">Stream</a></td>
+                    <td><em>stream</em></td>
+                    <td><p>Stream to read logs from.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>streamVersion</em></td>
+                    <td><p>Version of the log stream.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>headerLength</em></td>
+                    <td><p>Length of the header. This will be substracted to the actual stream position to compute the <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_StreamOffset">StreamOffset</a>.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>mustClose</em></td>
+                    <td><p>Defaults to true (the stream will be automatically closed).
+False to let the stream opened once this reader is disposed, the end of the log data is reached or an error is encountered.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_CurrentStreamVersion.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.CurrentStreamVersion%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L29">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_CurrentStreamVersion" data-uid="CK.Monitoring.LogReader.CurrentStreamVersion">CurrentStreamVersion</h4>
+              <div class="markdown level1 summary"><p>Current version stamp. Writes are done with this version, but reads MUST handle it.
+The first released version is 5.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public const int CurrentStreamVersion = 6</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_FileHeader.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.FileHeader%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L35">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_FileHeader" data-uid="CK.Monitoring.LogReader.FileHeader">FileHeader</h4>
+              <div class="markdown level1 summary"><p>The file header for .ckmon files starting from CurrentStreamVersion = 5.
+That&#39;s C, K, M, O and N (ASCII).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly byte[] FileHeader</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_BadEndOfFileMarker.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.BadEndOfFileMarker%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L212">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_BadEndOfFileMarker" data-uid="CK.Monitoring.LogReader.BadEndOfFileMarker">BadEndOfFileMarker</h4>
+              <div class="markdown level1 summary"><p>Gets whether the end of file has been reached and the file is missing the final 0 byte marker.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool BadEndOfFileMarker
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_Current.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.Current%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L179">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_Current" data-uid="CK.Monitoring.LogReader.Current">Current</h4>
+              <div class="markdown level1 summary"><p>Current <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a> that can be a <a class="xref" href="CK.Monitoring.IMulticastLogEntry.html#CK_Monitoring_IMulticastLogEntry">IMulticastLogEntry</a>.
+As usual, <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_MoveNext">MoveNext()</a> must be called before getting the first entry.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ILogEntry Current
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_CurrentFilter.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.CurrentFilter%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L168">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_CurrentFilter" data-uid="CK.Monitoring.LogReader.CurrentFilter">CurrentFilter</h4>
+              <div class="markdown level1 summary"><p>Gets or sets a <a class="xref" href="CK.Monitoring.LogReader.MulticastFilter.html#CK_Monitoring_LogReader_MulticastFilter">LogReader.MulticastFilter</a> that will be taken into account during the next <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_MoveNext">MoveNext()</a>.
+Only entries from this monitor will be extracted when reading a <a class="xref" href="CK.Monitoring.IMulticastLogEntry.html#CK_Monitoring_IMulticastLogEntry">IMulticastLogEntry</a> (pure unicast <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a> will be ignored).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Monitoring_LogReader_CurrentFilter_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Note that the <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_Current">Current</a> will be <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a> objects: multi-cast entry properties (<a class="xref" href="CK.Monitoring.IMulticastLogInfo.html#CK_Monitoring_IMulticastLogInfo_MonitorId">MonitorId</a> 
+and <a class="xref" href="CK.Monitoring.IMulticastLogEntry.html#CK_Monitoring_IMulticastLogEntry_GroupDepth">GroupDepth</a>) are no more available when a filter is set.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LogReader.MulticastFilter CurrentFilter
+{
+    get;
+    set;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.LogReader.MulticastFilter.html#CK_Monitoring_LogReader_MulticastFilter">LogReader.MulticastFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_CurrentMulticast.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.CurrentMulticast%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L192">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_CurrentMulticast" data-uid="CK.Monitoring.LogReader.CurrentMulticast">CurrentMulticast</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_Current">Current</a> entry if the underlying entry is a <a class="xref" href="CK.Monitoring.IMulticastLogEntry.html#CK_Monitoring_IMulticastLogEntry">IMulticastLogEntry</a>, null otherwise.
+This captures the actual entry when a <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_CurrentFilter">CurrentFilter</a> is set (Current is then a mere Unicast entry).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IMulticastLogEntry CurrentMulticast
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.IMulticastLogEntry.html#CK_Monitoring_IMulticastLogEntry">IMulticastLogEntry</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_CurrentMulticastWithOffset.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.CurrentMulticastWithOffset%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L221">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_CurrentMulticastWithOffset" data-uid="CK.Monitoring.LogReader.CurrentMulticastWithOffset">CurrentMulticastWithOffset</h4>
+              <div class="markdown level1 summary"><p>Current <a class="xref" href="CK.Monitoring.IMulticastLogEntry.html#CK_Monitoring_IMulticastLogEntry">IMulticastLogEntry</a> with its associated position in the stream.
+The current entry must be a multi-cast one and, as usual, <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_MoveNext">MoveNext()</a> must be called before getting the first entry.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MulticastLogEntryWithOffset CurrentMulticastWithOffset
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.MulticastLogEntryWithOffset.html#CK_Monitoring_MulticastLogEntryWithOffset">MulticastLogEntryWithOffset</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_ReadException.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.ReadException%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L204">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_ReadException" data-uid="CK.Monitoring.LogReader.ReadException">ReadException</h4>
+              <div class="markdown level1 summary"><p>Gets the exception that may have been thrown when reading the file.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Exception ReadException
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.exception(v=vs.110).aspx">Exception</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_StreamOffset.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.StreamOffset%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L233">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_StreamOffset" data-uid="CK.Monitoring.LogReader.StreamOffset">StreamOffset</h4>
+              <div class="markdown level1 summary"><p>Gets the inner <a class="xref" href="https://msdn.microsoft.com/en-us/library/d9936z61(v=vs.110).aspx">System.IO.Stream.Position</a> of the <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_Current">Current</a> entry.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long StreamOffset
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_StreamVersion.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.StreamVersion%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L173">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_StreamVersion" data-uid="CK.Monitoring.LogReader.StreamVersion">StreamVersion</h4>
+              <div class="markdown level1 summary"><p>Gets the stream version. It is available only after the first call to <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_MoveNext">MoveNext()</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int StreamVersion
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_System_Collections_IEnumerator_Current.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.System%23Collections%23IEnumerator%23Current%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L302">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_System_Collections_IEnumerator_Current" data-uid="CK.Monitoring.LogReader.System#Collections#IEnumerator#Current">IEnumerator.Current</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">object IEnumerator.Current
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_Dispose.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.Dispose%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L285">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_Dispose" data-uid="CK.Monitoring.LogReader.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"><p>Close the inner stream (.Net 4.5 only: if this reader has been asked to do so thanks to constructors&#39; parameter mustClose sets to true).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_MoveNext.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.MoveNext%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L242">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_MoveNext" data-uid="CK.Monitoring.LogReader.MoveNext">MoveNext()</h4>
+              <div class="markdown level1 summary"><p>Attempts to read the next <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool MoveNext()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True on success, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_Open_System_IO_Stream_System_Int64_CK_Monitoring_LogReader_MulticastFilter_.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.Open(System.IO.Stream%2CSystem.Int64%2CCK.Monitoring.LogReader.MulticastFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L105">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_Open_System_IO_Stream_System_Int64_CK_Monitoring_LogReader_MulticastFilter_" data-uid="CK.Monitoring.LogReader.Open(System.IO.Stream,System.Int64,CK.Monitoring.LogReader.MulticastFilter)">Open(Stream, Int64, LogReader.MulticastFilter)</h4>
+              <div class="markdown level1 summary"><p>Opens a <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader">LogReader</a> to read the content of a compressed or uncompressed stream.
+The stream will be closed when <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_Dispose">Dispose()</a> will be called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Monitoring_LogReader_Open_System_IO_Stream_System_Int64_CK_Monitoring_LogReader_MulticastFilter__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>.ckmon files exist in different file versions, depending on headers.
+The file can be compressed using GZipStream, in which case the header will be the magic GZIP header: 1F 8B.
+New header (applies to version 5), the file will start with 43 4B 4D 4F 4E (CKMON in ASCII), followed by the version number, instead of only the version number.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static LogReader Open(Stream seekableStream, long dataOffset = 0L, LogReader.MulticastFilter filter = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.stream(v=vs.110).aspx">Stream</a></td>
+                    <td><em>seekableStream</em></td>
+                    <td><p>Stream that must support Seek operations (<a class="xref" href="https://msdn.microsoft.com/en-us/library/23ke5bx8(v=vs.110).aspx">System.IO.Stream.CanSeek</a> must be true).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+                    <td><em>dataOffset</em></td>
+                    <td><p>An optional offset where the stream position must be initially set: this is the position of an entry in the actual (potentially uncompressed stream),
+not the offset in the original stream.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.LogReader.MulticastFilter.html#CK_Monitoring_LogReader_MulticastFilter">LogReader.MulticastFilter</a></td>
+                    <td><em>filter</em></td>
+                    <td><p>An optional <a class="xref" href="CK.Monitoring.LogReader.MulticastFilter.html#CK_Monitoring_LogReader_MulticastFilter">LogReader.MulticastFilter</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader">LogReader</a></td>
+                    <td><p>A <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader">LogReader</a> that will close the file when disposed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_Open_System_String_System_Int64_CK_Monitoring_LogReader_MulticastFilter_.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.Open(System.String%2CSystem.Int64%2CCK.Monitoring.LogReader.MulticastFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L73">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_Open_System_String_System_Int64_CK_Monitoring_LogReader_MulticastFilter_" data-uid="CK.Monitoring.LogReader.Open(System.String,System.Int64,CK.Monitoring.LogReader.MulticastFilter)">Open(String, Int64, LogReader.MulticastFilter)</h4>
+              <div class="markdown level1 summary"><p>Opens a <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader">LogReader</a> to read the content of a compressed or uncompressed file.
+The file will be closed when <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader_Dispose">Dispose()</a> will be called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Monitoring_LogReader_Open_System_String_System_Int64_CK_Monitoring_LogReader_MulticastFilter__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>.ckmon files exist in different file versions, depending on headers.
+The file can be compressed using GZipStream, in which case the header will be the magic GZIP header: 1F 8B.
+New header (applies to version 5), the file will start with 43 4B 4D 4F 4E (CKMON in ASCII), followed by the version number, instead of only the version number.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static LogReader Open(string path, long dataOffset = 0L, LogReader.MulticastFilter filter = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>path</em></td>
+                    <td><p>Path of the log file.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+                    <td><em>dataOffset</em></td>
+                    <td><p>An optional offset where the stream position must be initially set: this is the position of an entry in the actual (potentially uncompressed stream),
+not the offset in the original stream.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.LogReader.MulticastFilter.html#CK_Monitoring_LogReader_MulticastFilter">LogReader.MulticastFilter</a></td>
+                    <td><em>filter</em></td>
+                    <td><p>An optional <a class="xref" href="CK.Monitoring.LogReader.MulticastFilter.html#CK_Monitoring_LogReader_MulticastFilter">LogReader.MulticastFilter</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader">LogReader</a></td>
+                    <td><p>A <a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader">LogReader</a> that will close the file when disposed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_LogReader_System_Collections_IEnumerator_Reset.md&amp;value=---%0Auid%3A%20CK.Monitoring.LogReader.System%23Collections%23IEnumerator%23Reset%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/Persistence/LogReader.cs/#L307">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_LogReader_System_Collections_IEnumerator_Reset" data-uid="CK.Monitoring.LogReader.System#Collections#IEnumerator#Reset">IEnumerator.Reset()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void IEnumerator.Reset()</code></pre>
+              </div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

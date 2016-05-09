@@ -1,0 +1,1218 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileUtil
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileUtil
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L19" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Core_FileUtil" data-uid="CK.Core.FileUtil">Class FileUtil
+              </h1>
+              <div class="markdown level0 summary"><p>Helper functions related to file system.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">FileUtil</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Core</h6>
+              <h6><strong>Assembly</strong>:CK.Core.dll</h6>
+              <h5 id="CK_Core_FileUtil_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class FileUtil</code></pre>
+              </div>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_AltDirectorySeparatorString.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.AltDirectorySeparatorString%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L75">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_AltDirectorySeparatorString" data-uid="CK.Core.FileUtil.AltDirectorySeparatorString">AltDirectorySeparatorString</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="https://msdn.microsoft.com/en-us/library/ytkx7x94(v=vs.110).aspx">System.IO.Path.AltDirectorySeparatorChar</a> as a string.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly string AltDirectorySeparatorString</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_DirectorySeparatorString.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.DirectorySeparatorString%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L70">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_DirectorySeparatorString" data-uid="CK.Core.FileUtil.DirectorySeparatorString">DirectorySeparatorString</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="https://msdn.microsoft.com/en-us/library/12hzbdxy(v=vs.110).aspx">System.IO.Path.DirectorySeparatorChar</a> as a string.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly string DirectorySeparatorString</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_FileNameUniqueTimeUtcFormat.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.FileNameUniqueTimeUtcFormat%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L83">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_FileNameUniqueTimeUtcFormat" data-uid="CK.Core.FileUtil.FileNameUniqueTimeUtcFormat">FileNameUniqueTimeUtcFormat</h4>
+              <div class="markdown level1 summary"><p>A display format for <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">System.DateTime</a> that supports round-trips, is readable and can be used in path 
+or url (the DateTime should be in UTC since <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v=vs.110).aspx">System.DateTime.Kind</a> is ignored).
+Use <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_MatchFileNameUniqueTimeUtcFormat_CK_Text_StringMatcher_System_DateTime__">MatchFileNameUniqueTimeUtcFormat(StringMatcher, out DateTime)</a> or <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_TryParseFileNameUniqueTimeUtcFormat_System_String_System_DateTime__System_Boolean_">TryParseFileNameUniqueTimeUtcFormat(String, out DateTime, Boolean)</a> to parse it (it uses the correct <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.globalization.datetimestyles(v=vs.110).aspx">System.Globalization.DateTimeStyles</a>).
+It is: @&quot;yyyy-MM-dd HH\hmm.ss.fffffff&quot;</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly string FileNameUniqueTimeUtcFormat</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_GzipFileHeader.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.GzipFileHeader%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L30">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_GzipFileHeader" data-uid="CK.Core.FileUtil.GzipFileHeader">GzipFileHeader</h4>
+              <div class="markdown level1 summary"><p>The file header for gzipped files.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly byte[] GzipFileHeader</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_InexistingFile.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.InexistingFile%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L25">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_InexistingFile" data-uid="CK.Core.FileUtil.InexistingFile">InexistingFile</h4>
+              <div class="markdown level1 summary"><p>Combination of <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.fileattributes(v=vs.110).aspx">System.IO.FileAttributes</a> that can not exist: it can be used to 
+tag non existing files among other existing (i.e. valid) file attributes.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly FileAttributes InexistingFile</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.fileattributes(v=vs.110).aspx">FileAttributes</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_MissingFileLastWriteTimeUtc.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.MissingFileLastWriteTimeUtc%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L89">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_MissingFileLastWriteTimeUtc" data-uid="CK.Core.FileUtil.MissingFileLastWriteTimeUtc">MissingFileLastWriteTimeUtc</h4>
+              <div class="markdown level1 summary"><p>The time returned by <a class="xref" href="https://msdn.microsoft.com/en-us/library/9ys2733c(v=vs.110).aspx">System.IO.File.GetLastWriteTimeUtc(System.String)</a> when the file does not exist.
+From MSDN: If the file described in the path parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly DateTime MissingFileLastWriteTimeUtc</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_CheckForWriteAccess_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.CheckForWriteAccess(System.String%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L373">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_CheckForWriteAccess_System_String_System_Int32_" data-uid="CK.Core.FileUtil.CheckForWriteAccess(System.String,System.Int32)">CheckForWriteAccess(String, Int32)</h4>
+              <div class="markdown level1 summary"><p>Waits for a file to be writable or does not exist (if it does not exist, it can be created!).
+The file is opened and close.
+Waits the number of <em>nbMaxMilliSecond</em> before leaving and returning false: when 0 (the default),
+there is no wai. A nbMaxMilliSecond below 20 ~ 30 milliseconds is not accurate: even with nbMaxMilliSecond = 1
+this method will return true if the file becomes writable during the next 10 or 20 milliseconds.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool CheckForWriteAccess(string path, int nbMaxMilliSecond = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>path</em></td>
+                    <td><p>The path of the file to write to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>nbMaxMilliSecond</em></td>
+                    <td><p>Maximum number of milliseconds to wait before returning false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if the file has been correctly opened (and closed) in write mode.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_CompressFileToGzipFile_System_String_System_String_System_Boolean_System_IO_Compression_CompressionLevel_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.CompressFileToGzipFile(System.String%2CSystem.String%2CSystem.Boolean%2CSystem.IO.Compression.CompressionLevel%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L441">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_CompressFileToGzipFile_System_String_System_String_System_Boolean_System_IO_Compression_CompressionLevel_System_Int32_" data-uid="CK.Core.FileUtil.CompressFileToGzipFile(System.String,System.String,System.Boolean,System.IO.Compression.CompressionLevel,System.Int32)">CompressFileToGzipFile(String, String, Boolean, CompressionLevel, Int32)</h4>
+              <div class="markdown level1 summary"><p>Compresses a file to another file, using GZip at the given compression level.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CompressFileToGzipFile(string sourceFilePath, string destinationPath, bool deleteSourceFileOnSuccess, CompressionLevel level = CompressionLevel.Optimal, int bufferSize = 65536)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>sourceFilePath</em></td>
+                    <td><p>The source file path.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>destinationPath</em></td>
+                    <td><p>The destination path. If it doesn&#39;t exist, it will be created. If it exists, it will be replaced.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>deleteSourceFileOnSuccess</em></td>
+                    <td><p>if set to <code>true</code>, will delete source file if no errors occured during compression.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.compression.compressionlevel(v=vs.110).aspx">CompressionLevel</a></td>
+                    <td><em>level</em></td>
+                    <td><p>Compression level to use.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>bufferSize</em></td>
+                    <td><p>Size of the buffer, in bytes.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_CompressFileToGzipFileAsync_System_String_System_String_System_Threading_CancellationToken_System_Boolean_System_IO_Compression_CompressionLevel_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.CompressFileToGzipFileAsync(System.String%2CSystem.String%2CSystem.Threading.CancellationToken%2CSystem.Boolean%2CSystem.IO.Compression.CompressionLevel%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L413">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_CompressFileToGzipFileAsync_System_String_System_String_System_Threading_CancellationToken_System_Boolean_System_IO_Compression_CompressionLevel_System_Int32_" data-uid="CK.Core.FileUtil.CompressFileToGzipFileAsync(System.String,System.String,System.Threading.CancellationToken,System.Boolean,System.IO.Compression.CompressionLevel,System.Int32)">CompressFileToGzipFileAsync(String, String, CancellationToken, Boolean, CompressionLevel, Int32)</h4>
+              <div class="markdown level1 summary"><p>Compresses a file to another file asynchronously, using GZip at the given compression level.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Task CompressFileToGzipFileAsync(string sourceFilePath, string destinationPath, CancellationToken cancellationToken = null, bool deleteSourceFileOnSuccess = true, CompressionLevel level = CompressionLevel.Optimal, int bufferSize = 65536)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>sourceFilePath</em></td>
+                    <td><p>The source file path.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>destinationPath</em></td>
+                    <td><p>The destination path. If it doesn&#39;t exist, it will be created. If it exists, it will be replaced.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.threading.cancellationtoken(v=vs.110).aspx">CancellationToken</a></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>Optional cancellation token for the task.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>deleteSourceFileOnSuccess</em></td>
+                    <td><p>If set to <code>true</code>, will delete source file if no error occurred during compression.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.compression.compressionlevel(v=vs.110).aspx">CompressionLevel</a></td>
+                    <td><em>level</em></td>
+                    <td><p>Compression level to use.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>bufferSize</em></td>
+                    <td><p>Size of the buffer, in bytes.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.threading.tasks.task(v=vs.110).aspx">Task</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_CopyDirectory_System_IO_DirectoryInfo_System_IO_DirectoryInfo_System_Boolean_System_Boolean_System_Func_System_IO_FileInfo_System_Boolean__System_Func_System_IO_DirectoryInfo_System_Boolean__.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.CopyDirectory(System.IO.DirectoryInfo%2CSystem.IO.DirectoryInfo%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Func%7BSystem.IO.FileInfo%2CSystem.Boolean%7D%2CSystem.Func%7BSystem.IO.DirectoryInfo%2CSystem.Boolean%7D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L338">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_CopyDirectory_System_IO_DirectoryInfo_System_IO_DirectoryInfo_System_Boolean_System_Boolean_System_Func_System_IO_FileInfo_System_Boolean__System_Func_System_IO_DirectoryInfo_System_Boolean__" data-uid="CK.Core.FileUtil.CopyDirectory(System.IO.DirectoryInfo,System.IO.DirectoryInfo,System.Boolean,System.Boolean,System.Func{System.IO.FileInfo,System.Boolean},System.Func{System.IO.DirectoryInfo,System.Boolean})">CopyDirectory(DirectoryInfo, DirectoryInfo, Boolean, Boolean, Func&lt;FileInfo, Boolean&gt;, Func&lt;DirectoryInfo, Boolean&gt;)</h4>
+              <div class="markdown level1 summary"><p>Recursively copy a directory, creates it if it does not already exists. 
+Throws an IOException, if a same file exists in the target directory.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CopyDirectory(DirectoryInfo src, DirectoryInfo target, bool withHiddenFiles = true, bool withHiddenFolders = true, Func&lt;FileInfo, bool&gt; fileFilter = null, Func&lt;DirectoryInfo, bool&gt; dirFilter = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.directoryinfo(v=vs.110).aspx">DirectoryInfo</a></td>
+                    <td><em>src</em></td>
+                    <td><p>The source directory.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.directoryinfo(v=vs.110).aspx">DirectoryInfo</a></td>
+                    <td><em>target</em></td>
+                    <td><p>The target directory.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>withHiddenFiles</em></td>
+                    <td><p>False to skip hidden files.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>withHiddenFolders</em></td>
+                    <td><p>False to skip hidden folders.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549151(v=vs.110).aspx">Func</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.fileinfo(v=vs.110).aspx">FileInfo</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a>&gt;</td>
+                    <td><em>fileFilter</em></td>
+                    <td><p>Optional predicate for directories.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549151(v=vs.110).aspx">Func</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.directoryinfo(v=vs.110).aspx">DirectoryInfo</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a>&gt;</td>
+                    <td><em>dirFilter</em></td>
+                    <td><p>Optional predicate for files.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_CreateAndOpenUniqueTimedFile_System_String_System_String_System_DateTime_System_IO_FileAccess_System_IO_FileShare_System_Int32_System_IO_FileOptions_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.CreateAndOpenUniqueTimedFile(System.String%2CSystem.String%2CSystem.DateTime%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.IO.FileOptions%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L193">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_CreateAndOpenUniqueTimedFile_System_String_System_String_System_DateTime_System_IO_FileAccess_System_IO_FileShare_System_Int32_System_IO_FileOptions_System_Int32_" data-uid="CK.Core.FileUtil.CreateAndOpenUniqueTimedFile(System.String,System.String,System.DateTime,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.IO.FileOptions,System.Int32)">CreateAndOpenUniqueTimedFile(String, String, DateTime, FileAccess, FileShare, Int32, FileOptions, Int32)</h4>
+              <div class="markdown level1 summary"><p>Creates and opens a new necessarily unique file in a directory that must exist.
+The file name is based on a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">System.DateTime</a>, with an eventual uniquifier if a file already exists with the same name.
+You can use <a class="xref" href="https://msdn.microsoft.com/en-us/library/a70y7a3c(v=vs.110).aspx">System.IO.FileStream.Name</a> to obtain the file name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static FileStream CreateAndOpenUniqueTimedFile(string pathPrefix, string fileSuffix, DateTime time, FileAccess access, FileShare share, int bufferSize, FileOptions options, int maxTryBeforeGuid = 512)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>pathPrefix</em></td>
+                    <td><p>The path prefix. Must not be null. Must be a valid path and may ends with a prefix for the file name itself.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>fileSuffix</em></td>
+                    <td><p>Suffix for the file name. Must not be null. Typically an extension (like &quot;.txt&quot;).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a></td>
+                    <td><em>time</em></td>
+                    <td><p>The time that will be used to create the file name. It must be an UTC time.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.fileaccess(v=vs.110).aspx">FileAccess</a></td>
+                    <td><em>access</em></td>
+                    <td><p>A constant that determines how the file can be accessed by the FileStream object. 
+It can only be <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.fileaccess(v=vs.110).aspx">System.IO.FileAccess.Write</a> or <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.fileaccess(v=vs.110).aspx">System.IO.FileAccess.ReadWrite</a> (when set to <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.fileaccess(v=vs.110).aspx">System.IO.FileAccess.Read</a> a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.argumentexception(v=vs.110).aspx">System.ArgumentException</a> is thrown).
+This sets the CanRead and CanWrite properties of the FileStream object. 
+CanSeek is true if path specifies a disk file.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.fileshare(v=vs.110).aspx">FileShare</a></td>
+                    <td><em>share</em></td>
+                    <td><p>A constant that determines how the file will be shared by processes.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>bufferSize</em></td>
+                    <td><p>A positive Int32 value greater than 0 indicating the buffer size. For bufferSize values between one and eight, the actual buffer size is set to eight bytes.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.fileoptions(v=vs.110).aspx">FileOptions</a></td>
+                    <td><em>options</em></td>
+                    <td><p>Specifies additional file options.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>maxTryBeforeGuid</em></td>
+                    <td><p>Maximum value for short hexadecimal uniquifier before using a base 64 guid suffix. Must greater than 0.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.filestream(v=vs.110).aspx">FileStream</a></td>
+                    <td><p>An opened <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.filestream(v=vs.110).aspx">System.IO.FileStream</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_EnsureUniqueTimedFile_System_String_System_String_System_DateTime_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.EnsureUniqueTimedFile(System.String%2CSystem.String%2CSystem.DateTime%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L247">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_EnsureUniqueTimedFile_System_String_System_String_System_DateTime_System_Int32_" data-uid="CK.Core.FileUtil.EnsureUniqueTimedFile(System.String,System.String,System.DateTime,System.Int32)">EnsureUniqueTimedFile(String, String, DateTime, Int32)</h4>
+              <div class="markdown level1 summary"><p>Gets a path to a necessarily unique named file.
+The file name is based on a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">System.DateTime</a>, with an eventual uniquifier if a file already exists with the same name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string EnsureUniqueTimedFile(string pathPrefix, string fileSuffix, DateTime time, int maxTryBeforeGuid = 512)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>pathPrefix</em></td>
+                    <td><p>The path prefix. Must not be null. Must be a valid path and may ends with a prefix for the file name itself.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>fileSuffix</em></td>
+                    <td><p>Suffix for the file name. Must not be null. Typically an extension (like &quot;.txt&quot;).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a></td>
+                    <td><em>time</em></td>
+                    <td><p>The time that will be used to create the file name. It must be an UTC time.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>maxTryBeforeGuid</em></td>
+                    <td><p>Maximum value for short hexadecimal uniquifier before using a base 64 guid suffix. Must greater than 0.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><p>A string to a necessarily unique named file path.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_FormatTimedUniqueFilePart_System_DateTime_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.FormatTimedUniqueFilePart(System.DateTime)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L319">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_FormatTimedUniqueFilePart_System_DateTime_" data-uid="CK.Core.FileUtil.FormatTimedUniqueFilePart(System.DateTime)">FormatTimedUniqueFilePart(DateTime)</h4>
+              <div class="markdown level1 summary"><p>Formats a string that is file name compatible from the given time and a <a class="xref" href="https://msdn.microsoft.com/en-us/library/b49320df(v=vs.110).aspx">System.Guid.NewGuid</a>
+where time uses <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_FileNameUniqueTimeUtcFormat">FileNameUniqueTimeUtcFormat</a> and the new Guid is 
+encoded with <a href="http://en.wikipedia.org/wiki/Base64#URL_applications">http://en.wikipedia.org/wiki/Base64#URL_applications</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string FormatTimedUniqueFilePart(DateTime time)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a></td>
+                    <td><em>time</em></td>
+                    <td><p>The date time to use.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><p>A string with the time and a new guid in a file system compatible format.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_IndexOfInvalidFileNameChars_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.IndexOfInvalidFileNameChars(System.String)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L140">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_IndexOfInvalidFileNameChars_System_String_" data-uid="CK.Core.FileUtil.IndexOfInvalidFileNameChars(System.String)">IndexOfInvalidFileNameChars(String)</h4>
+              <div class="markdown level1 summary"><p>Finds the first character index of any characters that are invalid in a file name.
+This method (and <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_IndexOfInvalidPathChars_System_String_">IndexOfInvalidPathChars(String)</a>) avoid the allocation of 
+the array each time <a class="xref" href="https://msdn.microsoft.com/en-us/library/ms143438(v=vs.110).aspx">System.IO.Path.GetInvalidFileNameChars</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int IndexOfInvalidFileNameChars(string path)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>path</em></td>
+                    <td><p>Path to check. Can not be null.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><p>A negative value if not found.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_IndexOfInvalidPathChars_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.IndexOfInvalidPathChars(System.String)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L128">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_IndexOfInvalidPathChars_System_String_" data-uid="CK.Core.FileUtil.IndexOfInvalidPathChars(System.String)">IndexOfInvalidPathChars(String)</h4>
+              <div class="markdown level1 summary"><p>Finds the first character index of any characters that are invalid in a path.
+This method (and <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_IndexOfInvalidFileNameChars_System_String_">IndexOfInvalidFileNameChars(String)</a>) avoid the allocation of 
+the array each time <a class="xref" href="https://msdn.microsoft.com/en-us/library/ms143439(v=vs.110).aspx">System.IO.Path.GetInvalidPathChars</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int IndexOfInvalidPathChars(string path)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>path</em></td>
+                    <td><p>Path to check. Can not be null.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><p>A negative value if not found.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_MatchFileNameUniqueTimeUtcFormat_CK_Text_StringMatcher_System_DateTime__.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.MatchFileNameUniqueTimeUtcFormat(CK.Text.StringMatcher%2CSystem.DateTime%40)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L97">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_MatchFileNameUniqueTimeUtcFormat_CK_Text_StringMatcher_System_DateTime__" data-uid="CK.Core.FileUtil.MatchFileNameUniqueTimeUtcFormat(CK.Text.StringMatcher,System.DateTime@)">MatchFileNameUniqueTimeUtcFormat(StringMatcher, out DateTime)</h4>
+              <div class="markdown level1 summary"><p>Matches a DateTime in the <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_FileNameUniqueTimeUtcFormat">FileNameUniqueTimeUtcFormat</a> format.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool MatchFileNameUniqueTimeUtcFormat(StringMatcher this, out DateTime time)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Text.StringMatcher.html#CK_Text_StringMatcher">StringMatcher</a></td>
+                    <td><em>this</em></td>
+                    <td><p>This <a class="xref" href="CK.Text.StringMatcher.html#CK_Text_StringMatcher">StringMatcher</a>.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a></td>
+                    <td><em>time</em></td>
+                    <td><p>Result time on success; otherwise <a class="xref" href="CK.Core.Util.html#CK_Core_Util_UtcMinValue">UtcMinValue</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if the time has been matched.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_MoveToUniqueTimedFile_System_String_System_String_System_String_System_DateTime_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.MoveToUniqueTimedFile(System.String%2CSystem.String%2CSystem.String%2CSystem.DateTime%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L229">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_MoveToUniqueTimedFile_System_String_System_String_System_String_System_DateTime_System_Int32_" data-uid="CK.Core.FileUtil.MoveToUniqueTimedFile(System.String,System.String,System.String,System.DateTime,System.Int32)">MoveToUniqueTimedFile(String, String, String, DateTime, Int32)</h4>
+              <div class="markdown level1 summary"><p>Moves (renames) a file to a necessarily unique named file.
+The file name is based on a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">System.DateTime</a>, with an eventual uniquifier if a file already exists with the same name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string MoveToUniqueTimedFile(string sourceFilePath, string pathPrefix, string fileSuffix, DateTime time, int maxTryBeforeGuid = 512)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>sourceFilePath</em></td>
+                    <td><p>Path of the file to move.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>pathPrefix</em></td>
+                    <td><p>The path prefix. Must not be null. Must be a valid path and may ends with a prefix for the file name itself.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>fileSuffix</em></td>
+                    <td><p>Suffix for the file name. Must not be null. Typically an extension (like &quot;.txt&quot;).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a></td>
+                    <td><em>time</em></td>
+                    <td><p>The time that will be used to create the file name. It must be an UTC time.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>maxTryBeforeGuid</em></td>
+                    <td><p>Maximum value for short hexadecimal uniquifier before using a base 64 guid suffix. Must greater than 0.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><p>An opened <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.filestream(v=vs.110).aspx">System.IO.FileStream</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_NormalizePathSeparator_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.NormalizePathSeparator(System.String%2CSystem.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L47">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_NormalizePathSeparator_System_String_System_Boolean_" data-uid="CK.Core.FileUtil.NormalizePathSeparator(System.String,System.Boolean)">NormalizePathSeparator(String, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Canonicalizes the path: all &#39;/&#39; and &#39;\&#39; are mapped to <a class="xref" href="https://msdn.microsoft.com/en-us/library/12hzbdxy(v=vs.110).aspx">System.IO.Path.DirectorySeparatorChar</a> 
+(and <a class="xref" href="https://msdn.microsoft.com/en-us/library/ytkx7x94(v=vs.110).aspx">System.IO.Path.AltDirectorySeparatorChar</a> will also be transformed).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string NormalizePathSeparator(string path, bool ensureTrailingBackslash)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>path</em></td>
+                    <td><p>The path to standardize (must be not be null). It is trimmed and if the path is empty, the empty string is returned.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>ensureTrailingBackslash</em></td>
+                    <td><p>Ensures that the normalized path will end with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/12hzbdxy(v=vs.110).aspx">System.IO.Path.DirectorySeparatorChar</a>.
+It should be true for path to directories because we consider that a directory path SHOULD end with 
+the slash as often as possible.
+When <em>path</em> is empty, this is not applied to preserve the fact that the string is empty.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><p>A standardized path, whatever the actual <code>Path.DirectorySeparatorChar</code> is
+on the current platform.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_TryParseFileNameUniqueTimeUtcFormat_System_String_System_DateTime__System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.TryParseFileNameUniqueTimeUtcFormat(System.String%2CSystem.DateTime%40%2CSystem.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L115">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_TryParseFileNameUniqueTimeUtcFormat_System_String_System_DateTime__System_Boolean_" data-uid="CK.Core.FileUtil.TryParseFileNameUniqueTimeUtcFormat(System.String,System.DateTime@,System.Boolean)">TryParseFileNameUniqueTimeUtcFormat(String, out DateTime, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Tries to parse a string formatted with the <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_FileNameUniqueTimeUtcFormat">FileNameUniqueTimeUtcFormat</a>.
+The string must contain only the time unless <em>allowSuffix</em> is true.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool TryParseFileNameUniqueTimeUtcFormat(string s, out DateTime time, bool allowSuffix = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>s</em></td>
+                    <td><p>The string to parse.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a></td>
+                    <td><em>time</em></td>
+                    <td><p>Result time on success.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>allowSuffix</em></td>
+                    <td><p>True to accept a string that starts with the time and contains more text.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if the string has been successfully parsed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_FileUtil_WriteUniqueTimedFile_System_String_System_String_System_DateTime_System_Byte___System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.FileUtil.WriteUniqueTimedFile(System.String%2CSystem.String%2CSystem.DateTime%2CSystem.Byte%5B%5D%2CSystem.Boolean%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/FileUtil.cs/#L156">View Source</a>
+              </span>
+              <h4 id="CK_Core_FileUtil_WriteUniqueTimedFile_System_String_System_String_System_DateTime_System_Byte___System_Boolean_System_Int32_" data-uid="CK.Core.FileUtil.WriteUniqueTimedFile(System.String,System.String,System.DateTime,System.Byte[],System.Boolean,System.Int32)">WriteUniqueTimedFile(String, String, DateTime, Byte[], Boolean, Int32)</h4>
+              <div class="markdown level1 summary"><p>Creates a new necessarily unique file and writes bytes content in a directory that must exist.
+The file name is based on a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">System.DateTime</a>, with an eventual uniquifier if a file already exists with the same name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string WriteUniqueTimedFile(string pathPrefix, string fileSuffix, DateTime time, byte[] content, bool withUTF8Bom, int maxTryBeforeGuid = 3)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>pathPrefix</em></td>
+                    <td><p>The path prefix. Must not be null. Must be a valid path and may ends with a prefix for the file name itself.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>fileSuffix</em></td>
+                    <td><p>Suffix for the file name. Must not be null. Typically an extension (like &quot;.txt&quot;).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a></td>
+                    <td><em>time</em></td>
+                    <td><p>The time that will be used to create the file name. It should be an UTC time.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110).aspx">Byte</a>[]</td>
+                    <td><em>content</em></td>
+                    <td><p>The bytes to write. Can be null or empty if the file must only be created.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>withUTF8Bom</em></td>
+                    <td><p>True to write the UTF8 Byte Order Mask (the preamble).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>maxTryBeforeGuid</em></td>
+                    <td><p>Maximum value for short hexa uniquifier before using a base 64 guid suffix. Must between 0 and 15 (included).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><p>The full path name of the created file.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

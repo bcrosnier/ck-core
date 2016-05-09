@@ -1,0 +1,886 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ReflectionHelper
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ReflectionHelper
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L38" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Reflection_ReflectionHelper" data-uid="CK.Reflection.ReflectionHelper">Class ReflectionHelper
+              </h1>
+              <div class="markdown level0 summary"><p>Reflection related helpers methods that can not (really) be defined as extension methods.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">ReflectionHelper</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Reflection</h6>
+              <h6><strong>Assembly</strong>:CK.Reflection.dll</h6>
+              <h5 id="CK_Reflection_ReflectionHelper_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class ReflectionHelper</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_CovariantMatch_System_Type_System_Type_.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.CovariantMatch(System.Type%2CSystem.Type)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L270">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_CovariantMatch_System_Type_System_Type_" data-uid="CK.Reflection.ReflectionHelper.CovariantMatch(System.Type,System.Type)">CovariantMatch(Type, Type)</h4>
+              <div class="markdown level1 summary"><p>Checks whether a type is &quot;above&quot; (or &quot;more general than&quot;) another one. 
+This check uses <a class="xref" href="https://msdn.microsoft.com/en-us/library/twa2x35x(v=vs.110).aspx">System.Type.IsAssignableFrom(System.Type)</a> when the main type is not generic. 
+For generics (be it an interface or a class), inheritance relations are used recursively on 
+generic parameters: the &quot;is assignable from&quot; semantics is lost in favor of a more 
+relaxed relation, for instance <code>IEnumerable[ICollection[ValueType]]</code> &quot;Covariant matches&quot; with <code>IEnumerable[IList[int]]</code>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool CovariantMatch(Type mainType, Type toMatch)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a></td>
+                    <td><em>mainType</em></td>
+                    <td><p>The &quot;main type&quot; (the one that must be &quot;more general than&quot; <em>toMatch</em>).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a></td>
+                    <td><em>toMatch</em></td>
+                    <td><p>The type to match.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if <em>mainType</em> is &quot;above&quot; <em>toMatch</em>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_CreateParametersType_System_Reflection_ParameterInfo___.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.CreateParametersType(System.Reflection.ParameterInfo%5B%5D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L129">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_CreateParametersType_System_Reflection_ParameterInfo___" data-uid="CK.Reflection.ReflectionHelper.CreateParametersType(System.Reflection.ParameterInfo[])">CreateParametersType(ParameterInfo[])</h4>
+              <div class="markdown level1 summary"><p>Creates an array of type of a method parameters.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Reflection_ReflectionHelper_CreateParametersType_System_Reflection_ParameterInfo____remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Implementation is faster (and more simple?) than using a linq select...</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Type[] CreateParametersType(ParameterInfo[] parametersInfo)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.parameterinfo(v=vs.110).aspx">ParameterInfo</a>[]</td>
+                    <td><em>parametersInfo</em></td>
+                    <td><p>Parameters from which type must be extracted.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a>[]</td>
+                    <td><p>Parameters&#39; types.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_CreateParametersType_System_Reflection_ParameterInfo___System_Int32_.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.CreateParametersType(System.Reflection.ParameterInfo%5B%5D%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L110">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_CreateParametersType_System_Reflection_ParameterInfo___System_Int32_" data-uid="CK.Reflection.ReflectionHelper.CreateParametersType(System.Reflection.ParameterInfo[],System.Int32)">CreateParametersType(ParameterInfo[], Int32)</h4>
+              <div class="markdown level1 summary"><p>Creates an array of type of a method parameters.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Type[] CreateParametersType(ParameterInfo[] parametersInfo, int startIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.parameterinfo(v=vs.110).aspx">ParameterInfo</a>[]</td>
+                    <td><em>parametersInfo</em></td>
+                    <td><p>Parameters from which type must be extracted.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>startIndex</em></td>
+                    <td><p>The zero-based starting parameter position.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a>[]</td>
+                    <td><p>Parameters&#39; types.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_CreateParametersType_System_Reflection_ParameterInfo___System_Type_.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.CreateParametersType(System.Reflection.ParameterInfo%5B%5D%2CSystem.Type)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L148">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_CreateParametersType_System_Reflection_ParameterInfo___System_Type_" data-uid="CK.Reflection.ReflectionHelper.CreateParametersType(System.Reflection.ParameterInfo[],System.Type)">CreateParametersType(ParameterInfo[], Type)</h4>
+              <div class="markdown level1 summary"><p>Creates an array of type of a method parameters.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Reflection_ReflectionHelper_CreateParametersType_System_Reflection_ParameterInfo___System_Type__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Implementation is faster (and more simple?) than using a linq select...</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Type[] CreateParametersType(ParameterInfo[] parametersInfo, Type typeToPrepend)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.parameterinfo(v=vs.110).aspx">ParameterInfo</a>[]</td>
+                    <td><em>parametersInfo</em></td>
+                    <td><p>The parameter info.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a></td>
+                    <td><em>typeToPrepend</em></td>
+                    <td><p>Extra type that must be injected as the fist type in the resulting array 
+(typically the <a class="xref" href="https://msdn.microsoft.com/en-us/library/0x9d77ht(v=vs.110).aspx">System.Reflection.MemberInfo.DeclaringType</a> - the &#39;this&#39; parameter).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a>[]</td>
+                    <td><p>Parameters&#39; types.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_GenerateCustomAttributeBuilder_System_Collections_Generic_IEnumerable_System_Reflection_CustomAttributeData__System_Action_System_Reflection_Emit_CustomAttributeBuilder__System_Func_System_Reflection_CustomAttributeData_System_Boolean__.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.GenerateCustomAttributeBuilder(System.Collections.Generic.IEnumerable%7BSystem.Reflection.CustomAttributeData%7D%2CSystem.Action%7BSystem.Reflection.Emit.CustomAttributeBuilder%7D%2CSystem.Func%7BSystem.Reflection.CustomAttributeData%2CSystem.Boolean%7D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L165">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_GenerateCustomAttributeBuilder_System_Collections_Generic_IEnumerable_System_Reflection_CustomAttributeData__System_Action_System_Reflection_Emit_CustomAttributeBuilder__System_Func_System_Reflection_CustomAttributeData_System_Boolean__" data-uid="CK.Reflection.ReflectionHelper.GenerateCustomAttributeBuilder(System.Collections.Generic.IEnumerable{System.Reflection.CustomAttributeData},System.Action{System.Reflection.Emit.CustomAttributeBuilder},System.Func{System.Reflection.CustomAttributeData,System.Boolean})">GenerateCustomAttributeBuilder(IEnumerable&lt;CustomAttributeData&gt;, Action&lt;CustomAttributeBuilder&gt;, Func&lt;CustomAttributeData, Boolean&gt;)</h4>
+              <div class="markdown level1 summary"><p>Generates <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.emit.customattributebuilder(v=vs.110).aspx">System.Reflection.Emit.CustomAttributeBuilder</a> from an enumerable of <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.customattributedata(v=vs.110).aspx">System.Reflection.CustomAttributeData</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void GenerateCustomAttributeBuilder(IEnumerable&lt;CustomAttributeData&gt; customAttributes, Action&lt;CustomAttributeBuilder&gt; collector, Func&lt;CustomAttributeData, bool&gt; filter = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.customattributedata(v=vs.110).aspx">CustomAttributeData</a>&gt;</td>
+                    <td><em>customAttributes</em></td>
+                    <td><p>Existing custom attribute data (can be obtained through <a class="xref" href="https://msdn.microsoft.com/en-us/library/dd268528(v=vs.110).aspx">System.Reflection.MemberInfo.GetCustomAttributesData</a>).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/018hxwa8(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.emit.customattributebuilder(v=vs.110).aspx">CustomAttributeBuilder</a>&gt;</td>
+                    <td><em>collector</em></td>
+                    <td><p>Action that receives builders that reproduce the original custom attributes.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549151(v=vs.110).aspx">Func</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.customattributedata(v=vs.110).aspx">CustomAttributeData</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a>&gt;</td>
+                    <td><em>filter</em></td>
+                    <td><p>Optional filter for attributes. When null, all attributes are collected.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_GetFlattenEvents_System_Type_.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.GetFlattenEvents(System.Type)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L234">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_GetFlattenEvents_System_Type_" data-uid="CK.Reflection.ReflectionHelper.GetFlattenEvents(System.Type)">GetFlattenEvents(Type)</h4>
+              <div class="markdown level1 summary"><p>Gets all events (including inherited events) of the given interface type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;EventInfo&gt; GetFlattenEvents(Type interfaceType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a></td>
+                    <td><em>interfaceType</em></td>
+                    <td><p>Type to process, must be an interface.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.eventinfo(v=vs.110).aspx">EventInfo</a>&gt;</td>
+                    <td><p>An <a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">System.Collections.Generic.IEnumerable`1</a> of <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.eventinfo(v=vs.110).aspx">System.Reflection.EventInfo</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_GetFlattenMembers__1_System_Type_System_Func_System_Type_System_Collections_Generic_IEnumerable___0___.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.GetFlattenMembers%60%601(System.Type%2CSystem.Func%7BSystem.Type%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%7D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L246">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_GetFlattenMembers__1_System_Type_System_Func_System_Type_System_Collections_Generic_IEnumerable___0___" data-uid="CK.Reflection.ReflectionHelper.GetFlattenMembers``1(System.Type,System.Func{System.Type,System.Collections.Generic.IEnumerable{``0}})">GetFlattenMembers&lt;T&gt;(Type, Func&lt;Type, IEnumerable&lt;T&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Gets an <a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">System.Collections.Generic.IEnumerable`1</a> that contains elements returned by the <em>getFunction</em>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; GetFlattenMembers&lt;T&gt;(Type interfaceType, Func&lt;Type, IEnumerable&lt;T&gt;&gt; getFunction)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a></td>
+                    <td><em>interfaceType</em></td>
+                    <td><p>Type to process, it must be an interface.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549151(v=vs.110).aspx">Func</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a>, <a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;T&gt;&gt;</td>
+                    <td><em>getFunction</em></td>
+                    <td><p>Function that takes a type and return an <a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">System.Collections.Generic.IEnumerable`1</a>, a possible implementation can be the lambda <code>t => t.GetMethods()</code>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;T&gt;</td>
+                    <td><p>An <a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">System.Collections.Generic.IEnumerable`1</a> that contains elements returned by the <em>getFunction</em>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td>Type of the element that you're looking for. <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.methodinfo(v=vs.110).aspx">System.Reflection.MethodInfo</a> for example.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_GetFlattenMethods_System_Type_.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.GetFlattenMethods(System.Type)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L213">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_GetFlattenMethods_System_Type_" data-uid="CK.Reflection.ReflectionHelper.GetFlattenMethods(System.Type)">GetFlattenMethods(Type)</h4>
+              <div class="markdown level1 summary"><p>Gets all methods (including inherited methods and methods with special names like get_XXX 
+and others add_XXX) of the given interface type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;MethodInfo&gt; GetFlattenMethods(Type interfaceType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a></td>
+                    <td><em>interfaceType</em></td>
+                    <td><p>Type to process, must be an interface.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.methodinfo(v=vs.110).aspx">MethodInfo</a>&gt;</td>
+                    <td><p>An <a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">System.Collections.Generic.IEnumerable`1</a> of <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.methodinfo(v=vs.110).aspx">System.Reflection.MethodInfo</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_GetFlattenProperties_System_Type_.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.GetFlattenProperties(System.Type)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L224">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_GetFlattenProperties_System_Type_" data-uid="CK.Reflection.ReflectionHelper.GetFlattenProperties(System.Type)">GetFlattenProperties(Type)</h4>
+              <div class="markdown level1 summary"><p>Gets all properties (including inherited properties) of the given interface type (<a class="xref" href="https://msdn.microsoft.com/en-us/library/aky14axb(v=vs.110).aspx">System.Type.GetProperties</a> does not 
+flatten the properties).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;PropertyInfo&gt; GetFlattenProperties(Type interfaceType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a></td>
+                    <td><em>interfaceType</em></td>
+                    <td><p>Type to process, must be an interface.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.propertyinfo(v=vs.110).aspx">PropertyInfo</a>&gt;</td>
+                    <td><p>An <a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">System.Collections.Generic.IEnumerable`1</a> of <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.propertyinfo(v=vs.110).aspx">System.Reflection.PropertyInfo</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_GetPropertyInfo__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.GetPropertyInfo%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Object%7D%7D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L60">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_GetPropertyInfo__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___" data-uid="CK.Reflection.ReflectionHelper.GetPropertyInfo``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">GetPropertyInfo&lt;THolder&gt;(Expression&lt;Func&lt;THolder, Object&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Retrieves a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.propertyinfo(v=vs.110).aspx">System.Reflection.PropertyInfo</a> from a lambda function without requiring an instance of the holder 
+object and without any constraint for the type of the property.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static PropertyInfo GetPropertyInfo&lt;THolder&gt;(Expression&lt;Func&lt;THolder, object&gt;&gt; propertyLambda)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb335710(v=vs.110).aspx">Expression</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549151(v=vs.110).aspx">Func</a>&lt;THolder, <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a>&gt;&gt;</td>
+                    <td><em>propertyLambda</em></td>
+                    <td><p>A lambda function that selects the property as an object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.propertyinfo(v=vs.110).aspx">PropertyInfo</a></td>
+                    <td><p>Corresponding property information.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>THolder</em></td>
+                    <td>Property holder type.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_GetPropertyInfo__1_System_Linq_Expressions_Expression_System_Func___0___.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.GetPropertyInfo%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%7D%7D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L84">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_GetPropertyInfo__1_System_Linq_Expressions_Expression_System_Func___0___" data-uid="CK.Reflection.ReflectionHelper.GetPropertyInfo``1(System.Linq.Expressions.Expression{System.Func{``0}})">GetPropertyInfo&lt;TProperty&gt;(Expression&lt;Func&lt;TProperty&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Retrieves a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.propertyinfo(v=vs.110).aspx">System.Reflection.PropertyInfo</a> from a parameterless lambda function: a closure is actually required
+and the compiler generates one automatically.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static PropertyInfo GetPropertyInfo&lt;TProperty&gt;(Expression&lt;Func&lt;TProperty&gt;&gt; propertyLambda)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb335710(v=vs.110).aspx">Expression</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/bb534960(v=vs.110).aspx">Func</a>&lt;TProperty&gt;&gt;</td>
+                    <td><em>propertyLambda</em></td>
+                    <td><p>A lambda function that selects a property (from the current syntactic context).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.propertyinfo(v=vs.110).aspx">PropertyInfo</a></td>
+                    <td><p>Corresponding property information.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TProperty</em></td>
+                    <td>Property type.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_GetPropertyInfo__2___0_System_Linq_Expressions_Expression_System_Func___0___1___.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.GetPropertyInfo%60%602(%60%600%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2C%60%601%7D%7D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L48">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_GetPropertyInfo__2___0_System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="CK.Reflection.ReflectionHelper.GetPropertyInfo``2(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}})">GetPropertyInfo&lt;THolder, TProperty&gt;(THolder, Expression&lt;Func&lt;THolder, TProperty&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Retrieves a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.propertyinfo(v=vs.110).aspx">System.Reflection.PropertyInfo</a> from a lambda function based on an instance of the holder.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static PropertyInfo GetPropertyInfo&lt;THolder, TProperty&gt;(THolder source, Expression&lt;Func&lt;THolder, TProperty&gt;&gt; propertyLambda)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">THolder</span></td>
+                    <td><em>source</em></td>
+                    <td><p>An instance of the <em>THolder</em>.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb335710(v=vs.110).aspx">Expression</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549151(v=vs.110).aspx">Func</a>&lt;THolder, TProperty&gt;&gt;</td>
+                    <td><em>propertyLambda</em></td>
+                    <td><p>A lambda function that selects the property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.propertyinfo(v=vs.110).aspx">PropertyInfo</a></td>
+                    <td><p>Corresponding property information.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>THolder</em></td>
+                    <td>Property holder type (will be inferred by the compiler).</td>
+                  </tr>
+                  <tr>
+                    <td><em>TProperty</em></td>
+                    <td>Property type (will be inferred by the compiler).</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_ReflectionHelper_GetPropertyInfo__2_System_Linq_Expressions_Expression_System_Func___0___1___.md&amp;value=---%0Auid%3A%20CK.Reflection.ReflectionHelper.GetPropertyInfo%60%602(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2C%60%601%7D%7D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/ReflectionHelper.cs/#L72">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_ReflectionHelper_GetPropertyInfo__2_System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="CK.Reflection.ReflectionHelper.GetPropertyInfo``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">GetPropertyInfo&lt;THolder, TProperty&gt;(Expression&lt;Func&lt;THolder, TProperty&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Retrieves a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.propertyinfo(v=vs.110).aspx">System.Reflection.PropertyInfo</a> from a lambda function.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static PropertyInfo GetPropertyInfo&lt;THolder, TProperty&gt;(Expression&lt;Func&lt;THolder, TProperty&gt;&gt; propertyLambda)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb335710(v=vs.110).aspx">Expression</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549151(v=vs.110).aspx">Func</a>&lt;THolder, TProperty&gt;&gt;</td>
+                    <td><em>propertyLambda</em></td>
+                    <td><p>A lambda function that selects the property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.propertyinfo(v=vs.110).aspx">PropertyInfo</a></td>
+                    <td><p>Corresponding property information.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>THolder</em></td>
+                    <td>Property holder type.</td>
+                  </tr>
+                  <tr>
+                    <td><em>TProperty</em></td>
+                    <td>Property type.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

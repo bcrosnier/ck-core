@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RouteActionFactory&lt;TAction, TRoute&gt;
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RouteActionFactory&lt;TAction, TRoute&gt;
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_RouteActionFactory_2.md&amp;value=---%0Auid%3A%20CK.RouteConfig.RouteActionFactory%602%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/RouteActionFactory.cs/#L15" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_RouteConfig_RouteActionFactory_2" data-uid="CK.RouteConfig.RouteActionFactory`2">Class RouteActionFactory&lt;TAction, TRoute&gt;
+              </h1>
+              <div class="markdown level0 summary"><p>Factory for actual actions from <a class="xref" href="CK.RouteConfig.ActionConfiguration.html#CK_RouteConfig_ActionConfiguration">ActionConfiguration</a> objects that enables
+the <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2">ConfiguredRouteHost&lt;TAction, TRoute&gt;</a> to create new actions and new final routes whenever its configuration changed.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">RouteActionFactory&lt;TAction, TRoute&gt;</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.RouteConfig</h6>
+              <h6><strong>Assembly</strong>:CK.Monitoring.dll</h6>
+              <h5 id="CK_RouteConfig_RouteActionFactory_2_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class RouteActionFactory&lt;TAction, TRoute&gt;
+    where TAction : class where TRoute : class</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TAction</em></td>
+                    <td>Actual type of the actions. The only constraint is that it must be a reference type.</td>
+                  </tr>
+                  <tr>
+                    <td><em>TRoute</em></td>
+                    <td>Route class that encapsulates actions.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_RouteActionFactory_2__ctor.md&amp;value=---%0Auid%3A%20CK.RouteConfig.RouteActionFactory%602.%23ctor%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/RouteActionFactory.cs/#L25">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_RouteActionFactory_2__ctor" data-uid="CK.RouteConfig.RouteActionFactory`2.#ctor">RouteActionFactory()</h4>
+              <div class="markdown level1 summary"><p>Initializes a new factory.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected RouteActionFactory()</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_RouteActionFactory_2_DoCreate_CK_Core_IActivityMonitor_CK_RouteConfig_IRouteConfigurationLock_CK_RouteConfig_ActionConfiguration_.md&amp;value=---%0Auid%3A%20CK.RouteConfig.RouteActionFactory%602.DoCreate(CK.Core.IActivityMonitor%2CCK.RouteConfig.IRouteConfigurationLock%2CCK.RouteConfig.ActionConfiguration)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/RouteActionFactory.cs/#L108">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_RouteActionFactory_2_DoCreate_CK_Core_IActivityMonitor_CK_RouteConfig_IRouteConfigurationLock_CK_RouteConfig_ActionConfiguration_" data-uid="CK.RouteConfig.RouteActionFactory`2.DoCreate(CK.Core.IActivityMonitor,CK.RouteConfig.IRouteConfigurationLock,CK.RouteConfig.ActionConfiguration)">DoCreate(IActivityMonitor, IRouteConfigurationLock, ActionConfiguration)</h4>
+              <div class="markdown level1 summary"><p>Must be implemented to create a <em>TAction</em> from a <a class="xref" href="CK.RouteConfig.ActionConfiguration.html#CK_RouteConfig_ActionConfiguration">ActionConfiguration</a> object
+that is guaranteed to not be a composite (a parallel or a sequence).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract TAction DoCreate(IActivityMonitor monitor, IRouteConfigurationLock configLock, ActionConfiguration c)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>Monitor to use if needed.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.RouteConfig.IRouteConfigurationLock.html#CK_RouteConfig_IRouteConfigurationLock">IRouteConfigurationLock</a></td>
+                    <td><em>configLock</em></td>
+                    <td><p>Configuration lock. It must not be solicited during the creation of the action: an action that delay
+its work can keep a reference to it and use it when needed.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.RouteConfig.ActionConfiguration.html#CK_RouteConfig_ActionConfiguration">ActionConfiguration</a></td>
+                    <td><em>c</em></td>
+                    <td><p>Configuration of the action.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TAction</span></td>
+                    <td><p>The created action.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_RouteActionFactory_2_DoCreateEmptyFinalRoute.md&amp;value=---%0Auid%3A%20CK.RouteConfig.RouteActionFactory%602.DoCreateEmptyFinalRoute%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/RouteActionFactory.cs/#L86">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_RouteActionFactory_2_DoCreateEmptyFinalRoute" data-uid="CK.RouteConfig.RouteActionFactory`2.DoCreateEmptyFinalRoute">DoCreateEmptyFinalRoute()</h4>
+              <div class="markdown level1 summary"><p>Must be implemented to return an empty final route.
+This empty final route is used when no configuration exists or if an error occurred while 
+setting a new configuration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract TRoute DoCreateEmptyFinalRoute()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TRoute</span></td>
+                    <td><p>An empty route. Can be a static shared (immutable) object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_RouteActionFactory_2_DoCreateFinalRoute_CK_Core_IActivityMonitor_CK_RouteConfig_IRouteConfigurationLock__0___System_String_System_Object_System_Collections_Generic_IReadOnlyList__1__.md&amp;value=---%0Auid%3A%20CK.RouteConfig.RouteActionFactory%602.DoCreateFinalRoute(CK.Core.IActivityMonitor%2CCK.RouteConfig.IRouteConfigurationLock%2C%600%5B%5D%2CSystem.String%2CSystem.Object%2CSystem.Collections.Generic.IReadOnlyList%7B%601%7D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/RouteActionFactory.cs/#L149">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_RouteActionFactory_2_DoCreateFinalRoute_CK_Core_IActivityMonitor_CK_RouteConfig_IRouteConfigurationLock__0___System_String_System_Object_System_Collections_Generic_IReadOnlyList__1__" data-uid="CK.RouteConfig.RouteActionFactory`2.DoCreateFinalRoute(CK.Core.IActivityMonitor,CK.RouteConfig.IRouteConfigurationLock,`0[],System.String,System.Object,System.Collections.Generic.IReadOnlyList{`1})">DoCreateFinalRoute(IActivityMonitor, IRouteConfigurationLock, TAction[], String, Object, IReadOnlyList&lt;TRoute&gt;)</h4>
+              <div class="markdown level1 summary"><p>Must be implemented to create the final route class that encapsulates the array of actions of a route. </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract TRoute DoCreateFinalRoute(IActivityMonitor monitor, IRouteConfigurationLock configLock, TAction[] actions, string configurationName, object configData, IReadOnlyList&lt;TRoute&gt; routePath)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>Monitor to use if needed to comment route creation.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.RouteConfig.IRouteConfigurationLock.html#CK_RouteConfig_IRouteConfigurationLock">IRouteConfigurationLock</a></td>
+                    <td><em>configLock</em></td>
+                    <td><p>Configuration lock. It must not be solicited during the creation of the route: a route that delays
+its work can keep a reference to it and use it as needed.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td>TAction[]</td>
+                    <td><em>actions</em></td>
+                    <td><p>Array of actions for the route.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>configurationName</em></td>
+                    <td><p>The <a class="xref" href="CK.RouteConfig.RouteConfiguration.html#CK_RouteConfig_RouteConfiguration">RouteConfiguration</a> name.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></td>
+                    <td><em>configData</em></td>
+                    <td><p>Configuration data of the route.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/hh192385(v=vs.110).aspx">IReadOnlyList</a>&lt;TRoute&gt;</td>
+                    <td><em>routePath</em></td>
+                    <td><p>Path to this route: parent route objects are already created.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TRoute</span></td>
+                    <td><p>Final route actions encapsulation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_RouteActionFactory_2_DoCreateParallel_CK_Core_IActivityMonitor_CK_RouteConfig_IRouteConfigurationLock_CK_RouteConfig_ActionParallelConfiguration__0___.md&amp;value=---%0Auid%3A%20CK.RouteConfig.RouteActionFactory%602.DoCreateParallel(CK.Core.IActivityMonitor%2CCK.RouteConfig.IRouteConfigurationLock%2CCK.RouteConfig.ActionParallelConfiguration%2C%600%5B%5D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/RouteActionFactory.cs/#L121">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_RouteActionFactory_2_DoCreateParallel_CK_Core_IActivityMonitor_CK_RouteConfig_IRouteConfigurationLock_CK_RouteConfig_ActionParallelConfiguration__0___" data-uid="CK.RouteConfig.RouteActionFactory`2.DoCreateParallel(CK.Core.IActivityMonitor,CK.RouteConfig.IRouteConfigurationLock,CK.RouteConfig.ActionParallelConfiguration,`0[])">DoCreateParallel(IActivityMonitor, IRouteConfigurationLock, ActionParallelConfiguration, TAction[])</h4>
+              <div class="markdown level1 summary"><p>Must me implemented to create a parallel action.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract TAction DoCreateParallel(IActivityMonitor monitor, IRouteConfigurationLock configLock, ActionParallelConfiguration c, TAction[] children)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>Monitor to use if needed.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.RouteConfig.IRouteConfigurationLock.html#CK_RouteConfig_IRouteConfigurationLock">IRouteConfigurationLock</a></td>
+                    <td><em>configLock</em></td>
+                    <td><p>Configuration lock. It must not be solicited during the creation of the parallel: if the parallel delays
+its work, it can keep a reference to it and use it as needed.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.RouteConfig.ActionParallelConfiguration.html#CK_RouteConfig_ActionParallelConfiguration">ActionParallelConfiguration</a></td>
+                    <td><em>c</em></td>
+                    <td><p>Configuration of the parallel action.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td>TAction[]</td>
+                    <td><em>children</em></td>
+                    <td><p>Array of already created children action.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TAction</span></td>
+                    <td><p>A parallel action.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_RouteActionFactory_2_DoCreateSequence_CK_Core_IActivityMonitor_CK_RouteConfig_IRouteConfigurationLock_CK_RouteConfig_ActionSequenceConfiguration__0___.md&amp;value=---%0Auid%3A%20CK.RouteConfig.RouteActionFactory%602.DoCreateSequence(CK.Core.IActivityMonitor%2CCK.RouteConfig.IRouteConfigurationLock%2CCK.RouteConfig.ActionSequenceConfiguration%2C%600%5B%5D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/RouteActionFactory.cs/#L134">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_RouteActionFactory_2_DoCreateSequence_CK_Core_IActivityMonitor_CK_RouteConfig_IRouteConfigurationLock_CK_RouteConfig_ActionSequenceConfiguration__0___" data-uid="CK.RouteConfig.RouteActionFactory`2.DoCreateSequence(CK.Core.IActivityMonitor,CK.RouteConfig.IRouteConfigurationLock,CK.RouteConfig.ActionSequenceConfiguration,`0[])">DoCreateSequence(IActivityMonitor, IRouteConfigurationLock, ActionSequenceConfiguration, TAction[])</h4>
+              <div class="markdown level1 summary"><p>Must me implemented to create a sequence action.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract TAction DoCreateSequence(IActivityMonitor monitor, IRouteConfigurationLock configLock, ActionSequenceConfiguration c, TAction[] children)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>Monitor to use if needed.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.RouteConfig.IRouteConfigurationLock.html#CK_RouteConfig_IRouteConfigurationLock">IRouteConfigurationLock</a></td>
+                    <td><em>configLock</em></td>
+                    <td><p>Configuration lock. It must not be solicited during the creation of the sequence: a sequence that delays
+its work can keep a reference to it and use it as needed.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.RouteConfig.ActionSequenceConfiguration.html#CK_RouteConfig_ActionSequenceConfiguration">ActionSequenceConfiguration</a></td>
+                    <td><em>c</em></td>
+                    <td><p>Configuration of the sequence action.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td>TAction[]</td>
+                    <td><em>children</em></td>
+                    <td><p>Array of already created children action.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TAction</span></td>
+                    <td><p>A sequence action.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_RouteActionFactory_2_DoInitialize.md&amp;value=---%0Auid%3A%20CK.RouteConfig.RouteActionFactory%602.DoInitialize%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/RouteActionFactory.cs/#L93">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_RouteActionFactory_2_DoInitialize" data-uid="CK.RouteConfig.RouteActionFactory`2.DoInitialize">DoInitialize()</h4>
+              <div class="markdown level1 summary"><p>Must be implemented to initialize any required shared objects for building new actions and routes.
+This is called once prior to any call to other methods of this factory.
+Default implementation does nothing.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void DoInitialize()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_RouteActionFactory_2_DoUninitialize_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.RouteConfig.RouteActionFactory%602.DoUninitialize(System.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/RouteActionFactory.cs/#L157">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_RouteActionFactory_2_DoUninitialize_System_Boolean_" data-uid="CK.RouteConfig.RouteActionFactory`2.DoUninitialize(System.Boolean)">DoUninitialize(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Must be implemented to cleanup any resources (if any) once new actions and routes have been created.
+This is always called (even if an error occurred). 
+Default implementation does nothing.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void DoUninitialize(bool success)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>success</em></td>
+                    <td><p>True on success, false if creation of routes has failed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

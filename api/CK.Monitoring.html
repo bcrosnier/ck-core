@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CK.Monitoring
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CK.Monitoring
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring.md&amp;value=---%0Auid%3A%20CK.Monitoring%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <h1 id="CK_Monitoring" data-uid="CK.Monitoring">Namespace CK.Monitoring
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="markdown level0 remarks"></div>
+                <h3 id="classes">Classes
+              </h3>
+                  <h4><a class="xref" href="CK.Monitoring.CKMonWriterClient.html#CK_Monitoring_CKMonWriterClient">CKMonWriterClient</a></h4>
+                  <section><p>This client writes .ckmon files for one monitor.
+To close output file, simply <a class="xref" href="CK.Core.IActivityMonitorOutput.html#CK_Core_IActivityMonitorOutput_UnregisterClient_CK_Core_IActivityMonitorClient_">UnregisterClient(IActivityMonitorClient)</a> this client.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a></h4>
+                  <section><p>A GrandOutput collects activity of multiple <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a>. It routes log events to 
+multiple channels based on <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_Topic">Topic</a>.</p>
+<p>It is usually useless to explicitly create an instance of GrandOutput: the <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_Default">Default</a> one is 
+available as soon as <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_EnsureActiveDefault_System_Action_CK_Monitoring_GrandOutput__">EnsureActiveDefault(Action&lt;GrandOutput&gt;)</a> (or <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_EnsureActiveDefaultWithDefaultSettings_CK_Core_IActivityMonitor_">EnsureActiveDefaultWithDefaultSettings(IActivityMonitor)</a>) is called 
+and will be automatically used by new <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a>.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.GrandOutputChannelConfigData.html#CK_Monitoring_GrandOutputChannelConfigData">GrandOutputChannelConfigData</a></h4>
+                  <section><p>Configuration for a channel. A channel is a route that receive outputs from monitors: this configuration is associated to a <a class="xref" href="CK.RouteConfig.RouteConfiguration.html#CK_RouteConfig_RouteConfiguration">RouteConfiguration</a> 
+or a <a class="xref" href="CK.RouteConfig.SubRouteConfiguration.html#CK_RouteConfig_SubRouteConfiguration">SubRouteConfiguration</a> object.
+Currently, the only configuration is the <a class="xref" href="CK.Monitoring.GrandOutputChannelConfigData.html#CK_Monitoring_GrandOutputChannelConfigData_MinimalFilter">MinimalFilter</a> of the channel.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.GrandOutputClient.html#CK_Monitoring_GrandOutputClient">GrandOutputClient</a></h4>
+                  <section><p>A GrandOutputClient is a <a class="xref" href="CK.Core.IActivityMonitorClient.html#CK_Core_IActivityMonitorClient">IActivityMonitorClient</a> that can only be obtained and registered
+through <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_Register_CK_Core_IActivityMonitor_">Register(IActivityMonitor)</a>.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.GrandOutputConfiguration.html#CK_Monitoring_GrandOutputConfiguration">GrandOutputConfiguration</a></h4>
+                  <section><p>Defines configuration for <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a>.
+This object is not thread safe. New GrandOutputConfiguration can be created when needed (and 
+method <a class="xref" href="CK.Monitoring.GrandOutputConfiguration.html#CK_Monitoring_GrandOutputConfiguration_LoadFromFile_System_String_CK_Core_IActivityMonitor_">LoadFromFile(String, IActivityMonitor)</a> or <a class="xref" href="CK.Monitoring.GrandOutputConfiguration.html#CK_Monitoring_GrandOutputConfiguration_Load_System_Xml_Linq_XElement_CK_Core_IActivityMonitor_">Load(XElement, IActivityMonitor)</a> called).</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.LogEntry.html#CK_Monitoring_LogEntry">LogEntry</a></h4>
+                  <section><p>Encapsulates <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a> concrete objects manipulation.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.LogReader.html#CK_Monitoring_LogReader">LogReader</a></h4>
+                  <section><p>A log reader acts as an enumerator of <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a> that are stored in a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.stream(v=vs.110).aspx">System.IO.Stream</a>.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.LogReader.MulticastFilter.html#CK_Monitoring_LogReader_MulticastFilter">LogReader.MulticastFilter</a></h4>
+                  <section><p>Enables filtering of a multi-cast stream: only entries from the specified monitor will be read. </p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.MonitorBinaryFileOutput.html#CK_Monitoring_MonitorBinaryFileOutput">MonitorBinaryFileOutput</a></h4>
+                  <section><p>Helper class that encapsulates temporary stream and final renaming for log entries streams.
+This currently handles only the maximum count of entries per file but this may be extended with options like &quot;SubFolderMode&quot; that can be based 
+on current time (to group logs inside timed intermediate folders like one per day: 2014/01/12 or 2014-01/12, etc.). </p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.MonitorFileOutputBase.html#CK_Monitoring_MonitorFileOutputBase">MonitorFileOutputBase</a></h4>
+                  <section><p>Helper class that encapsulates temporary stream and final renaming for log entries streams.
+This currently handles only the maximum count of entries per file but this may be extended with options like &quot;SubFolderMode&quot; that can be based 
+on current time (to group logs inside timed intermediate folders like one per day: 2014/01/12 or 2014-01/12, etc.). </p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.MonitorTextFileOutput.html#CK_Monitoring_MonitorTextFileOutput">MonitorTextFileOutput</a></h4>
+                  <section><p>Helper class that encapsulates temporary stream and final renaming for log entries streams.
+This currently handles only the maximum count of entries per file but this may be extended with options like &quot;SubFolderMode&quot; that can be based 
+on current time (to group logs inside timed intermediate folders like one per day: 2014/01/12 or 2014-01/12, etc.). </p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.MultiLogReader.html#CK_Monitoring_MultiLogReader">MultiLogReader</a></h4>
+                  <section><p>This reader process multiples .ckmon files (possibly in different steps: it internally aggregates the result) and can 
+create <a class="xref" href="CK.Monitoring.MultiLogReader.ActivityMap.html#CK_Monitoring_MultiLogReader_ActivityMap">MultiLogReader.ActivityMap</a> objects on demand.
+It is a thread safe object (the ActivityMap is immutable).</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.MultiLogReader.ActivityMap.html#CK_Monitoring_MultiLogReader_ActivityMap">MultiLogReader.ActivityMap</a></h4>
+                  <section><p>Immutable snapshot of a <a class="xref" href="CK.Monitoring.MultiLogReader.html#CK_Monitoring_MultiLogReader">MultiLogReader</a>&#39;s content.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.MultiLogReader.Monitor.html#CK_Monitoring_MultiLogReader_Monitor">MultiLogReader.Monitor</a></h4>
+                  <section><p>Immutable information that describes one monitor&#39;s content.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.MultiLogReader.Monitor.LivePage.html#CK_Monitoring_MultiLogReader_Monitor_LivePage">MultiLogReader.Monitor.LivePage</a></h4>
+                  <section><p>A page gives access to <a class="xref" href="CK.Monitoring.MultiLogReader.Monitor.LivePage.html#CK_Monitoring_MultiLogReader_Monitor_LivePage_Entries">Entries</a> by unifying all the raw log files and removing duplicates from them.
+Pages are sequentially accessed from a first page (obtained by <see cref="G:Monitor.ReadFirstPage"></see>) and the by calling <a class="xref" href="CK.Monitoring.MultiLogReader.Monitor.LivePage.html#CK_Monitoring_MultiLogReader_Monitor_LivePage_ForwardPage">ForwardPage()</a>.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.MultiLogReader.RawLogFile.html#CK_Monitoring_MultiLogReader_RawLogFile">MultiLogReader.RawLogFile</a></h4>
+                  <section><p>Immutable object that contains a description of the content of a raw log file.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.MultiLogReader.RawLogFileMonitorOccurence.html#CK_Monitoring_MultiLogReader_RawLogFileMonitorOccurence">MultiLogReader.RawLogFileMonitorOccurence</a></h4>
+                  <section><p>Immutable object that describes the occurrence of a Monitor in a <a class="xref" href="CK.Monitoring.MultiLogReader.RawLogFile.html#CK_Monitoring_MultiLogReader_RawLogFile">MultiLogReader.RawLogFile</a>.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.ParentedLogEntry.html#CK_Monitoring_ParentedLogEntry">ParentedLogEntry</a></h4>
+                  <section><p>Parented log entry binds an entry to its parent group and can be a missing entry (a line or group opening or closing that we know it exists
+but have no data for it or only their <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry_LogTime">LogTime</a>).</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.XmlMonitoringExtensions.html#CK_Monitoring_XmlMonitoringExtensions">XmlMonitoringExtensions</a></h4>
+                  <section><p>Helpers to read XML configurations.</p>
+</section>
+                <h3 id="structs">Structs
+              </h3>
+                  <h4><a class="xref" href="CK.Monitoring.GrandOutputEventInfo.html#CK_Monitoring_GrandOutputEventInfo">GrandOutputEventInfo</a></h4>
+                  <section><p>Captures a log data with the current <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_Topic">Topic</a>.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.MulticastLogEntryWithOffset.html#CK_Monitoring_MulticastLogEntryWithOffset">MulticastLogEntryWithOffset</a></h4>
+                  <section><p>Immutable capture of a log <a class="xref" href="CK.Monitoring.MulticastLogEntryWithOffset.html#CK_Monitoring_MulticastLogEntryWithOffset_Entry">Entry</a> and its <a class="xref" href="CK.Monitoring.MulticastLogEntryWithOffset.html#CK_Monitoring_MulticastLogEntryWithOffset_Offset">Offset</a>.</p>
+</section>
+                <h3 id="interfaces">Interfaces
+              </h3>
+                  <h4><a class="xref" href="CK.Monitoring.IGrandOutputBridgeTarget.html#CK_Monitoring_IGrandOutputBridgeTarget">IGrandOutputBridgeTarget</a></h4>
+                  <section><p>External entry point for cross application domain bridge.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.IGrandOutputDispatcherStrategy.html#CK_Monitoring_IGrandOutputDispatcherStrategy">IGrandOutputDispatcherStrategy</a></h4>
+                  <section><p>Defines a strategy to manage dispatching log events overload and idle time management.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.IGrandOutputSink.html#CK_Monitoring_IGrandOutputSink">IGrandOutputSink</a></h4>
+                  <section><p>Defines a sink that can be registered onto a <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a>
+to intercept any log event. It is also supported by <a class="xref" href="CK.Monitoring.GrandOutputHandlers.HandlerBase.html#CK_Monitoring_GrandOutputHandlers_HandlerBase">HandlerBase</a>.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a></h4>
+                  <section><p>Unified interface for log entries whatever their <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry_LogType">LogType</a> is.
+All log entries can be exposed through this &quot;rich&quot; interface.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.IMulticastLogEntry.html#CK_Monitoring_IMulticastLogEntry">IMulticastLogEntry</a></h4>
+                  <section><p>Unified interface for multi-cast log entries whatever their <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry_LogType">LogType</a> or their source <a class="xref" href="CK.Monitoring.IMulticastLogInfo.html#CK_Monitoring_IMulticastLogInfo_MonitorId">MonitorId</a> is.
+All log entries can be exposed through this &quot;rich&quot; interface.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.IMulticastLogInfo.html#CK_Monitoring_IMulticastLogInfo">IMulticastLogInfo</a></h4>
+                  <section><p>Information required by a <a class="xref" href="CK.Monitoring.IMulticastLogEntry.html#CK_Monitoring_IMulticastLogEntry">IMulticastLogEntry</a>.</p>
+</section>
+                <h3 id="enums">Enums
+              </h3>
+                  <h4><a class="xref" href="CK.Monitoring.LogEntryType.html#CK_Monitoring_LogEntryType">LogEntryType</a></h4>
+                  <section><p>Type of a <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a>.</p>
+</section>
+                  <h4><a class="xref" href="CK.Monitoring.SourceFilterApplyMode.html#CK_Monitoring_SourceFilterApplyMode">SourceFilterApplyMode</a></h4>
+                  <section><p>Defines how the <a class="xref" href="CK.Monitoring.GrandOutputConfiguration.html#CK_Monitoring_GrandOutputConfiguration">GrandOutputConfiguration</a> applies its <a class="xref" href="CK.Monitoring.GrandOutputConfiguration.html#CK_Monitoring_GrandOutputConfiguration_SourceOverrideFilter">SourceOverrideFilter</a>
+to the application domain&#39;s global <a class="xref" href="CK.Core.ActivityMonitor.SourceFilter.html#CK_Core_ActivityMonitor_SourceFilter_FilterSource">FilterSource</a>.</p>
+</section>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

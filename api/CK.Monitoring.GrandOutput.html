@@ -1,0 +1,765 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GrandOutput
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GrandOutput
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.DefaultConfig.cs/#L18" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Monitoring_GrandOutput" data-uid="CK.Monitoring.GrandOutput">Class GrandOutput
+              </h1>
+              <div class="markdown level0 summary"><p>A GrandOutput collects activity of multiple <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a>. It routes log events to 
+multiple channels based on <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_Topic">Topic</a>.</p>
+<p>It is usually useless to explicitly create an instance of GrandOutput: the <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_Default">Default</a> one is 
+available as soon as <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_EnsureActiveDefault_System_Action_CK_Monitoring_GrandOutput__">EnsureActiveDefault(Action&lt;GrandOutput&gt;)</a> (or <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_EnsureActiveDefaultWithDefaultSettings_CK_Core_IActivityMonitor_">EnsureActiveDefaultWithDefaultSettings(IActivityMonitor)</a>) is called 
+and will be automatically used by new <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a>.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">GrandOutput</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Monitoring</h6>
+              <h6><strong>Assembly</strong>:CK.Monitoring.dll</h6>
+              <h5 id="CK_Monitoring_GrandOutput_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public sealed class GrandOutput : IDisposable</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput__ctor_CK_Monitoring_IGrandOutputDispatcherStrategy_.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.%23ctor(CK.Monitoring.IGrandOutputDispatcherStrategy)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L79">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput__ctor_CK_Monitoring_IGrandOutputDispatcherStrategy_" data-uid="CK.Monitoring.GrandOutput.#ctor(CK.Monitoring.IGrandOutputDispatcherStrategy)">GrandOutput(IGrandOutputDispatcherStrategy)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a>. </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GrandOutput(IGrandOutputDispatcherStrategy dispatcherStrategy = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.IGrandOutputDispatcherStrategy.html#CK_Monitoring_IGrandOutputDispatcherStrategy">IGrandOutputDispatcherStrategy</a></td>
+                    <td><em>dispatcherStrategy</em></td>
+                    <td><p>Strategy to use to handle the throughput.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_ConfigurationAttemptCount.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.ConfigurationAttemptCount%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L179">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_ConfigurationAttemptCount" data-uid="CK.Monitoring.GrandOutput.ConfigurationAttemptCount">ConfigurationAttemptCount</h4>
+              <div class="markdown level1 summary"><p>Gets the total number of calls to <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_SetConfiguration_CK_Monitoring_GrandOutputConfiguration_CK_Core_IActivityMonitor_System_Int32_">SetConfiguration(GrandOutputConfiguration, IActivityMonitor, Int32)</a> (and to <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_Dispose">Dispose()</a> method).
+This can be used to call <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_WaitForNextConfiguration_System_Int32_System_Int32_">WaitForNextConfiguration(Int32, Int32)</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int ConfigurationAttemptCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_Default.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.Default%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L38">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_Default" data-uid="CK.Monitoring.GrandOutput.Default">Default</h4>
+              <div class="markdown level1 summary"><p>Gets the default <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a> for the current Application Domain.
+Note that <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_EnsureActiveDefault_System_Action_CK_Monitoring_GrandOutput__">EnsureActiveDefault(Action&lt;GrandOutput&gt;)</a> must have been called, otherwise this static property is null.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static GrandOutput Default
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_GrandOutputMinimalFilter.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.GrandOutputMinimalFilter%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L131">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_GrandOutputMinimalFilter" data-uid="CK.Monitoring.GrandOutput.GrandOutputMinimalFilter">GrandOutputMinimalFilter</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the minimal filter that monitors created for the 
+GrandOutput itself will use.
+Defaults to <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Release">Release</a> (this should be changed only for debugging reasons).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static LogFilter GrandOutputMinimalFilter
+{
+    get;
+    set;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_IsDisposed.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.IsDisposed%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L338">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_IsDisposed" data-uid="CK.Monitoring.GrandOutput.IsDisposed">IsDisposed</h4>
+              <div class="markdown level1 summary"><p>Gets whether this GrandOutput has been disposed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsDisposed
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_LostEventCount.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.LostEventCount%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L140">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_LostEventCount" data-uid="CK.Monitoring.GrandOutput.LostEventCount">LostEventCount</h4>
+              <div class="markdown level1 summary"><p>Gets the number of lost events since this <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a> has been created.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int LostEventCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_MaxQueuedCount.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.MaxQueuedCount%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L148">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_MaxQueuedCount" data-uid="CK.Monitoring.GrandOutput.MaxQueuedCount">MaxQueuedCount</h4>
+              <div class="markdown level1 summary"><p>Maximal queue size that has been used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int MaxQueuedCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_Dispose.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.Dispose%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L369">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_Dispose" data-uid="CK.Monitoring.GrandOutput.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"><p>Calls <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_Dispose_CK_Core_IActivityMonitor_System_Int32_">Dispose(IActivityMonitor, Int32)</a> with a <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor">SystemActivityMonitor</a> and <a class="xref" href="https://msdn.microsoft.com/en-us/library/65fh19xy(v=vs.110).aspx">System.Threading.Timeout.Infinite</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_Dispose_CK_Core_IActivityMonitor_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.Dispose(CK.Core.IActivityMonitor%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L348">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_Dispose_CK_Core_IActivityMonitor_System_Int32_" data-uid="CK.Monitoring.GrandOutput.Dispose(CK.Core.IActivityMonitor,System.Int32)">Dispose(IActivityMonitor, Int32)</h4>
+              <div class="markdown level1 summary"><p>Closes this <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose(IActivityMonitor monitor, int millisecondsBeforeForceClose = -1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>Monitor that will be used. Must not be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>millisecondsBeforeForceClose</em></td>
+                    <td><p>Maximal time to wait for current routes to be unlocked (see <a class="xref" href="CK.RouteConfig.IRouteConfigurationLock.html#CK_RouteConfig_IRouteConfigurationLock">IRouteConfigurationLock</a>).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_EnsureActiveDefault_System_Action_CK_Monitoring_GrandOutput__.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.EnsureActiveDefault(System.Action%7BCK.Monitoring.GrandOutput%7D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L59">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_EnsureActiveDefault_System_Action_CK_Monitoring_GrandOutput__" data-uid="CK.Monitoring.GrandOutput.EnsureActiveDefault(System.Action{CK.Monitoring.GrandOutput})">EnsureActiveDefault(Action&lt;GrandOutput&gt;)</h4>
+              <div class="markdown level1 summary"><p>Ensures that the <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_Default">Default</a> GrandOutput is created and that any <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a> that will be created in this
+application domain will automatically have a <a class="xref" href="CK.Monitoring.GrandOutputClient.html#CK_Monitoring_GrandOutputClient">GrandOutputClient</a> registered for this Default GrandOutput.
+Use <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_EnsureActiveDefaultWithDefaultSettings_CK_Core_IActivityMonitor_">EnsureActiveDefaultWithDefaultSettings(IActivityMonitor)</a> to initially configure this default.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Monitoring_GrandOutput_EnsureActiveDefault_System_Action_CK_Monitoring_GrandOutput___remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This method is thread-safe (a simple lock protects it) and uses a <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> action 
+that <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_Register_CK_Core_IActivityMonitor_">Register(IActivityMonitor)</a>s newly created <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a>.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static GrandOutput EnsureActiveDefault(Action&lt;GrandOutput&gt; configurator = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/018hxwa8(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a>&gt;</td>
+                    <td><em>configurator</em></td>
+                    <td><p>Optional action that can configure the default GrandOutput.
+If specified will be called after the creation of a new GrandOutput: it will not be called 
+if a <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_Default">Default</a> is already available.
+This parameter is optional since you can configure it at any time.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a></td>
+                    <td><p>The Default GrandOutput.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_EnsureActiveDefaultWithDefaultSettings_CK_Core_IActivityMonitor_.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.EnsureActiveDefaultWithDefaultSettings(CK.Core.IActivityMonitor)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.DefaultConfig.cs/#L33">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_EnsureActiveDefaultWithDefaultSettings_CK_Core_IActivityMonitor_" data-uid="CK.Monitoring.GrandOutput.EnsureActiveDefaultWithDefaultSettings(CK.Core.IActivityMonitor)">EnsureActiveDefaultWithDefaultSettings(IActivityMonitor)</h4>
+              <div class="markdown level1 summary"><p>Ensures that the <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_Default">Default</a> GrandOutput is created (see <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_EnsureActiveDefault_System_Action_CK_Monitoring_GrandOutput__">EnsureActiveDefault(Action&lt;GrandOutput&gt;)</a>) and configured with default settings:
+only one one channel with its minimal filter sets to Debug with one text file handler that writes .txt files in &quot;<a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a>\GrandOutputDefault&quot; directory.
+The <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> must be valid and if a GrandOutput.config file exists inside, it is loaded as the configuration.
+If it exists, it must be valid (otherwise an exception is thrown).
+Once loaded, the file is monitored and any change that occurs to it dynamically triggers a <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_SetConfiguration_CK_Monitoring_GrandOutputConfiguration_CK_Core_IActivityMonitor_System_Int32_">SetConfiguration(GrandOutputConfiguration, IActivityMonitor, Int32)</a> with the new file.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static GrandOutput EnsureActiveDefaultWithDefaultSettings(IActivityMonitor monitor = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>An optional monitor.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput">GrandOutput</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_Register_CK_Core_IActivityMonitor_.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.Register(CK.Core.IActivityMonitor)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L112">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_Register_CK_Core_IActivityMonitor_" data-uid="CK.Monitoring.GrandOutput.Register(CK.Core.IActivityMonitor)">Register(IActivityMonitor)</h4>
+              <div class="markdown level1 summary"><p>Ensures that a client for this GrandOutput is registered on a monitor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GrandOutputClient Register(IActivityMonitor monitor)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>The monitor onto which a <a class="xref" href="CK.Monitoring.GrandOutputClient.html#CK_Monitoring_GrandOutputClient">GrandOutputClient</a> must be registered.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.GrandOutputClient.html#CK_Monitoring_GrandOutputClient">GrandOutputClient</a></td>
+                    <td><p>A newly created client or the already existing one.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_RegisterGlobalSink_CK_Monitoring_IGrandOutputSink_.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.RegisterGlobalSink(CK.Monitoring.IGrandOutputSink)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L157">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_RegisterGlobalSink_CK_Monitoring_IGrandOutputSink_" data-uid="CK.Monitoring.GrandOutput.RegisterGlobalSink(CK.Monitoring.IGrandOutputSink)">RegisterGlobalSink(IGrandOutputSink)</h4>
+              <div class="markdown level1 summary"><p>Registers a <a class="xref" href="CK.Monitoring.IGrandOutputSink.html#CK_Monitoring_IGrandOutputSink">IGrandOutputSink</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RegisterGlobalSink(IGrandOutputSink sink)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.IGrandOutputSink.html#CK_Monitoring_IGrandOutputSink">IGrandOutputSink</a></td>
+                    <td><em>sink</em></td>
+                    <td><p>The sink to register.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_SetConfiguration_CK_Monitoring_GrandOutputConfiguration_CK_Core_IActivityMonitor_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.SetConfiguration(CK.Monitoring.GrandOutputConfiguration%2CCK.Core.IActivityMonitor%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L191">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_SetConfiguration_CK_Monitoring_GrandOutputConfiguration_CK_Core_IActivityMonitor_System_Int32_" data-uid="CK.Monitoring.GrandOutput.SetConfiguration(CK.Monitoring.GrandOutputConfiguration,CK.Core.IActivityMonitor,System.Int32)">SetConfiguration(GrandOutputConfiguration, IActivityMonitor, Int32)</h4>
+              <div class="markdown level1 summary"><p>Attempts to set a new configuration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool SetConfiguration(GrandOutputConfiguration config, IActivityMonitor monitor = null, int millisecondsBeforeForceClose = -1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.GrandOutputConfiguration.html#CK_Monitoring_GrandOutputConfiguration">GrandOutputConfiguration</a></td>
+                    <td><em>config</em></td>
+                    <td><p>The configuration that must be set.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>Optional monitor.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>millisecondsBeforeForceClose</em></td>
+                    <td><p>Optional timeout to wait before forcing the close of the currently active configuration.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True on success.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_UnregisterGlobalSink_CK_Monitoring_IGrandOutputSink_.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.UnregisterGlobalSink(CK.Monitoring.IGrandOutputSink)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L168">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_UnregisterGlobalSink_CK_Monitoring_IGrandOutputSink_" data-uid="CK.Monitoring.GrandOutput.UnregisterGlobalSink(CK.Monitoring.IGrandOutputSink)">UnregisterGlobalSink(IGrandOutputSink)</h4>
+              <div class="markdown level1 summary"><p>Unregisters a <a class="xref" href="CK.Monitoring.IGrandOutputSink.html#CK_Monitoring_IGrandOutputSink">IGrandOutputSink</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UnregisterGlobalSink(IGrandOutputSink sink)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.IGrandOutputSink.html#CK_Monitoring_IGrandOutputSink">IGrandOutputSink</a></td>
+                    <td><em>sink</em></td>
+                    <td><p>The sink to unregister.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_GrandOutput_WaitForNextConfiguration_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Monitoring.GrandOutput.WaitForNextConfiguration(System.Int32%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/GrandOutput.cs/#L223">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_GrandOutput_WaitForNextConfiguration_System_Int32_System_Int32_" data-uid="CK.Monitoring.GrandOutput.WaitForNextConfiguration(System.Int32,System.Int32)">WaitForNextConfiguration(Int32, Int32)</h4>
+              <div class="markdown level1 summary"><p>Blocks the caller until the current <a class="xref" href="CK.Monitoring.GrandOutput.html#CK_Monitoring_GrandOutput_ConfigurationAttemptCount">ConfigurationAttemptCount</a> is greater or equal to the given number and the last 
+configuration has been applied (or this object is disposed).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool WaitForNextConfiguration(int configurationAttemptCount, int millisecondsTimeout)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>configurationAttemptCount</em></td>
+                    <td><p>The number of configuration attempt count to wait for.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>millisecondsTimeout</em></td>
+                    <td><p>Maximum number of milliseconds to wait. Use <a class="xref" href="https://msdn.microsoft.com/en-us/library/65fh19xy(v=vs.110).aspx">System.Threading.Timeout.Infinite</a> or -1 for no limit.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>False if specified timeout expired.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

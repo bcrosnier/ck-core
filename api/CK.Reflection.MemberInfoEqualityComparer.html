@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MemberInfoEqualityComparer
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MemberInfoEqualityComparer
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_MemberInfoEqualityComparer.md&amp;value=---%0Auid%3A%20CK.Reflection.MemberInfoEqualityComparer%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/MethodInfoEqualityComparer.cs/#L39" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Reflection_MemberInfoEqualityComparer" data-uid="CK.Reflection.MemberInfoEqualityComparer">Class MemberInfoEqualityComparer
+              </h1>
+              <div class="markdown level0 summary"><p>Provides actual comparison of <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a> without  considering the <a class="xref" href="https://msdn.microsoft.com/en-us/library/6f7d8831(v=vs.110).aspx">System.Reflection.MemberInfo.ReflectedType</a>.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">MemberInfoEqualityComparer</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Reflection</h6>
+              <h6><strong>Assembly</strong>:CK.Reflection.dll</h6>
+              <h5 id="CK_Reflection_MemberInfoEqualityComparer_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public sealed class MemberInfoEqualityComparer : IEqualityComparer&lt;MemberInfo&gt;</code></pre>
+              </div>
+              <h5 id="CK_Reflection_MemberInfoEqualityComparer_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>This code comes from re-motion Core Framework (LGPL). It has been slightly modified, but the credits is for them.</p>
+<p>
+Copyright (c) rubicon IT GmbH, www.rubicon.eu
+</p>
+</div>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_MemberInfoEqualityComparer_Default.md&amp;value=---%0Auid%3A%20CK.Reflection.MemberInfoEqualityComparer.Default%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/MethodInfoEqualityComparer.cs/#L44">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_MemberInfoEqualityComparer_Default" data-uid="CK.Reflection.MemberInfoEqualityComparer.Default">Default</h4>
+              <div class="markdown level1 summary"><p>Gets the comparer instance that should be always used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly MemberInfoEqualityComparer Default</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Reflection.MemberInfoEqualityComparer.html#CK_Reflection_MemberInfoEqualityComparer">MemberInfoEqualityComparer</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_MemberInfoEqualityComparer_Equals_System_Reflection_MemberInfo_System_Reflection_MemberInfo_.md&amp;value=---%0Auid%3A%20CK.Reflection.MemberInfoEqualityComparer.Equals(System.Reflection.MemberInfo%2CSystem.Reflection.MemberInfo)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/MethodInfoEqualityComparer.cs/#L58">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_MemberInfoEqualityComparer_Equals_System_Reflection_MemberInfo_System_Reflection_MemberInfo_" data-uid="CK.Reflection.MemberInfoEqualityComparer.Equals(System.Reflection.MemberInfo,System.Reflection.MemberInfo)">Equals(MemberInfo, MemberInfo)</h4>
+              <div class="markdown level1 summary"><p>Checks two <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a> instances for logical equality, without considering the <a class="xref" href="https://msdn.microsoft.com/en-us/library/6f7d8831(v=vs.110).aspx">System.Reflection.MemberInfo.ReflectedType</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Equals(MemberInfo x, MemberInfo y)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">MemberInfo</a></td>
+                    <td><em>x</em></td>
+                    <td><p>First <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a> to compare.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">MemberInfo</a></td>
+                    <td><em>y</em></td>
+                    <td><p>Second <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a> to compare.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if the two <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a> objects are logically equivalent, ie., if they represent the same <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a>.
+This is very similar to the <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">System.Object.Equals(System.Object)</a> implementation of <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a> objects, but it ignores the</p>
+<p><a class="xref" href="https://msdn.microsoft.com/en-us/library/6f7d8831(v=vs.110).aspx">System.Reflection.MemberInfo.ReflectedType</a> property. In effect, two members compare equal if they are declared by the same type and
+denote the same member on that type. For generic <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.methodinfo(v=vs.110).aspx">System.Reflection.MethodInfo</a> objects, the generic arguments must be the same.
+The idea for this method, but not the code, was taken from <a href="http://blogs.msdn.com/b/kingces/archive/2005/08/17/452774.aspx">http://blogs.msdn.com/b/kingces/archive/2005/08/17/452774.aspx</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Reflection_MemberInfoEqualityComparer_GetHashCode_System_Reflection_MemberInfo_.md&amp;value=---%0Auid%3A%20CK.Reflection.MemberInfoEqualityComparer.GetHashCode(System.Reflection.MemberInfo)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Reflection/MethodInfoEqualityComparer.cs/#L105">View Source</a>
+              </span>
+              <h4 id="CK_Reflection_MemberInfoEqualityComparer_GetHashCode_System_Reflection_MemberInfo_" data-uid="CK.Reflection.MemberInfoEqualityComparer.GetHashCode(System.Reflection.MemberInfo)">GetHashCode(MemberInfo)</h4>
+              <div class="markdown level1 summary"><p>Returns the hash code for the given <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a>. To calculate the hash code, the hash codes of the declaring type, 
+metadata token and module of the <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a> are combined. If the declaring type is an array, the name of the </p>
+<p><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a> is used instead of the metadata token.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int GetHashCode(MemberInfo m)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">MemberInfo</a></td>
+                    <td><em>m</em></td>
+                    <td><p>The <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a> for which the hash code should be calculated.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><p>The calculated hash code of the <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.reflection.memberinfo(v=vs.110).aspx">System.Reflection.MemberInfo</a>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

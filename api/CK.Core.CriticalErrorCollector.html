@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CriticalErrorCollector
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CriticalErrorCollector
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L21" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Core_CriticalErrorCollector" data-uid="CK.Core.CriticalErrorCollector">Class CriticalErrorCollector
+              </h1>
+              <div class="markdown level0 summary"><p>This collector keeps <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_Capacity">Capacity</a> <a class="xref" href="CK.Core.CriticalErrorCollector.Error.html#CK_Core_CriticalErrorCollector_Error">CriticalErrorCollector.Error</a>s (and no more).
+It raises <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreads">OnErrorFromBackgroundThreads</a> event on each <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_Add_System_Exception_System_String_">Add(Exception, String)</a>.
+It is totally thread-safe and guaranties (as long as its Capacity is big enough) that no error can be lost
+(even errors raised while dispatching the event are themselves collected) and that errors are dispatched in
+sequence.</p>
+<p>
+This class is typically used as a static property or field by any object that must handle unexpected errors. (It can also be used
+per-instance if it makes sense.)
+</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">CriticalErrorCollector</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Core</h6>
+              <h6><strong>Assembly</strong>:CK.Core.dll</h6>
+              <h5 id="CK_Core_CriticalErrorCollector_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class CriticalErrorCollector</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector__ctor.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.%23ctor%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L118">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector__ctor" data-uid="CK.Core.CriticalErrorCollector.#ctor">CriticalErrorCollector()</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector">CriticalErrorCollector</a> with a default <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_Capacity">Capacity</a> set to 128.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CriticalErrorCollector()</code></pre>
+              </div>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_Capacity.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.Capacity%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L130">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_Capacity" data-uid="CK.Core.CriticalErrorCollector.Capacity">Capacity</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the maximal number of errors kept by this collector.
+Defaults to 128 (which should be enough).
+It can be safely changed at any time.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int Capacity
+{
+    get;
+    set;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_DispatchQueuedWorkItemCount.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.DispatchQueuedWorkItemCount%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L327">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_DispatchQueuedWorkItemCount" data-uid="CK.Core.CriticalErrorCollector.DispatchQueuedWorkItemCount">DispatchQueuedWorkItemCount</h4>
+              <div class="markdown level1 summary"><p>Gets the number of internally created queued work items 
+since this collector exists.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int DispatchQueuedWorkItemCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_NextSequenceNumber.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.NextSequenceNumber%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L318">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_NextSequenceNumber" data-uid="CK.Core.CriticalErrorCollector.NextSequenceNumber">NextSequenceNumber</h4>
+              <div class="markdown level1 summary"><p>Gets the next <a class="xref" href="CK.Core.CriticalErrorCollector.Error.html#CK_Core_CriticalErrorCollector_Error_SequenceNumber">SequenceNumber</a>.
+Getting this property makes sense only if this collector is not being solicited.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int NextSequenceNumber
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreadsPending.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.OnErrorFromBackgroundThreadsPending%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L285">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreadsPending" data-uid="CK.Core.CriticalErrorCollector.OnErrorFromBackgroundThreadsPending">OnErrorFromBackgroundThreadsPending</h4>
+              <div class="markdown level1 summary"><p>Gets whether any event is waiting to be raised by <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreads">OnErrorFromBackgroundThreads</a> or is being processed.
+When this is false, it is guaranteed that any existing errors have been handled: if no more <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_Add_System_Exception_System_String_">Add(Exception, String)</a> can be done
+it means that this collector has finished its job.
+Instead of pooling this property - with an horrible Thread.Sleep( 1 ), you should use <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_WaitOnErrorFromBackgroundThreadsPending">WaitOnErrorFromBackgroundThreadsPending()</a> 
+to more efficiently and securely wait for the end of this collector&#39;s job.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool OnErrorFromBackgroundThreadsPending
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_OptimizedDispatchQueuedWorkItemCount.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.OptimizedDispatchQueuedWorkItemCount%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L338">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_OptimizedDispatchQueuedWorkItemCount" data-uid="CK.Core.CriticalErrorCollector.OptimizedDispatchQueuedWorkItemCount">OptimizedDispatchQueuedWorkItemCount</h4>
+              <div class="markdown level1 summary"><p>Gets the number of work items that have been saved since another one 
+was ready to dispatch the events.
+This is a measure of an internal optimization that makes sense only under
+heavy loads (unit tests).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int OptimizedDispatchQueuedWorkItemCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_Add_System_Exception_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.Add(System.Exception%2CSystem.String)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L141">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_Add_System_Exception_System_String_" data-uid="CK.Core.CriticalErrorCollector.Add(System.Exception,System.String)">Add(Exception, String)</h4>
+              <div class="markdown level1 summary"><p>Adds a critical, unexpected error.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Add(Exception ex, string comment)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.exception(v=vs.110).aspx">Exception</a></td>
+                    <td><em>ex</em></td>
+                    <td><p>The unexpected exception. Must not be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>comment</em></td>
+                    <td><p>Comment associated to the error (such as the name of the culprit). Can be null.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_Clear.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.Clear%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L271">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_Clear" data-uid="CK.Core.CriticalErrorCollector.Clear">Clear()</h4>
+              <div class="markdown level1 summary"><p>Clears the list. Only errors that have been already raised by <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreads">OnErrorFromBackgroundThreads</a>
+are removed from the internal buffer: it can be safely called at any time.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_Clear_System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.Clear(System.Int32%40%2CSystem.Int32%40)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L245">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_Clear_System_Int32__System_Int32__" data-uid="CK.Core.CriticalErrorCollector.Clear(System.Int32@,System.Int32@)">Clear(out Int32, out Int32)</h4>
+              <div class="markdown level1 summary"><p>Clears the list. Only errors that have been already raised by <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreads">OnErrorFromBackgroundThreads</a>
+are removed from the internal buffer: it can be safely called at any time.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Clear(out int cleared, out int waitingToBeRaisedErrors)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>cleared</em></td>
+                    <td><p>Number of suppressed errors.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>waitingToBeRaisedErrors</em></td>
+                    <td><p>The number of errors waiting to be raised.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_ToArray.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.ToArray%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L306">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_ToArray" data-uid="CK.Core.CriticalErrorCollector.ToArray">ToArray()</h4>
+              <div class="markdown level1 summary"><p>Obtains a copy of the last (up to) <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_Capacity">Capacity</a> errors from oldest to newest.
+The newest may have not been raised by <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreads">OnErrorFromBackgroundThreads</a> yet.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CriticalErrorCollector.Error[] ToArray()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CriticalErrorCollector.Error.html#CK_Core_CriticalErrorCollector_Error">CriticalErrorCollector.Error</a>[]</td>
+                    <td><p>An independent array. May be empty but never null.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_WaitOnErrorFromBackgroundThreadsPending.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.WaitOnErrorFromBackgroundThreadsPending%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L294">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_WaitOnErrorFromBackgroundThreadsPending" data-uid="CK.Core.CriticalErrorCollector.WaitOnErrorFromBackgroundThreadsPending">WaitOnErrorFromBackgroundThreadsPending()</h4>
+              <div class="markdown level1 summary"><p>Blocks the caller thread until no more event is waiting to be raised by <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreads">OnErrorFromBackgroundThreads</a> or is being processed.
+This is the right function to use instead of pooling <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreadsPending">OnErrorFromBackgroundThreadsPending</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void WaitOnErrorFromBackgroundThreadsPending()</code></pre>
+              </div>
+              <h3 id="events">Events
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreads.md&amp;value=---%0Auid%3A%20CK.Core.CriticalErrorCollector.OnErrorFromBackgroundThreads%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CriticalErrorCollector.cs/#L113">View Source</a>
+              </span>
+              <h4 id="CK_Core_CriticalErrorCollector_OnErrorFromBackgroundThreads" data-uid="CK.Core.CriticalErrorCollector.OnErrorFromBackgroundThreads">OnErrorFromBackgroundThreads</h4>
+              <div class="markdown level1 summary"><p>Fires when an error has been <a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector_Add_System_Exception_System_String_">Add(Exception, String)</a>ed (there cannot be more than one thread that raises this event at the same time).
+Raising this event is itself protected: if an exception is raised by one of the registered EventHandler, the culprit is removed 
+from the OnErrorFromBackgroundThreads list of delegates, the exception is appended in the collector, and a new event will 
+be raised (to the remaining handlers).</p>
+<p>Caution: the event always fire on a background thread (adding an error is not a blocking operation).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public event EventHandler&lt;CriticalErrorCollector.ErrorEventArgs&gt; OnErrorFromBackgroundThreads</code></pre>
+              </div>
+              <h5 class="eventType">Event Type</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/db0etb8x(v=vs.110).aspx">EventHandler</a>&lt;<a class="xref" href="CK.Core.CriticalErrorCollector.ErrorEventArgs.html#CK_Core_CriticalErrorCollector_ErrorEventArgs">CriticalErrorCollector.ErrorEventArgs</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

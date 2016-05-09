@@ -1,0 +1,1098 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct LogFilter
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct LogFilter
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L39" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Core_LogFilter" data-uid="CK.Core.LogFilter">Struct LogFilter
+              </h1>
+              <div class="markdown level0 summary"><p>Immutable capture of a double <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a>. One for <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and one for <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>.
+This value type exposes predefined configured couples: <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Debug">Debug</a> (full trace), <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Verbose">Verbose</a>, <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Monitor">Monitor</a>, </p>
+<p><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Terse">Terse</a>, <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Release">Release</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Off">Off</a> (no log at all).</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:CK.Core</h6>
+              <h6><strong>Assembly</strong>:CK.ActivityMonitor.dll</h6>
+              <h5 id="CK_Core_LogFilter_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[Serializable]
+public struct LogFilter</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter__ctor_CK_Core_LogLevelFilter_CK_Core_LogLevelFilter_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.%23ctor(CK.Core.LogLevelFilter%2CCK.Core.LogLevelFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L98">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter__ctor_CK_Core_LogLevelFilter_CK_Core_LogLevelFilter_" data-uid="CK.Core.LogFilter.#ctor(CK.Core.LogLevelFilter,CK.Core.LogLevelFilter)">LogFilter(LogLevelFilter, LogLevelFilter)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a> with a level for <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>s and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> logs.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LogFilter(LogLevelFilter group, LogLevelFilter line)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a></td>
+                    <td><em>group</em></td>
+                    <td><p>Filter for groups.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a></td>
+                    <td><em>line</em></td>
+                    <td><p>Filter for lines.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Debug.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Debug%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L51">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Debug" data-uid="CK.Core.LogFilter.Debug">Debug</h4>
+              <div class="markdown level1 summary"><p>Debug filter enables full <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Trace">Trace</a> for both <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly LogFilter Debug</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Group.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Group%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L86">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Group" data-uid="CK.Core.LogFilter.Group">Group</h4>
+              <div class="markdown level1 summary"><p>The filter that applies to groups. </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly LogLevelFilter Group</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Invalid.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Invalid%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L81">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Invalid" data-uid="CK.Core.LogFilter.Invalid">Invalid</h4>
+              <div class="markdown level1 summary"><p>Invalid must be used as a special value. It is <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Invalid">Invalid</a> for both <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly LogFilter Invalid</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Line.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Line%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L91">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Line" data-uid="CK.Core.LogFilter.Line">Line</h4>
+              <div class="markdown level1 summary"><p>The filter that applies to log lines (Trace, Info, Warn, Error and Fatal). </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly LogLevelFilter Line</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Monitor.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Monitor%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L61">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Monitor" data-uid="CK.Core.LogFilter.Monitor">Monitor</h4>
+              <div class="markdown level1 summary"><p>While monitoring, only errors and warnings are captured, whereas all <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>s appear to get the detailed structure of the activity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly LogFilter Monitor</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Off.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Off%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L76">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Off" data-uid="CK.Core.LogFilter.Off">Off</h4>
+              <div class="markdown level1 summary"><p>Off filter does not capture anything.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly LogFilter Off</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Release.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Release%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L71">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Release" data-uid="CK.Core.LogFilter.Release">Release</h4>
+              <div class="markdown level1 summary"><p>Release filter captures only <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Error">Error</a>s for both <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly LogFilter Release</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Terse.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Terse%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L66">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Terse" data-uid="CK.Core.LogFilter.Terse">Terse</h4>
+              <div class="markdown level1 summary"><p>Terse filter captures only errors for <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and limits <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>s to <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Info">Info</a> level.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly LogFilter Terse</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Undefined.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Undefined%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L46">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Undefined" data-uid="CK.Core.LogFilter.Undefined">Undefined</h4>
+              <div class="markdown level1 summary"><p>Undefined filter is <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_None">None</a> for both <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>.
+This is the same as using the default constructor for this structure (it is exposed here for clarity).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly LogFilter Undefined</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Verbose.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Verbose%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L56">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Verbose" data-uid="CK.Core.LogFilter.Verbose">Verbose</h4>
+              <div class="markdown level1 summary"><p>Verbose <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Trace">Trace</a> all <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>s but limits <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> to <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Info">Info</a> level.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly LogFilter Verbose</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Combine_CK_Core_LogFilter_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Combine(CK.Core.LogFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L110">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Combine_CK_Core_LogFilter_" data-uid="CK.Core.LogFilter.Combine(CK.Core.LogFilter)">Combine(LogFilter)</h4>
+              <div class="markdown level1 summary"><p>Combines this filter with another one. <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a> level filters
+are combined with <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Combine_CK_Core_LogLevelFilter_CK_Core_LogLevelFilter_">Combine(LogLevelFilter, LogLevelFilter)</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LogFilter Combine(LogFilter other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><em>other</em></td>
+                    <td><p>The other filter to combine with this one.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><p>The resulting filter.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Combine_CK_Core_LogLevelFilter_CK_Core_LogLevelFilter_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Combine(CK.Core.LogLevelFilter%2CCK.Core.LogLevelFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L165">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Combine_CK_Core_LogLevelFilter_CK_Core_LogLevelFilter_" data-uid="CK.Core.LogFilter.Combine(CK.Core.LogLevelFilter,CK.Core.LogLevelFilter)">Combine(LogLevelFilter, LogLevelFilter)</h4>
+              <div class="markdown level1 summary"><p>Combines two enums <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a> into one.
+The resulting filter is the more verbose one (the smallest level). <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Invalid">Invalid</a> is considered as <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_None">None</a> (it has no impact).
+This operation is commutative and associative: different order of combination always give the same result.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static LogLevelFilter Combine(LogLevelFilter x, LogLevelFilter y)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a></td>
+                    <td><em>x</em></td>
+                    <td><p>First filter level.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a></td>
+                    <td><em>y</em></td>
+                    <td><p>Second filter level.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a></td>
+                    <td><p>The resulting level.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_CombineNoneOnly_CK_Core_LogFilter_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.CombineNoneOnly(CK.Core.LogFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L120">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_CombineNoneOnly_CK_Core_LogFilter_" data-uid="CK.Core.LogFilter.CombineNoneOnly(CK.Core.LogFilter)">CombineNoneOnly(LogFilter)</h4>
+              <div class="markdown level1 summary"><p>Combines this filter with another one only if <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> or <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a> is <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_None">None</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LogFilter CombineNoneOnly(LogFilter other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><em>other</em></td>
+                    <td><p>The other filter to combine with this one.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><p>The resulting filter.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Equals_System_Object_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Equals(System.Object)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L178">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Equals_System_Object_" data-uid="CK.Core.LogFilter.Equals(System.Object)">Equals(Object)</h4>
+              <div class="markdown level1 summary"><p>Overridden to compare <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></td>
+                    <td><em>obj</em></td>
+                    <td><p>Other object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if Line and Group are equal.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_GetHashCode.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.GetHashCode%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L192">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_GetHashCode" data-uid="CK.Core.LogFilter.GetHashCode">GetHashCode()</h4>
+              <div class="markdown level1 summary"><p>Overridden to compute hash based on <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a> values.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><p>The hash code.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_HasImpactOn_CK_Core_LogFilter_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.HasImpactOn(CK.Core.LogFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L152">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_HasImpactOn_CK_Core_LogFilter_" data-uid="CK.Core.LogFilter.HasImpactOn(CK.Core.LogFilter)">HasImpactOn(LogFilter)</h4>
+              <div class="markdown level1 summary"><p>Tests if <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Combine_CK_Core_LogFilter_">Combine(LogFilter)</a> this and <em>x</em> will result in a different filter than x.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool HasImpactOn(LogFilter x)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><em>x</em></td>
+                    <td><p>The other filter.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if combining this filter and <em>x</em> will change x.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_Parse_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.Parse(System.String)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L242">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_Parse_System_String_" data-uid="CK.Core.LogFilter.Parse(System.String)">Parse(String)</h4>
+              <div class="markdown level1 summary"><p>Parses the filter: it can be a predefined filter as (&quot;Undefined&quot;, &quot;Debug&quot;, &quot;Verbose&quot;, etc.) 
+or as {GroupLogLevelFilter,LineLogLevelFilter} pairs like &quot;{None,None}&quot;, &quot;{Error,Trace}&quot;.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static LogFilter Parse(string filter)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>filter</em></td>
+                    <td><p>Predefined filter as (Undefined, Debug, Verbose, etc.) or as {LineLogLevelFilter,GroupLogLevelFilter} like {None,None}, {Error,Trace}.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><p>The filter.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_SetGroup_CK_Core_LogLevelFilter_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.SetGroup(CK.Core.LogLevelFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L142">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_SetGroup_CK_Core_LogLevelFilter_" data-uid="CK.Core.LogFilter.SetGroup(CK.Core.LogLevelFilter)">SetGroup(LogLevelFilter)</h4>
+              <div class="markdown level1 summary"><p>Returns a <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a> with a given <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a> for the <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LogFilter SetGroup(LogLevelFilter group)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a></td>
+                    <td><em>group</em></td>
+                    <td><p>Filter for the group.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><p>The filter with the group level.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_SetLine_CK_Core_LogLevelFilter_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.SetLine(CK.Core.LogLevelFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L132">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_SetLine_CK_Core_LogLevelFilter_" data-uid="CK.Core.LogFilter.SetLine(CK.Core.LogLevelFilter)">SetLine(LogLevelFilter)</h4>
+              <div class="markdown level1 summary"><p>Returns a <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a> with a given <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a> for the <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LogFilter SetLine(LogLevelFilter line)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter">LogLevelFilter</a></td>
+                    <td><em>line</em></td>
+                    <td><p>Filter for the line.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><p>The filter with the line level.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_ToString.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.ToString%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L201">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_ToString" data-uid="CK.Core.LogFilter.ToString">ToString()</h4>
+              <div class="markdown level1 summary"><p>Overridden to show the group and the line level.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><p>A {group,line} string.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_TryParse_System_String_CK_Core_LogFilter__.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.TryParse(System.String%2CCK.Core.LogFilter%40)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L257">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_TryParse_System_String_CK_Core_LogFilter__" data-uid="CK.Core.LogFilter.TryParse(System.String,CK.Core.LogFilter@)">TryParse(String, out LogFilter)</h4>
+              <div class="markdown level1 summary"><p>Tries to parse a <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a>: it can be a predefined filter as (&quot;Undefined&quot;, &quot;Debug&quot;, &quot;Verbose&quot;, etc.)<br>or as {GroupLogLevelFilter,LineLogLevelFilter} pairs like &quot;{None,None}&quot;, &quot;{Error,Trace}&quot;.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool TryParse(string s, out LogFilter f)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>s</em></td>
+                    <td><p>Filter to parse.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><em>f</em></td>
+                    <td><p>Resulting filter.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True on success, false on error.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="operators">Operators
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_op_Equality_CK_Core_LogFilter_CK_Core_LogFilter_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.op_Equality(CK.Core.LogFilter%2CCK.Core.LogFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L220">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_op_Equality_CK_Core_LogFilter_CK_Core_LogFilter_" data-uid="CK.Core.LogFilter.op_Equality(CK.Core.LogFilter,CK.Core.LogFilter)">Equality(LogFilter, LogFilter)</h4>
+              <div class="markdown level1 summary"><p>Equality operator.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator ==(LogFilter x, LogFilter y)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><em>x</em></td>
+                    <td><p>First filter.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><em>y</em></td>
+                    <td><p>Second filter.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a> are the same for the two filters.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_LogFilter_op_Inequality_CK_Core_LogFilter_CK_Core_LogFilter_.md&amp;value=---%0Auid%3A%20CK.Core.LogFilter.op_Inequality(CK.Core.LogFilter%2CCK.Core.LogFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/LogFilter.cs/#L231">View Source</a>
+              </span>
+              <h4 id="CK_Core_LogFilter_op_Inequality_CK_Core_LogFilter_CK_Core_LogFilter_" data-uid="CK.Core.LogFilter.op_Inequality(CK.Core.LogFilter,CK.Core.LogFilter)">Inequality(LogFilter, LogFilter)</h4>
+              <div class="markdown level1 summary"><p>Inequality operator.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator !=(LogFilter x, LogFilter y)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><em>x</em></td>
+                    <td><p>First filter.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><em>y</em></td>
+                    <td><p>Second filter.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a> are the same for the two filters.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

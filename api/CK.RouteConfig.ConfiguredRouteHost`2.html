@@ -1,0 +1,706 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConfiguredRouteHost&lt;TAction, TRoute&gt;
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConfiguredRouteHost&lt;TAction, TRoute&gt;
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L18" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_RouteConfig_ConfiguredRouteHost_2" data-uid="CK.RouteConfig.ConfiguredRouteHost`2">Class ConfiguredRouteHost&lt;TAction, TRoute&gt;
+              </h1>
+              <div class="markdown level0 summary"><p>Thread-safe management of hierarchical routes configured (and reconfigured) by a <a class="xref" href="CK.RouteConfig.RouteConfiguration.html#CK_RouteConfig_RouteConfiguration">RouteConfiguration</a>.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">ConfiguredRouteHost&lt;TAction, TRoute&gt;</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.RouteConfig</h6>
+              <h6><strong>Assembly</strong>:CK.Monitoring.dll</h6>
+              <h5 id="CK_RouteConfig_ConfiguredRouteHost_2_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class ConfiguredRouteHost&lt;TAction, TRoute&gt; : IDisposable where TAction : class where TRoute : class</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TAction</em></td>
+                    <td>Actual type of the actions. Can be any reference type.</td>
+                  </tr>
+                  <tr>
+                    <td><em>TRoute</em></td>
+                    <td>Route class that encapsulates actions.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2__ctor_CK_RouteConfig_RouteActionFactory__0__1__System_Action_CK_RouteConfig_ConfiguredRouteHost__0__1__ConfigurationReady__System_Action_CK_Core_IActivityMonitor__0__System_Action_CK_Core_IActivityMonitor__0__.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.%23ctor(CK.RouteConfig.RouteActionFactory%7B%600%2C%601%7D%2CSystem.Action%7BCK.RouteConfig.ConfiguredRouteHost%7B%600%2C%601%7D.ConfigurationReady%7D%2CSystem.Action%7BCK.Core.IActivityMonitor%2C%600%7D%2CSystem.Action%7BCK.Core.IActivityMonitor%2C%600%7D)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L111">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2__ctor_CK_RouteConfig_RouteActionFactory__0__1__System_Action_CK_RouteConfig_ConfiguredRouteHost__0__1__ConfigurationReady__System_Action_CK_Core_IActivityMonitor__0__System_Action_CK_Core_IActivityMonitor__0__" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.#ctor(CK.RouteConfig.RouteActionFactory{`0,`1},System.Action{CK.RouteConfig.ConfiguredRouteHost{`0,`1}.ConfigurationReady},System.Action{CK.Core.IActivityMonitor,`0},System.Action{CK.Core.IActivityMonitor,`0})">ConfiguredRouteHost(RouteActionFactory&lt;TAction, TRoute&gt;, Action&lt;ConfiguredRouteHost&lt;TAction, TRoute&gt;.ConfigurationReady&gt;, Action&lt;IActivityMonitor, TAction&gt;, Action&lt;IActivityMonitor, TAction&gt;)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2">ConfiguredRouteHost&lt;TAction, TRoute&gt;</a> initially <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_IsEmpty">IsEmpty</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ConfiguredRouteHost(RouteActionFactory&lt;TAction, TRoute&gt; actionFactory, Action&lt;ConfiguredRouteHost&lt;TAction, TRoute&gt;.ConfigurationReady&gt; readyCallback = null, Action&lt;IActivityMonitor, TAction&gt; starter = null, Action&lt;IActivityMonitor, TAction&gt; closer = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.RouteConfig.RouteActionFactory%602.html#CK_RouteConfig_RouteActionFactory_2">RouteActionFactory</a>&lt;TAction, TRoute&gt;</td>
+                    <td><em>actionFactory</em></td>
+                    <td><p>Factory for <em>TAction</em> based on an <a class="xref" href="CK.RouteConfig.ActionConfiguration.html#CK_RouteConfig_ActionConfiguration">ActionConfiguration</a> for final <em>TRoute</em>.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/018hxwa8(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.ConfigurationReady.html#CK_RouteConfig_ConfiguredRouteHost_2_ConfigurationReady">ConfiguredRouteHost.ConfigurationReady</a>&lt;&gt;&gt;</td>
+                    <td><em>readyCallback</em></td>
+                    <td><p>Optional callback that will be called right before applying a new configuration.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549311(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a>, TAction&gt;</td>
+                    <td><em>starter</em></td>
+                    <td><p>Optional starter function for a <em>TAction</em>.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549311(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a>, TAction&gt;</td>
+                    <td><em>closer</em></td>
+                    <td><p>Optional closer function.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_ConfigurationAttemptCount.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.ConfigurationAttemptCount%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L150">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_ConfigurationAttemptCount" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.ConfigurationAttemptCount">ConfigurationAttemptCount</h4>
+              <div class="markdown level1 summary"><p>Gets the total number of calls to <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_SetConfiguration_CK_Core_IActivityMonitor_CK_RouteConfig_RouteConfiguration_System_Int32_">SetConfiguration(IActivityMonitor, RouteConfiguration, Int32)</a> (and to <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_Dispose">Dispose()</a> method).
+This can be used to call <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_WaitForNextConfiguration_System_Int32_System_Int32_">WaitForNextConfiguration(Int32, Int32)</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int ConfigurationAttemptCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_IsDisposed.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.IsDisposed%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L176">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_IsDisposed" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.IsDisposed">IsDisposed</h4>
+              <div class="markdown level1 summary"><p>Gets whether this host has been disposed.
+When disposed, <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_ObtainRoute_System_String_">ObtainRoute(String)</a> always returns null.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsDisposed
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_IsEmpty.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.IsEmpty%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L167">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_IsEmpty" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.IsEmpty">IsEmpty</h4>
+              <div class="markdown level1 summary"><p>Gets whether this host is closed.
+When closed, all routes are empty.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsEmpty
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_SuccessfulConfigurationCount.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.SuccessfulConfigurationCount%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L158">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_SuccessfulConfigurationCount" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.SuccessfulConfigurationCount">SuccessfulConfigurationCount</h4>
+              <div class="markdown level1 summary"><p>Gets the total number of successful calls to <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_SetConfiguration_CK_Core_IActivityMonitor_CK_RouteConfig_RouteConfiguration_System_Int32_">SetConfiguration(IActivityMonitor, RouteConfiguration, Int32)</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int SuccessfulConfigurationCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_Dispose.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.Dispose%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L538">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_Dispose" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"><p>Calls <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_Dispose_CK_Core_IActivityMonitor_System_Int32_">Dispose(IActivityMonitor, Int32)</a> with a <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor">SystemActivityMonitor</a> and no closing time limit.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_Dispose_CK_Core_IActivityMonitor_System_Int32_.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.Dispose(CK.Core.IActivityMonitor%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L494">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_Dispose_CK_Core_IActivityMonitor_System_Int32_" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.Dispose(CK.Core.IActivityMonitor,System.Int32)">Dispose(IActivityMonitor, Int32)</h4>
+              <div class="markdown level1 summary"><p>Closes the current configuration. 
+Current actions are closed. <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_IsDisposed">IsDisposed</a> is set to true.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Dispose(IActivityMonitor monitor, int millisecondsBeforeForceClose = -1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>Monitor that will be used. Must not be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>millisecondsBeforeForceClose</em></td>
+                    <td><p>Maximal time to wait for current routes to be unlocked (see <a class="xref" href="CK.RouteConfig.IRouteConfigurationLock.html#CK_RouteConfig_IRouteConfigurationLock">IRouteConfigurationLock</a>).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>Returns true if this host has actually been disposed, false if it has already been disposed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.Dispose(System.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L547">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_Dispose_System_Boolean_" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Calls <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_Dispose_CK_Core_IActivityMonitor_System_Int32_">Dispose(IActivityMonitor, Int32)</a> with a <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor">SystemActivityMonitor</a> and no closing time limit.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>disposing</em></td>
+                    <td><p>True when called from code (managed and unmanaged resources must be disposed), false when called from the Garbage collector (only unmanaged resources should be closed in such case).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_Finalize.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.Finalize%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L560">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_Finalize" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.Finalize">Finalize()</h4>
+              <div class="markdown level1 summary"><p>Standard Dispose/Finalizer pattern (calls <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_Dispose_System_Boolean_">Dispose(Boolean)</a>. 
+Here to support release of unmanaged resources by specialization.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_ObtainRoute_System_String_.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.ObtainRoute(System.String)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L134">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_ObtainRoute_System_String_" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.ObtainRoute(System.String)">ObtainRoute(String)</h4>
+              <div class="markdown level1 summary"><p>Returns the <em>TRoute</em> for a full name.
+Obtaining a route locks the configuration: it must be unlocked when not used anymore.
+When null, it means that a configuration is waiting to be applied (a route that buffers its work should be substituted)
+or that this host <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_IsDisposed">IsDisposed</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TRoute ObtainRoute(string route)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>route</em></td>
+                    <td><p>The full route that will be matched.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TRoute</span></td>
+                    <td><p>The final route to apply or null if a configuration is applying or if <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_IsDisposed">IsDisposed</a> is true.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_SetConfiguration_CK_Core_IActivityMonitor_CK_RouteConfig_RouteConfiguration_System_Int32_.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.SetConfiguration(CK.Core.IActivityMonitor%2CCK.RouteConfig.RouteConfiguration%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L293">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_SetConfiguration_CK_Core_IActivityMonitor_CK_RouteConfig_RouteConfiguration_System_Int32_" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.SetConfiguration(CK.Core.IActivityMonitor,CK.RouteConfig.RouteConfiguration,System.Int32)">SetConfiguration(IActivityMonitor, RouteConfiguration, Int32)</h4>
+              <div class="markdown level1 summary"><p>Sets a new <a class="xref" href="CK.RouteConfig.RouteConfiguration.html#CK_RouteConfig_RouteConfiguration">RouteConfiguration</a>.</p>
+<p><ol><li></li><li></li><li></li><li></li><li></li><li></li></ol>
+If an error occurs while starting the new routes, false is returned and routes are empty.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool SetConfiguration(IActivityMonitor monitor, RouteConfiguration configuration, int millisecondsBeforeForceClose = -1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a></td>
+                    <td><em>monitor</em></td>
+                    <td><p>Monitor that will receive explanations and errors.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.RouteConfig.RouteConfiguration.html#CK_RouteConfig_RouteConfiguration">RouteConfiguration</a></td>
+                    <td><em>configuration</em></td>
+                    <td><p>The configuration to achieve.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>millisecondsBeforeForceClose</em></td>
+                    <td><p>Maximal time to wait for current routes to be unlocked (see <a class="xref" href="CK.RouteConfig.IRouteConfigurationLock.html#CK_RouteConfig_IRouteConfigurationLock">IRouteConfigurationLock</a>).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if the new configuration has been successfully applied, false if an error occurred.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_WaitForAppliedPendingConfiguration_System_Int32_.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.WaitForAppliedPendingConfiguration(System.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L458">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_WaitForAppliedPendingConfiguration_System_Int32_" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.WaitForAppliedPendingConfiguration(System.Int32)">WaitForAppliedPendingConfiguration(Int32)</h4>
+              <div class="markdown level1 summary"><p>Blocks the caller if a new configuration is waiting to be applied until it has effectively be applied.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool WaitForAppliedPendingConfiguration(int millisecondsTimeout = -1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>millisecondsTimeout</em></td>
+                    <td><p>Maximum number of milliseconds to wait.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>False if specified timeout expired.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_WaitForNextConfiguration_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.WaitForNextConfiguration(System.Int32%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L475">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_WaitForNextConfiguration_System_Int32_System_Int32_" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.WaitForNextConfiguration(System.Int32,System.Int32)">WaitForNextConfiguration(Int32, Int32)</h4>
+              <div class="markdown level1 summary"><p>Blocks the caller until the current <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_ConfigurationAttemptCount">ConfigurationAttemptCount</a> is greater or equal to the given number and the last 
+configuration has been applied (or this object is disposed).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool WaitForNextConfiguration(int configurationAttemptCount, int millisecondsTimeout)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>configurationAttemptCount</em></td>
+                    <td><p>The number of configuration attempt count to wait for.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>millisecondsTimeout</em></td>
+                    <td><p>Maximum number of milliseconds to wait. Use <a class="xref" href="https://msdn.microsoft.com/en-us/library/65fh19xy(v=vs.110).aspx">System.Threading.Timeout.Infinite</a> or -1 for no limit.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>False if specified timeout expired.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="events">Events
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_RouteConfig_ConfiguredRouteHost_2_ConfigurationClosing.md&amp;value=---%0Auid%3A%20CK.RouteConfig.ConfiguredRouteHost%602.ConfigurationClosing%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/RouteConfig/ConfiguredRouteHost.cs/#L275">View Source</a>
+              </span>
+              <h4 id="CK_RouteConfig_ConfiguredRouteHost_2_ConfigurationClosing" data-uid="CK.RouteConfig.ConfiguredRouteHost`2.ConfigurationClosing">ConfigurationClosing</h4>
+              <div class="markdown level1 summary"><p>Event raised by <a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.html#CK_RouteConfig_ConfiguredRouteHost_2_SetConfiguration_CK_Core_IActivityMonitor_CK_RouteConfig_RouteConfiguration_System_Int32_">SetConfiguration(IActivityMonitor, RouteConfiguration, Int32)</a> when current configured routes must be released.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public event EventHandler&lt;ConfiguredRouteHost&lt;TAction, TRoute&gt;.ConfigurationClosingEventArgs&gt; ConfigurationClosing</code></pre>
+              </div>
+              <h5 class="eventType">Event Type</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/db0etb8x(v=vs.110).aspx">EventHandler</a>&lt;<a class="xref" href="CK.RouteConfig.ConfiguredRouteHost%602.ConfigurationClosingEventArgs.html#CK_RouteConfig_ConfiguredRouteHost_2_ConfigurationClosingEventArgs">ConfiguredRouteHost.ConfigurationClosingEventArgs</a>&lt;&gt;&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

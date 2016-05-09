@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CKSortedArrayKeyList&lt;T, TKey&gt;
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CKSortedArrayKeyList&lt;T, TKey&gt;
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L35" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Core_CKSortedArrayKeyList_2" data-uid="CK.Core.CKSortedArrayKeyList`2">Class CKSortedArrayKeyList&lt;T, TKey&gt;
+              </h1>
+              <div class="markdown level0 summary"><p>Sorted list of items where the sort order relies on an external key, not the item itself.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><a class="xref" href="CK.Core.CKSortedArrayList%601.html#CK_Core_CKSortedArrayList_1">CKSortedArrayList</a>&lt;T&gt;</div>
+                  <div class="level2"><span class="xref">CKSortedArrayKeyList&lt;T, TKey&gt;</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Core</h6>
+              <h6><strong>Assembly</strong>:CK.Core.dll</h6>
+              <h5 id="CK_Core_CKSortedArrayKeyList_2_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[DebuggerTypeProxy(typeof (CKSortedArrayKeyList&lt;, &gt;.DebuggerView))]
+[DebuggerDisplay(&quot;Count = {Count}&quot;)]
+public class CKSortedArrayKeyList&lt;T, TKey&gt; : CKSortedArrayList&lt;T&gt;, IList&lt;T&gt;, ICollection&lt;T&gt;, IReadOnlyList&lt;T&gt;, ICKWritableCollection&lt;T&gt;, ICKWritableCollector&lt;T&gt;, ICKReadOnlyMultiKeyedCollection&lt;T, TKey&gt;, ICKReadOnlyUniqueKeyedCollection&lt;T, TKey&gt;, ICKReadOnlyCollection&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><em>TKey</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2__ctor_System_Func__0__1__System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.%23ctor(System.Func%7B%600%2C%601%7D%2CSystem.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L74">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2__ctor_System_Func__0__1__System_Boolean_" data-uid="CK.Core.CKSortedArrayKeyList`2.#ctor(System.Func{`0,`1},System.Boolean)">CKSortedArrayKeyList(Func&lt;T, TKey&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.CKSortedArrayKeyList%602.html#CK_Core_CKSortedArrayKeyList_2">CKSortedArrayKeyList&lt;T, TKey&gt;</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CKSortedArrayKeyList(Func&lt;T, TKey&gt; keySelector, bool allowDuplicates = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549151(v=vs.110).aspx">Func</a>&lt;T, TKey&gt;</td>
+                    <td><em>keySelector</em></td>
+                    <td><p>Function that associates a key to an item.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>allowDuplicates</em></td>
+                    <td><p>True to allow duplicates.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2__ctor_System_Func__0__1__System_Comparison__1__System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.%23ctor(System.Func%7B%600%2C%601%7D%2CSystem.Comparison%7B%601%7D%2CSystem.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L86">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2__ctor_System_Func__0__1__System_Comparison__1__System_Boolean_" data-uid="CK.Core.CKSortedArrayKeyList`2.#ctor(System.Func{`0,`1},System.Comparison{`1},System.Boolean)">CKSortedArrayKeyList(Func&lt;T, TKey&gt;, Comparison&lt;TKey&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.CKSortedArrayKeyList%602.html#CK_Core_CKSortedArrayKeyList_2">CKSortedArrayKeyList&lt;T, TKey&gt;</a> where a <a class="xref" href="https://msdn.microsoft.com/en-us/library/tfakywbh(v=vs.110).aspx">System.Comparison`1</a> function
+is used to compare keys.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CKSortedArrayKeyList(Func&lt;T, TKey&gt; keySelector, Comparison&lt;TKey&gt; keyComparison, bool allowDuplicates = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb549151(v=vs.110).aspx">Func</a>&lt;T, TKey&gt;</td>
+                    <td><em>keySelector</em></td>
+                    <td><p>Function that associates a key to an item.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/tfakywbh(v=vs.110).aspx">Comparison</a>&lt;TKey&gt;</td>
+                    <td><em>keyComparison</em></td>
+                    <td><p>Function used to compare keys.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>allowDuplicates</em></td>
+                    <td><p>True to allow duplicates.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2_Contains__1_.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.Contains(%601)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L108">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2_Contains__1_" data-uid="CK.Core.CKSortedArrayKeyList`2.Contains(`1)">Contains(TKey)</h4>
+              <div class="markdown level1 summary"><p>True if this list contains at least one item with the given key.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Contains(TKey key)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TKey</span></td>
+                    <td><em>key</em></td>
+                    <td><p>The key to find.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if an item is found, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2_Contains_System_Object_.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.Contains(System.Object)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L200">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2_Contains_System_Object_" data-uid="CK.Core.CKSortedArrayKeyList`2.Contains(System.Object)">Contains(Object)</h4>
+              <div class="markdown level1 summary"><p>Covariant version of the contains predicate. 
+If <em>item</em> is of type <em>T</em> the <a class="xref" href="CK.Core.CKSortedArrayList%601.html#CK_Core_CKSortedArrayList_1_Contains__0_">Contains(T)</a> is used 
+but if <em>item</em> is of type <em>TKey</em>, the <a class="xref" href="CK.Core.CKSortedArrayKeyList%602.html#CK_Core_CKSortedArrayKeyList_2_Contains__1_">Contains(TKey)</a> is used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override bool Contains(object item)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></td>
+                    <td><em>item</em></td>
+                    <td><p>Can be a <em>T</em> or a <em>TKey</em>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if a corresponding element in this list can be found.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2_GetAllByKey__1_.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.GetAllByKey(%601)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L148">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2_GetAllByKey__1_" data-uid="CK.Core.CKSortedArrayKeyList`2.GetAllByKey(`1)">GetAllByKey(TKey)</h4>
+              <div class="markdown level1 summary"><p>Gets an independent collection of the items that 
+are associated to the given key value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;T&gt; GetAllByKey(TKey key)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TKey</span></td>
+                    <td><em>key</em></td>
+                    <td><p>The key to find.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/hh881542(v=vs.110).aspx">IReadOnlyCollection</a>&lt;T&gt;</td>
+                    <td><p>An independent collection of <em>T</em>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2_GetByKey__1_System_Boolean__.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.GetByKey(%601%2CSystem.Boolean%40)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L119">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2_GetByKey__1_System_Boolean__" data-uid="CK.Core.CKSortedArrayKeyList`2.GetByKey(`1,System.Boolean@)">GetByKey(TKey, out Boolean)</h4>
+              <div class="markdown level1 summary"><p>Gets the first item with a given key or the default value if no such item exist.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public T GetByKey(TKey key, out bool exists)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TKey</span></td>
+                    <td><em>key</em></td>
+                    <td><p>The key.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>exists</em></td>
+                    <td><p>True if the key has been found, otherwise false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><p>The item or default(T) if not found.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2_IndexOf__0_.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.IndexOf(%600)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L173">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2_IndexOf__0_" data-uid="CK.Core.CKSortedArrayKeyList`2.IndexOf(`0)">IndexOf(T)</h4>
+              <div class="markdown level1 summary"><p>Gets the index of the element thanks to a linear search into the 
+internal array.
+If the key did not change, it is more efficient to find an element with <a class="xref" href="CK.Core.CKSortedArrayKeyList%602.html#CK_Core_CKSortedArrayKeyList_2_IndexOf__1_">IndexOf(TKey)</a> that 
+uses a dichotomic search.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int IndexOf(T value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><em>value</em></td>
+                    <td><p>The element to locate.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><p>The index in array that, if found; otherwise, –1.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2_IndexOf__1_.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.IndexOf(%601)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L98">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2_IndexOf__1_" data-uid="CK.Core.CKSortedArrayKeyList`2.IndexOf(`1)">IndexOf(TKey)</h4>
+              <div class="markdown level1 summary"><p>Gets the zero based position of on of the items that is associated to this key.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int IndexOf(TKey key)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TKey</span></td>
+                    <td><em>key</em></td>
+                    <td><p>The key to find.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><p>The index or a negative value like <see cref="G:Util.BinarySearch{T,TKey}"></see>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2_IndexOf_System_Object_.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.IndexOf(System.Object)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L186">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2_IndexOf_System_Object_" data-uid="CK.Core.CKSortedArrayKeyList`2.IndexOf(System.Object)">IndexOf(Object)</h4>
+              <div class="markdown level1 summary"><p>Covariant IndexOf method: if <em>item</em> is of type <em>T</em>
+the linear <a class="xref" href="CK.Core.CKSortedArrayKeyList%602.html#CK_Core_CKSortedArrayKeyList_2_IndexOf__0_">IndexOf(T)</a> is used but if <em>item</em> is of type <em>TKey</em>,
+the logarithmic <a class="xref" href="CK.Core.CKSortedArrayKeyList%602.html#CK_Core_CKSortedArrayKeyList_2_IndexOf__1_">IndexOf(TKey)</a> is used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int IndexOf(object item)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></td>
+                    <td><em>item</em></td>
+                    <td><p>Can be a <em>T</em> or a <em>TKey</em>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><p>The index of the item in the collection.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2_KeyCount__1_.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.KeyCount(%601)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L130">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2_KeyCount__1_" data-uid="CK.Core.CKSortedArrayKeyList`2.KeyCount(`1)">KeyCount(TKey)</h4>
+              <div class="markdown level1 summary"><p>Gets the number of items with a given key. It can be greater than 1 only if <a class="xref" href="CK.Core.CKSortedArrayList%601.html#CK_Core_CKSortedArrayList_1_AllowDuplicates">AllowDuplicates</a> is true.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int KeyCount(TKey key)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TKey</span></td>
+                    <td><em>key</em></td>
+                    <td><p>The key to find.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><p>The number of item with the <em>key</em>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKSortedArrayKeyList_2_Remove__1_.md&amp;value=---%0Auid%3A%20CK.Core.CKSortedArrayKeyList%602.Remove(%601)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKSortedArrayKeyList.cs/#L213">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKSortedArrayKeyList_2_Remove__1_" data-uid="CK.Core.CKSortedArrayKeyList`2.Remove(`1)">Remove(TKey)</h4>
+              <div class="markdown level1 summary"><p>Removes one item given a key: only one item is removed when <a class="xref" href="CK.Core.CKSortedArrayList%601.html#CK_Core_CKSortedArrayList_1_AllowDuplicates">AllowDuplicates</a> is 
+true and more than one item are associated to this key.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Remove(TKey key)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TKey</span></td>
+                    <td><em>key</em></td>
+                    <td><p>The key to remove.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if an item has been removed, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

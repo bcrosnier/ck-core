@@ -1,0 +1,871 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CKTrait
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CKTrait
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L21" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Core_CKTrait" data-uid="CK.Core.CKTrait">Class CKTrait
+              </h1>
+              <div class="markdown level0 summary"><p>A trait is an immutable object (thread-safe), associated to a unique string inside a <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Context">Context</a>, that can be atomic (&quot;Alt&quot;, &quot;Home&quot;, &quot;Ctrl&quot;) or 
+combined (&quot;Alt|Ctrl&quot;, &quot;Alt|Ctrl|Home&quot;). The only way to obtain a CKTrait is to call <a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext_FindOrCreate_System_String_">FindOrCreate(String)</a> (from 
+a string) or to use one of the available combination methods (<a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Union_CK_Core_CKTrait_">Union(CKTrait)</a>, <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Except_CK_Core_CKTrait_">Except(CKTrait)</a>, <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_SymmetricExcept_CK_Core_CKTrait_">SymmetricExcept(CKTrait)</a> or <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Intersect_CK_Core_CKTrait_">Intersect(CKTrait)</a> ).</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">CKTrait</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Core</h6>
+              <h6><strong>Assembly</strong>:CK.Core.dll</h6>
+              <h5 id="CK_Core_CKTrait_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public sealed class CKTrait : IComparable&lt;CKTrait&gt;, IEquatable&lt;CKTrait&gt;</code></pre>
+              </div>
+              <h5 id="CK_Core_CKTrait_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>A CKTrait is not serializable: since it is relative to <a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext">CKTraitContext</a>, it must be recreated in the right context. A CKTraitContext is typically
+a static object that exists in the origin application domain. A CKTrait must be serialized as its <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_ToString">ToString()</a> representation and it is up to the 
+code to call <a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext_FindOrCreate_System_String_">FindOrCreate(String)</a> on the appropriate context when deserializing it.</p>
+</div>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_AtomicTraits.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.AtomicTraits%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L85">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_AtomicTraits" data-uid="CK.Core.CKTrait.AtomicTraits">AtomicTraits</h4>
+              <div class="markdown level1 summary"><p>Gets the atomic traits that this trait contains.
+This list does not contain the empty trait and is sorted according to the name of the atomic traits (lexical order): this is the 
+same as the <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_ToString">ToString()</a> representation.
+Note that it is in reverse order regarding <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_CompareTo_CK_Core_CKTrait_">CompareTo(CKTrait)</a> (&quot;A&quot; that is stronger than &quot;B&quot; appears before &quot;B&quot;).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;CKTrait&gt; AtomicTraits
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/hh192385(v=vs.110).aspx">IReadOnlyList</a>&lt;<a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_Context.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.Context%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L65">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_Context" data-uid="CK.Core.CKTrait.Context">Context</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext">CKTraitContext</a> to which this trait belongs. </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CKTraitContext Context
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext">CKTraitContext</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_Fallbacks.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.Fallbacks%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L376">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_Fallbacks" data-uid="CK.Core.CKTrait.Fallbacks">Fallbacks</h4>
+              <div class="markdown level1 summary"><p>Gets an enumeration of fallbacks to consider for this trait ordered from best to worst.
+This trait does not start the list but the <a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext_EmptyTrait">EmptyTrait</a> always ends this list.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Core_CKTrait_Fallbacks_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>For atomic traits (and the empty trait itself), <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Fallbacks">Fallbacks</a> contains only the <a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext_EmptyTrait">EmptyTrait</a>.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;CKTrait&gt; Fallbacks
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_FallbacksCount.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.FallbacksCount%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L355">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_FallbacksCount" data-uid="CK.Core.CKTrait.FallbacksCount">FallbacksCount</h4>
+              <div class="markdown level1 summary"><p>Gets the number of <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Fallbacks">Fallbacks</a>. It is 2^<a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_AtomicTraits">AtomicTraits</a>.<a class="xref" href="https://msdn.microsoft.com/en-us/library/hh881496(v=vs.110).aspx">System.Collections.Generic.IReadOnlyCollection`1.Count</a> - 1 since this
+trait itself does not appear in the fallbacks, but it is always 1 for atomic and the empty trait (the empty trait always ends the list).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int FallbacksCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_FallbacksLongCount.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.FallbacksLongCount%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L364">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_FallbacksLongCount" data-uid="CK.Core.CKTrait.FallbacksLongCount">FallbacksLongCount</h4>
+              <div class="markdown level1 summary"><p>Gets the number of <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Fallbacks">Fallbacks</a>. It is 2^<a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_AtomicTraits">AtomicTraits</a>.<a class="xref" href="https://msdn.microsoft.com/en-us/library/hh881496(v=vs.110).aspx">System.Collections.Generic.IReadOnlyCollection`1.Count</a> - 1 since this
+trait itself does not appear in the fallbacks, but it is always 1 for atomic and the empty trait (the empty trait always ends the list).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long FallbacksLongCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_IsAtomic.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.IsAtomic%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L106">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_IsAtomic" data-uid="CK.Core.CKTrait.IsAtomic">IsAtomic</h4>
+              <div class="markdown level1 summary"><p>Gets a boolean indicating whether this trait contains zero 
+(the empty trait is considered as an atomic trait) or only one atomic trait.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Core_CKTrait_IsAtomic_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>For atomic traits (and the empty trait itself), <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Fallbacks">Fallbacks</a> contains only the <a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext_EmptyTrait">EmptyTrait</a>.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsAtomic
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_IsEmpty.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.IsEmpty%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L94">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_IsEmpty" data-uid="CK.Core.CKTrait.IsEmpty">IsEmpty</h4>
+              <div class="markdown level1 summary"><p>Gets a boolean indicating whether this trait is the empty trait (<a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_AtomicTraits">AtomicTraits</a> is empty
+and <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Fallbacks">Fallbacks</a> contains only itself).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsEmpty
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_Apply_CK_Core_CKTrait_CK_Core_SetOperation_.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.Apply(CK.Core.CKTrait%2CCK.Core.SetOperation)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L262">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_Apply_CK_Core_CKTrait_CK_Core_SetOperation_" data-uid="CK.Core.CKTrait.Apply(CK.Core.CKTrait,CK.Core.SetOperation)">Apply(CKTrait, SetOperation)</h4>
+              <div class="markdown level1 summary"><p>Applies the given <a class="xref" href="CK.Core.SetOperation.html#CK_Core_SetOperation">SetOperation</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CKTrait Apply(CKTrait other, SetOperation operation)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>other</em></td>
+                    <td><p>Trait to combine.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.SetOperation.html#CK_Core_SetOperation">SetOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td><p>Set operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><p>Resulting trait.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_CompareTo_CK_Core_CKTrait_.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.CompareTo(CK.Core.CKTrait)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L119">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_CompareTo_CK_Core_CKTrait_" data-uid="CK.Core.CKTrait.CompareTo(CK.Core.CKTrait)">CompareTo(CKTrait)</h4>
+              <div class="markdown level1 summary"><p>Compares this trait with another one.
+The <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Context">Context</a> is the primary key (see <a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext_CompareTo_CK_Core_CKTraitContext_">CompareTo(CKTraitContext)</a>), then comes 
+the number of traits (more traits is greater) and then comes the string representation of the trait in 
+reverse lexical order (<a class="xref" href="https://msdn.microsoft.com/en-us/library/bfaw046s(v=vs.110).aspx">System.StringComparer.Ordinal</a>): &quot;A&quot; is greater than &quot;B&quot;.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int CompareTo(CKTrait other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>other</em></td>
+                    <td><p>The trait to compare to.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><p>A negative, zero or positive value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_Equals_CK_Core_CKTrait_.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.Equals(CK.Core.CKTrait)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L134">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_Equals_CK_Core_CKTrait_" data-uid="CK.Core.CKTrait.Equals(CK.Core.CKTrait)">Equals(CKTrait)</h4>
+              <div class="markdown level1 summary"><p>Checks equality of this trait with another one.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Equals(CKTrait other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>other</em></td>
+                    <td><p>The trait to compare to.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True on equality.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_Except_CK_Core_CKTrait_.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.Except(CK.Core.CKTrait)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L229">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_Except_CK_Core_CKTrait_" data-uid="CK.Core.CKTrait.Except(CK.Core.CKTrait)">Except(CKTrait)</h4>
+              <div class="markdown level1 summary"><p>Obtains a <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a> from which trait(s) specified by the parameter are removed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CKTrait Except(CKTrait other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>other</em></td>
+                    <td><p>Trait to remove.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><p>The resulting trait.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_Intersect_CK_Core_CKTrait_.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.Intersect(CK.Core.CKTrait)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L197">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_Intersect_CK_Core_CKTrait_" data-uid="CK.Core.CKTrait.Intersect(CK.Core.CKTrait)">Intersect(CKTrait)</h4>
+              <div class="markdown level1 summary"><p>Obtains a <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a> that contains the atomic traits from both this trait and <em>other</em>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CKTrait Intersect(CKTrait other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>other</em></td>
+                    <td><p>Trait that must be kept.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><p>The resulting trait.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_IsSupersetOf_CK_Core_CKTrait_.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.IsSupersetOf(CK.Core.CKTrait)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L148">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_IsSupersetOf_CK_Core_CKTrait_" data-uid="CK.Core.CKTrait.IsSupersetOf(CK.Core.CKTrait)">IsSupersetOf(CKTrait)</h4>
+              <div class="markdown level1 summary"><p>Checks if each and every atomic traits of <em>other</em> exists in this trait.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Core_CKTrait_IsSupersetOf_CK_Core_CKTrait__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Note that <a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext_EmptyTrait">EmptyTrait</a> is contained (in the sense of this IsSupersetOf method) by definition in any trait 
+(including itself): this is the opposite of the <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Overlaps_CK_Core_CKTrait_">Overlaps(CKTrait)</a> method.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsSupersetOf(CKTrait other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>other</em></td>
+                    <td><p>The trait(s) to find.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>True if all the specified traits appear in this trait.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_Overlaps_CK_Core_CKTrait_.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.Overlaps(CK.Core.CKTrait)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L171">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_Overlaps_CK_Core_CKTrait_" data-uid="CK.Core.CKTrait.Overlaps(CK.Core.CKTrait)">Overlaps(CKTrait)</h4>
+              <div class="markdown level1 summary"><p>Checks if one of the atomic traits of <em>other</em> exists in this trait.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Core_CKTrait_Overlaps_CK_Core_CKTrait__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>When true, this ensures that <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_Intersect_CK_Core_CKTrait_">Intersect(CKTrait)</a>( <em>other</em> ) != <a class="xref" href="CK.Core.CKTraitContext.html#CK_Core_CKTraitContext_EmptyTrait">EmptyTrait</a>. 
+The empty trait is not contained (in the sense of this ContainsOne method) in any trait (including itself). This is the opposite
+of the <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait_IsSupersetOf_CK_Core_CKTrait_">IsSupersetOf(CKTrait)</a> method.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Overlaps(CKTrait other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>other</em></td>
+                    <td><p>The trait to find.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><p>Returns true if one of the specified traits appears in this trait.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_SymmetricExcept_CK_Core_CKTrait_.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.SymmetricExcept(CK.Core.CKTrait)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L245">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_SymmetricExcept_CK_Core_CKTrait_" data-uid="CK.Core.CKTrait.SymmetricExcept(CK.Core.CKTrait)">SymmetricExcept(CKTrait)</h4>
+              <div class="markdown level1 summary"><p>Obtains a <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a> where the atomic traits of <em>other</em> are removed (resp. added) depending 
+on whether they exist (resp. do not exist) in this trait. This is like an Exclusive Or (XOR).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CKTrait SymmetricExcept(CKTrait other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>other</em></td>
+                    <td><p>Trait to toggle.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><p>The resulting trait.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_ToString.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.ToString%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L74">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_ToString" data-uid="CK.Core.CKTrait.ToString">ToString()</h4>
+              <div class="markdown level1 summary"><p>Gets the multi traits in an ordered manner separated by +.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><p>This multi trait as a string.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_CKTrait_Union_CK_Core_CKTrait_.md&amp;value=---%0Auid%3A%20CK.Core.CKTrait.Union(CK.Core.CKTrait)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/CKTrait.cs/#L213">View Source</a>
+              </span>
+              <h4 id="CK_Core_CKTrait_Union_CK_Core_CKTrait_" data-uid="CK.Core.CKTrait.Union(CK.Core.CKTrait)">Union(CKTrait)</h4>
+              <div class="markdown level1 summary"><p>Obtains a <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a> that combines this one and 
+the trait(s) specified by the parameter. </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CKTrait Union(CKTrait other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>other</em></td>
+                    <td><p>Trait to add.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><p>The resulting trait.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

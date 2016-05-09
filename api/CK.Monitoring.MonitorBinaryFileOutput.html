@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MonitorBinaryFileOutput
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MonitorBinaryFileOutput
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_MonitorBinaryFileOutput.md&amp;value=---%0Auid%3A%20CK.Monitoring.MonitorBinaryFileOutput%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/MonitorBinaryFileOutput.cs/#L15" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Monitoring_MonitorBinaryFileOutput" data-uid="CK.Monitoring.MonitorBinaryFileOutput">Class MonitorBinaryFileOutput
+              </h1>
+              <div class="markdown level0 summary"><p>Helper class that encapsulates temporary stream and final renaming for log entries streams.
+This currently handles only the maximum count of entries per file but this may be extended with options like &quot;SubFolderMode&quot; that can be based 
+on current time (to group logs inside timed intermediate folders like one per day: 2014/01/12 or 2014-01/12, etc.). </p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><a class="xref" href="CK.Monitoring.MonitorFileOutputBase.html#CK_Monitoring_MonitorFileOutputBase">MonitorFileOutputBase</a></div>
+                  <div class="level2"><span class="xref">MonitorBinaryFileOutput</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Monitoring</h6>
+              <h6><strong>Assembly</strong>:CK.Monitoring.dll</h6>
+              <h5 id="CK_Monitoring_MonitorBinaryFileOutput_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class MonitorBinaryFileOutput : MonitorFileOutputBase, IDisposable</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_MonitorBinaryFileOutput__ctor_System_String_System_Guid_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Monitoring.MonitorBinaryFileOutput.%23ctor(System.String%2CSystem.Guid%2CSystem.Int32%2CSystem.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/MonitorBinaryFileOutput.cs/#L41">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_MonitorBinaryFileOutput__ctor_System_String_System_Guid_System_Int32_System_Boolean_" data-uid="CK.Monitoring.MonitorBinaryFileOutput.#ctor(System.String,System.Guid,System.Int32,System.Boolean)">MonitorBinaryFileOutput(String, Guid, Int32, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new file for <a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a> issued from a specific monitor: the final file name is 
+based on <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_FileNameUniqueTimeUtcFormat">FileNameUniqueTimeUtcFormat</a> with a &quot;-{XXX...XXX}.ckmon&quot; suffix where {XXX...XXX} is the unique identifier (Guid with the B format - 32 digits separated by 
+hyphens, enclosed in braces) of the monitor.
+You must call <a class="xref" href="CK.Monitoring.MonitorFileOutputBase.html#CK_Monitoring_MonitorFileOutputBase_Initialize_CK_Core_IActivityMonitor_">Initialize(IActivityMonitor)</a> before actually using this object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MonitorBinaryFileOutput(string configuredPath, Guid monitorId, int maxCountPerFile, bool useGzipCompression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>configuredPath</em></td>
+                    <td><p>The path. Can be absolute. When relative, it will be under <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> that must be set.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110).aspx">Guid</a></td>
+                    <td><em>monitorId</em></td>
+                    <td><p>Monitor identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>maxCountPerFile</em></td>
+                    <td><p>Maximum number of entries per file. Must be greater than 1.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>useGzipCompression</em></td>
+                    <td><p>True to gzip the file.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_MonitorBinaryFileOutput__ctor_System_String_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Monitoring.MonitorBinaryFileOutput.%23ctor(System.String%2CSystem.Int32%2CSystem.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/MonitorBinaryFileOutput.cs/#L26">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_MonitorBinaryFileOutput__ctor_System_String_System_Int32_System_Boolean_" data-uid="CK.Monitoring.MonitorBinaryFileOutput.#ctor(System.String,System.Int32,System.Boolean)">MonitorBinaryFileOutput(String, Int32, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new file for <a class="xref" href="CK.Monitoring.IMulticastLogEntry.html#CK_Monitoring_IMulticastLogEntry">IMulticastLogEntry</a>: the final file name is based on <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_FileNameUniqueTimeUtcFormat">FileNameUniqueTimeUtcFormat</a> with a &quot;.ckmon&quot; extension.
+You must call <a class="xref" href="CK.Monitoring.MonitorFileOutputBase.html#CK_Monitoring_MonitorFileOutputBase_Initialize_CK_Core_IActivityMonitor_">Initialize(IActivityMonitor)</a> before actually using this object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MonitorBinaryFileOutput(string configuredPath, int maxCountPerFile, bool useGzipCompression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>configuredPath</em></td>
+                    <td><p>The path: it can be absolute and when relative, it will be under <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> (that must be set).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>maxCountPerFile</em></td>
+                    <td><p>Maximum number of entries per file. Must be greater than 1.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>useGzipCompression</em></td>
+                    <td><p>True to gzip the file.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_MonitorBinaryFileOutput_CloseCurrentFile.md&amp;value=---%0Auid%3A%20CK.Monitoring.MonitorBinaryFileOutput.CloseCurrentFile%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/MonitorBinaryFileOutput.cs/#L114">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_MonitorBinaryFileOutput_CloseCurrentFile" data-uid="CK.Monitoring.MonitorBinaryFileOutput.CloseCurrentFile">CloseCurrentFile()</h4>
+              <div class="markdown level1 summary"><p>Called when the current file is closed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void CloseCurrentFile()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_MonitorBinaryFileOutput_OpenNewFile.md&amp;value=---%0Auid%3A%20CK.Monitoring.MonitorBinaryFileOutput.OpenNewFile%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/MonitorBinaryFileOutput.cs/#L102">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_MonitorBinaryFileOutput_OpenNewFile" data-uid="CK.Monitoring.MonitorBinaryFileOutput.OpenNewFile">OpenNewFile()</h4>
+              <div class="markdown level1 summary"><p>Called when a new file is created.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Stream OpenNewFile()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.stream(v=vs.110).aspx">Stream</a></td>
+                    <td><p>The created stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_MonitorBinaryFileOutput_UnicastWrite_CK_Core_ActivityMonitorLogData_CK_Monitoring_IMulticastLogInfo_.md&amp;value=---%0Auid%3A%20CK.Monitoring.MonitorBinaryFileOutput.UnicastWrite(CK.Core.ActivityMonitorLogData%2CCK.Monitoring.IMulticastLogInfo)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/MonitorBinaryFileOutput.cs/#L64">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_MonitorBinaryFileOutput_UnicastWrite_CK_Core_ActivityMonitorLogData_CK_Monitoring_IMulticastLogInfo_" data-uid="CK.Monitoring.MonitorBinaryFileOutput.UnicastWrite(CK.Core.ActivityMonitorLogData,CK.Monitoring.IMulticastLogInfo)">UnicastWrite(ActivityMonitorLogData, IMulticastLogInfo)</h4>
+              <div class="markdown level1 summary"><p>Writes a line entry as a uni-cast compact entry or as a multi-cast one if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UnicastWrite(ActivityMonitorLogData data, IMulticastLogInfo adapter)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.ActivityMonitorLogData.html#CK_Core_ActivityMonitorLogData">ActivityMonitorLogData</a></td>
+                    <td><em>data</em></td>
+                    <td><p>The log line.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.IMulticastLogInfo.html#CK_Monitoring_IMulticastLogInfo">IMulticastLogInfo</a></td>
+                    <td><em>adapter</em></td>
+                    <td><p>Multi-cast information to be able to write multi-cast entry when needed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_MonitorBinaryFileOutput_UnicastWriteCloseGroup_CK_Core_IActivityLogGroup_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityLogGroupConclusion__CK_Monitoring_IMulticastLogInfo_.md&amp;value=---%0Auid%3A%20CK.Monitoring.MonitorBinaryFileOutput.UnicastWriteCloseGroup(CK.Core.IActivityLogGroup%2CSystem.Collections.Generic.IReadOnlyList%7BCK.Core.ActivityLogGroupConclusion%7D%2CCK.Monitoring.IMulticastLogInfo)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/MonitorBinaryFileOutput.cs/#L89">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_MonitorBinaryFileOutput_UnicastWriteCloseGroup_CK_Core_IActivityLogGroup_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityLogGroupConclusion__CK_Monitoring_IMulticastLogInfo_" data-uid="CK.Monitoring.MonitorBinaryFileOutput.UnicastWriteCloseGroup(CK.Core.IActivityLogGroup,System.Collections.Generic.IReadOnlyList{CK.Core.ActivityLogGroupConclusion},CK.Monitoring.IMulticastLogInfo)">UnicastWriteCloseGroup(IActivityLogGroup, IReadOnlyList&lt;ActivityLogGroupConclusion&gt;, IMulticastLogInfo)</h4>
+              <div class="markdown level1 summary"><p>Writes a group closing entry as a uni-cast compact entry or as a multi-cast one if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UnicastWriteCloseGroup(IActivityLogGroup g, IReadOnlyList&lt;ActivityLogGroupConclusion&gt; conclusions, IMulticastLogInfo adapter)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityLogGroup.html#CK_Core_IActivityLogGroup">IActivityLogGroup</a></td>
+                    <td><em>g</em></td>
+                    <td><p>The group.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/hh192385(v=vs.110).aspx">IReadOnlyList</a>&lt;<a class="xref" href="CK.Core.ActivityLogGroupConclusion.html#CK_Core_ActivityLogGroupConclusion">ActivityLogGroupConclusion</a>&gt;</td>
+                    <td><em>conclusions</em></td>
+                    <td><p>Group&#39;s conclusions.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.IMulticastLogInfo.html#CK_Monitoring_IMulticastLogInfo">IMulticastLogInfo</a></td>
+                    <td><em>adapter</em></td>
+                    <td><p>Multi-cast information to be able to write multi-cast entry when needed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_MonitorBinaryFileOutput_UnicastWriteOpenGroup_CK_Core_IActivityLogGroup_CK_Monitoring_IMulticastLogInfo_.md&amp;value=---%0Auid%3A%20CK.Monitoring.MonitorBinaryFileOutput.UnicastWriteOpenGroup(CK.Core.IActivityLogGroup%2CCK.Monitoring.IMulticastLogInfo)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/MonitorBinaryFileOutput.cs/#L76">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_MonitorBinaryFileOutput_UnicastWriteOpenGroup_CK_Core_IActivityLogGroup_CK_Monitoring_IMulticastLogInfo_" data-uid="CK.Monitoring.MonitorBinaryFileOutput.UnicastWriteOpenGroup(CK.Core.IActivityLogGroup,CK.Monitoring.IMulticastLogInfo)">UnicastWriteOpenGroup(IActivityLogGroup, IMulticastLogInfo)</h4>
+              <div class="markdown level1 summary"><p>Writes a group opening entry as a uni-cast compact entry or as a multi-cast one if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UnicastWriteOpenGroup(IActivityLogGroup g, IMulticastLogInfo adapter)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityLogGroup.html#CK_Core_IActivityLogGroup">IActivityLogGroup</a></td>
+                    <td><em>g</em></td>
+                    <td><p>The group line.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.IMulticastLogInfo.html#CK_Monitoring_IMulticastLogInfo">IMulticastLogInfo</a></td>
+                    <td><em>adapter</em></td>
+                    <td><p>Multi-cast information to be able to write multi-cast entry when needed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Monitoring_MonitorBinaryFileOutput_Write_CK_Monitoring_ILogEntry_.md&amp;value=---%0Auid%3A%20CK.Monitoring.MonitorBinaryFileOutput.Write(CK.Monitoring.ILogEntry)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Monitoring/MonitorBinaryFileOutput.cs/#L52">View Source</a>
+              </span>
+              <h4 id="CK_Monitoring_MonitorBinaryFileOutput_Write_CK_Monitoring_ILogEntry_" data-uid="CK.Monitoring.MonitorBinaryFileOutput.Write(CK.Monitoring.ILogEntry)">Write(ILogEntry)</h4>
+              <div class="markdown level1 summary"><p>Writes a log entry (that can actually be a <a class="xref" href="CK.Monitoring.IMulticastLogEntry.html#CK_Monitoring_IMulticastLogEntry">IMulticastLogEntry</a>).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Write(ILogEntry e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Monitoring.ILogEntry.html#CK_Monitoring_ILogEntry">ILogEntry</a></td>
+                    <td><em>e</em></td>
+                    <td><p>The log entry.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

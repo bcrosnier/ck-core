@@ -1,0 +1,1226 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ActivityMonitor
+   | CK.Core documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ActivityMonitor
+   | CK.Core documentation ">
+    <meta name="generator" content="docfx 1.8.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L35" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="CK_Core_ActivityMonitor" data-uid="CK.Core.ActivityMonitor">Class ActivityMonitor
+              </h1>
+              <div class="markdown level0 summary"><p>Concrete implementation of <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a>.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+                  <div class="level1"><span class="xref">ActivityMonitor</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:CK.Core</h6>
+              <h6><strong>Assembly</strong>:CK.ActivityMonitor.dll</h6>
+              <h5 id="CK_Core_ActivityMonitor_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class ActivityMonitor : IActivityMonitorImpl, IActivityMonitor, IUniqueId</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor__ctor.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.%23ctor%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L201">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor__ctor" data-uid="CK.Core.ActivityMonitor.#ctor">ActivityMonitor()</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a> that applies all <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> and has no <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_Topic">Topic</a> initially set.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ActivityMonitor()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor__ctor_CK_Core_Impl_ActivityMonitorOutput_CK_Core_CKTrait_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.%23ctor(CK.Core.Impl.ActivityMonitorOutput%2CCK.Core.CKTrait%2CSystem.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L233">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor__ctor_CK_Core_Impl_ActivityMonitorOutput_CK_Core_CKTrait_System_Boolean_" data-uid="CK.Core.ActivityMonitor.#ctor(CK.Core.Impl.ActivityMonitorOutput,CK.Core.CKTrait,System.Boolean)">ActivityMonitor(ActivityMonitorOutput, CKTrait, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a> with a specific <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_Output">Output</a> or null
+to postpone the setting of Output by using <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_SetOutput_CK_Core_Impl_ActivityMonitorOutput_">SetOutput(ActivityMonitorOutput)</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected ActivityMonitor(ActivityMonitorOutput output, CKTrait tags = null, bool applyAutoConfigurations = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.Impl.ActivityMonitorOutput.html#CK_Core_Impl_ActivityMonitorOutput">ActivityMonitorOutput</a></td>
+                    <td><em>output</em></td>
+                    <td><p>The output to use. Can be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>tags</em></td>
+                    <td><p>Initial tags.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>applyAutoConfigurations</em></td>
+                    <td><p>Whether <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> should be applied.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor__ctor_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.%23ctor(System.Boolean%2CSystem.String)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L221">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor__ctor_System_Boolean_System_String_" data-uid="CK.Core.ActivityMonitor.#ctor(System.Boolean,System.String)">ActivityMonitor(Boolean, String)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a> that optionally applies <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> and with an initial topic.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ActivityMonitor(bool applyAutoConfigurations, string topic = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+                    <td><em>applyAutoConfigurations</em></td>
+                    <td><p>Whether <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> should be applied.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>topic</em></td>
+                    <td><p>Optional initial topic (can be null).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor__ctor_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.%23ctor(System.String)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L210">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor__ctor_System_String_" data-uid="CK.Core.ActivityMonitor.#ctor(System.String)">ActivityMonitor(String)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor">ActivityMonitor</a> that applies all <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> and has an initial <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_Topic">Topic</a> set.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ActivityMonitor(string topic)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>topic</em></td>
+                    <td><p>Initial topic (can be null).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_AutoConfiguration.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.AutoConfiguration%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L169">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_AutoConfiguration" data-uid="CK.Core.ActivityMonitor.AutoConfiguration">AutoConfiguration</h4>
+              <div class="markdown level1 summary"><p>The automatic configuration actions.
+Registers actions via += (or <see cref="G:Delegate.Combine"></see> if you like pain), unregister with -= operator (or <a class="xref" href="https://msdn.microsoft.com/en-us/library/z96shxe0(v=vs.110).aspx">System.Delegate.Remove(System.Delegate,System.Delegate)</a>).
+Simply sets it to null to clear all currently registered actions (this, of course, only from tests and not in real code).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Action&lt;IActivityMonitor&gt; AutoConfiguration</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/018hxwa8(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor">IActivityMonitor</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_CriticalErrorCollector.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CriticalErrorCollector%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L121">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_CriticalErrorCollector" data-uid="CK.Core.ActivityMonitor.CriticalErrorCollector">CriticalErrorCollector</h4>
+              <div class="markdown level1 summary"><p>The monitoring error collector. 
+Any error that occurs while dispatching logs to <a class="xref" href="CK.Core.IActivityMonitorClient.html#CK_Core_IActivityMonitorClient">IActivityMonitorClient</a>
+are collected and the culprit is removed from <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_Output">Output</a>.
+See <span class="xref">CriticalErrorCollector</span>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly CriticalErrorCollector CriticalErrorCollector</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector">CriticalErrorCollector</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_NoLogText.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.NoLogText%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L174">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_NoLogText" data-uid="CK.Core.ActivityMonitor.NoLogText">NoLogText</h4>
+              <div class="markdown level1 summary"><p>The no-log text replaces any null or empty log text.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly string NoLogText</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_ParkLevel.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.ParkLevel%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L46">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_ParkLevel" data-uid="CK.Core.ActivityMonitor.ParkLevel">ParkLevel</h4>
+              <div class="markdown level1 summary"><p>String to use to break the current <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel">LogLevel</a> (as if a different <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel">LogLevel</a> was used).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly string ParkLevel</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_SetTopicPrefix.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SetTopicPrefix%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L41">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_SetTopicPrefix" data-uid="CK.Core.ActivityMonitor.SetTopicPrefix">SetTopicPrefix</h4>
+              <div class="markdown level1 summary"><p>Prefix used by <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_SetTopic_System_String_System_String_System_Int32_">SetTopic(String, String, Int32)</a> is &quot;Topic: &quot;.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly string SetTopicPrefix</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_ActualFilter.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.ActualFilter%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L433">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_ActualFilter" data-uid="CK.Core.ActivityMonitor.ActualFilter">ActualFilter</h4>
+              <div class="markdown level1 summary"><p>Gets the actual filter level for logs: this combines the configured <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_MinimalFilter">MinimalFilter</a> and the minimal requirements
+of any <a class="xref" href="CK.Core.IActivityMonitorBoundClient.html#CK_Core_IActivityMonitorBoundClient">IActivityMonitorBoundClient</a> that specifies such a minimal filter level.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Core_ActivityMonitor_ActualFilter_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This does NOT take into account the static (application-domain) <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_DefaultFilter">DefaultFilter</a>.
+This global default must be used if this ActualFilter is <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_None">None</a> for <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> or <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>: 
+the <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_ShouldLogLine_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_System_Int32_">ShouldLogLine(IActivityMonitor, LogLevel, String, Int32)</a> extension method takes it into account.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LogFilter ActualFilter
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_AutoTags.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.AutoTags%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L356">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_AutoTags" data-uid="CK.Core.ActivityMonitor.AutoTags">AutoTags</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the tags of this monitor: any subsequent logs will be tagged by these tags.
+The <a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a> must be registered in <a class="xref" href="CK.Core.ActivityMonitor.Tags.html#CK_Core_ActivityMonitor_Tags">ActivityMonitor.Tags</a>.
+Modifications to this property are scoped to the current Group since when a Group is closed, this
+property (like <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_MinimalFilter">MinimalFilter</a>) is automatically restored to its original value (captured when the Group was opened).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CKTrait AutoTags
+{
+    get;
+    set;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_CurrentGroup.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23Impl%23IActivityMonitorImpl%23CurrentGroup%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.Group.cs/#L248">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_CurrentGroup" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#CurrentGroup">IActivityMonitorImpl.CurrentGroup</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IActivityLogGroup IActivityMonitorImpl.CurrentGroup
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityLogGroup.html#CK_Core_IActivityLogGroup">IActivityLogGroup</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_CK_Core_IUniqueId_UniqueId.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23IUniqueId%23UniqueId%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L255">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_CK_Core_IUniqueId_UniqueId" data-uid="CK.Core.ActivityMonitor.CK#Core#IUniqueId#UniqueId">IUniqueId.UniqueId</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Guid IUniqueId.UniqueId
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110).aspx">Guid</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_CurrentGroup.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CurrentGroup%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.Group.cs/#L254">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_CurrentGroup" data-uid="CK.Core.ActivityMonitor.CurrentGroup">CurrentGroup</h4>
+              <div class="markdown level1 summary"><p>Gets the currently opened group.
+Null when no group is currently opened.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IActivityLogGroup CurrentGroup
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityLogGroup.html#CK_Core_IActivityLogGroup">IActivityLogGroup</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_DefaultFilter.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.DefaultFilter%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L137">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_DefaultFilter" data-uid="CK.Core.ActivityMonitor.DefaultFilter">DefaultFilter</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the default filter that should be used when the <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_ActualFilter">ActualFilter</a> is <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Undefined">Undefined</a>.
+This configuration is per application domain (the backing field is static).
+It defaults to <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Undefined">Undefined</a>: it has the same effect as setting it to <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Debug">Debug</a> (i.e. sending everything) when
+no other configuration exists.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static LogFilter DefaultFilter
+{
+    get;
+    set;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_LastLogTime.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.LastLogTime%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L303">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_LastLogTime" data-uid="CK.Core.ActivityMonitor.LastLogTime">LastLogTime</h4>
+              <div class="markdown level1 summary"><p>Gets the last <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a> for this monitor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DateTimeStamp LastLogTime
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_MinimalFilter.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.MinimalFilter%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L404">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_MinimalFilter" data-uid="CK.Core.ActivityMonitor.MinimalFilter">MinimalFilter</h4>
+              <div class="markdown level1 summary"><p>Gets or sets a filter based for the log level.
+Modifications to this property are scoped to the current Group since when a Group is closed, this
+property (like <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoTags">AutoTags</a>) is automatically restored to its original value (captured when the Group was opened).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LogFilter MinimalFilter
+{
+    get;
+    set;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_Output.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.Output%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L285">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_Output" data-uid="CK.Core.ActivityMonitor.Output">Output</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="CK.Core.IActivityMonitorOutput.html#CK_Core_IActivityMonitorOutput">IActivityMonitorOutput</a> for this monitor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IActivityMonitorOutput Output
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IActivityMonitorOutput.html#CK_Core_IActivityMonitorOutput">IActivityMonitorOutput</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_Topic.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.Topic%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L313">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_Topic" data-uid="CK.Core.ActivityMonitor.Topic">Topic</h4>
+              <div class="markdown level1 summary"><p>Gets the current topic for this monitor. This can be any non null string (null topic is mapped to the empty string) that describes
+the current activity. It must be set with <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_SetTopic_System_String_System_String_System_Int32_">SetTopic(String, String, Int32)</a> and unlike <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_MinimalFilter">MinimalFilter</a> and <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoTags">AutoTags</a>, 
+the topic is not reseted when groups are closed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string Topic
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_UniqueId.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.UniqueId%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L266">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_UniqueId" data-uid="CK.Core.ActivityMonitor.UniqueId">UniqueId</h4>
+              <div class="markdown level1 summary"><p>Gets the unique identifier for this monitor.
+It is a <a class="xref" href="https://msdn.microsoft.com/en-us/library/b49320df(v=vs.110).aspx">System.Guid.NewGuid</a> by default but specialized implementations can set it
+via the protected <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_SetUniqueId_System_Guid_">SetUniqueId(Guid)</a> if a unique identifier exists in the context 
+that can more easily identify this activity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Guid UniqueId
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110).aspx">Guid</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_InitializeTopicAndAutoTags_System_String_CK_Core_CKTrait_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23Impl%23IActivityMonitorImpl%23InitializeTopicAndAutoTags(System.String%2CCK.Core.CKTrait%2CSystem.String%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L392">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_InitializeTopicAndAutoTags_System_String_CK_Core_CKTrait_System_String_System_Int32_" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#InitializeTopicAndAutoTags(System.String,CK.Core.CKTrait,System.String,System.Int32)">IActivityMonitorImpl.InitializeTopicAndAutoTags(String, CKTrait, String, Int32)</h4>
+              <div class="markdown level1 summary"><p>Called by IActivityMonitorBoundClient clients to initialize Topic and AutoTag from 
+inside their SetMonitor or any other methods provided that a reentrant and concurrent lock 
+has been obtained (otherwise an InvalidOperationException is thrown).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void IActivityMonitorImpl.InitializeTopicAndAutoTags(string newTopic, CKTrait newTags, string fileName, int lineNumber)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>newTopic</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></td>
+                    <td><em>newTags</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>fileName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>lineNumber</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_OnClientMinimalFilterChanged_CK_Core_LogFilter_CK_Core_LogFilter_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23Impl%23IActivityMonitorImpl%23OnClientMinimalFilterChanged(CK.Core.LogFilter%2CCK.Core.LogFilter)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L529">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_OnClientMinimalFilterChanged_CK_Core_LogFilter_CK_Core_LogFilter_" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#OnClientMinimalFilterChanged(CK.Core.LogFilter,CK.Core.LogFilter)">IActivityMonitorImpl.OnClientMinimalFilterChanged(LogFilter, LogFilter)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void IActivityMonitorImpl.OnClientMinimalFilterChanged(LogFilter oldLevel, LogFilter newLevel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><em>oldLevel</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter">LogFilter</a></td>
+                    <td><em>newLevel</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_ReentrancyAndConcurrencyLock.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23Impl%23IActivityMonitorImpl%23ReentrancyAndConcurrencyLock%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L860">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_ReentrancyAndConcurrencyLock" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#ReentrancyAndConcurrencyLock">IActivityMonitorImpl.ReentrancyAndConcurrencyLock()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDisposable IActivityMonitorImpl.ReentrancyAndConcurrencyLock()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.idisposable(v=vs.110).aspx">IDisposable</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_SetClientMinimalFilterDirty.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23Impl%23IActivityMonitorImpl%23SetClientMinimalFilterDirty%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L518">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_SetClientMinimalFilterDirty" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#SetClientMinimalFilterDirty">IActivityMonitorImpl.SetClientMinimalFilterDirty()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void IActivityMonitorImpl.SetClientMinimalFilterDirty()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_CloseGroup_CK_Core_DateTimeStamp_System_Object_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CloseGroup(CK.Core.DateTimeStamp%2CSystem.Object)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L705">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_CloseGroup_CK_Core_DateTimeStamp_System_Object_" data-uid="CK.Core.ActivityMonitor.CloseGroup(CK.Core.DateTimeStamp,System.Object)">CloseGroup(DateTimeStamp, Object)</h4>
+              <div class="markdown level1 summary"><p>Closes the current <a class="xref" href="CK.Core.ActivityMonitor.Group.html#CK_Core_ActivityMonitor_Group">ActivityMonitor.Group</a>. Optional parameter is polymorphic. It can be a string, a <a class="xref" href="CK.Core.ActivityLogGroupConclusion.html#CK_Core_ActivityLogGroupConclusion">ActivityLogGroupConclusion</a>, 
+a <a class="xref" href="https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx">System.Collections.Generic.List`1</a> or an <a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">System.Collections.Generic.IEnumerable`1</a> of ActivityLogGroupConclusion, or any object with an overridden <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">System.Object.ToString</a> method. 
+See remarks (especially for List<activityloggroupconclusion>).<p>
+</activityloggroupconclusion></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Core_ActivityMonitor_CloseGroup_CK_Core_DateTimeStamp_System_Object__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>An untyped object is used here to easily and efficiently accommodate both string and already existing ActivityLogGroupConclusion.
+When a List<activityloggroupconclusion> is used, it will be directly used to collect conclusion objects (new conclusions will be added to it). This is an optimization.<p>
+</activityloggroupconclusion></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void CloseGroup(DateTimeStamp logTime, object userConclusion = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a></td>
+                    <td><em>logTime</em></td>
+                    <td><p>Times-tamp of the group closing.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></td>
+                    <td><em>userConclusion</em></td>
+                    <td><p>Optional string, enumerable of <a class="xref" href="CK.Core.ActivityLogGroupConclusion.html#CK_Core_ActivityLogGroupConclusion">ActivityLogGroupConclusion</a>) or object to conclude the group. See remarks.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_ReentrancyAndConcurrencyLock.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.ReentrancyAndConcurrencyLock%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L869">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_ReentrancyAndConcurrencyLock" data-uid="CK.Core.ActivityMonitor.ReentrancyAndConcurrencyLock">ReentrancyAndConcurrencyLock()</h4>
+              <div class="markdown level1 summary"><p>Gets a disposable object that checks for reentrant and concurrent calls.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IDisposable ReentrancyAndConcurrencyLock()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.idisposable(v=vs.110).aspx">IDisposable</a></td>
+                    <td><p>A disposable object (that must be disposed).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_SetOutput_CK_Core_Impl_ActivityMonitorOutput_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SetOutput(CK.Core.Impl.ActivityMonitorOutput)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L294">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_SetOutput_CK_Core_Impl_ActivityMonitorOutput_" data-uid="CK.Core.ActivityMonitor.SetOutput(CK.Core.Impl.ActivityMonitorOutput)">SetOutput(ActivityMonitorOutput)</h4>
+              <div class="markdown level1 summary"><p>Sets the <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_Output">Output</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void SetOutput(ActivityMonitorOutput output)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.Impl.ActivityMonitorOutput.html#CK_Core_Impl_ActivityMonitorOutput">ActivityMonitorOutput</a></td>
+                    <td><em>output</em></td>
+                    <td><p>Can not be null.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_SetTopic_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SetTopic(System.String%2CSystem.String%2CSystem.Int32)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L322">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_SetTopic_System_String_System_String_System_Int32_" data-uid="CK.Core.ActivityMonitor.SetTopic(System.String,System.String,System.Int32)">SetTopic(String, String, Int32)</h4>
+              <div class="markdown level1 summary"><p>Sets the current topic for this monitor. This can be any non null string (null topic is mapped to the empty string) that describes
+the current activity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetTopic(string newTopic, [CallerFilePath] string fileName = null, [CallerLineNumber] int lineNumber = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>newTopic</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><em>fileName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+                    <td><em>lineNumber</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_SetUniqueId_System_Guid_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SetUniqueId(System.Guid)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L277">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_SetUniqueId_System_Guid_" data-uid="CK.Core.ActivityMonitor.SetUniqueId(System.Guid)">SetUniqueId(Guid)</h4>
+              <div class="markdown level1 summary"><p>Sets the unique identifier of this activity monitor.
+This must be used only during monitor construction or initialization, before the 
+monitor is actually used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void SetUniqueId(Guid uniqueId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110).aspx">Guid</a></td>
+                    <td><em>uniqueId</em></td>
+                    <td><p>New unique identifier.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_UnfilteredLog_CK_Core_ActivityMonitorLogData_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.UnfilteredLog(CK.Core.ActivityMonitorLogData)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L582">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_UnfilteredLog_CK_Core_ActivityMonitorLogData_" data-uid="CK.Core.ActivityMonitor.UnfilteredLog(CK.Core.ActivityMonitorLogData)">UnfilteredLog(ActivityMonitorLogData)</h4>
+              <div class="markdown level1 summary"><p>Logs a text regardless of <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_MinimalFilter">MinimalFilter</a> level (except for <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Off">Off</a>). 
+Each call to log is considered as a unit of text: depending on the rendering engine, a line or a 
+paragraph separator (or any appropriate separator) should be appended between each text if 
+the level is the same as the previous one.
+See remarks.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Core_ActivityMonitor_UnfilteredLog_CK_Core_ActivityMonitorLogData__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>A null or empty <a class="xref" href="CK.Core.ActivityMonitorLogData.html#CK_Core_ActivityMonitorLogData_Text">Text</a> is not logged.
+If needed, the special text <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_ParkLevel">ParkLevel</a> (&quot;PARK-LEVEL&quot;) breaks the current <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel">LogLevel</a>
+and resets it: the next log, even with the same LogLevel, will be treated as if
+a different LogLevel is used.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UnfilteredLog(ActivityMonitorLogData data)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.ActivityMonitorLogData.html#CK_Core_ActivityMonitorLogData">ActivityMonitorLogData</a></td>
+                    <td><em>data</em></td>
+                    <td><p>Data that describes the log. Can not be null.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_ActivityMonitor_UnfilteredOpenGroup_CK_Core_ActivityMonitorGroupData_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.UnfilteredOpenGroup(CK.Core.ActivityMonitorGroupData)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L653">View Source</a>
+              </span>
+              <h4 id="CK_Core_ActivityMonitor_UnfilteredOpenGroup_CK_Core_ActivityMonitorGroupData_" data-uid="CK.Core.ActivityMonitor.UnfilteredOpenGroup(CK.Core.ActivityMonitorGroupData)">UnfilteredOpenGroup(ActivityMonitorGroupData)</h4>
+              <div class="markdown level1 summary"><p>Opens a group regardless of <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_ActualFilter">ActualFilter</a> level (except for <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Off">Off</a>). </p>
+<p><a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_CloseGroup_CK_Core_DateTimeStamp_System_Object_">CloseGroup(DateTimeStamp, Object)</a> must be called in order to close the group, and/or the returned object must be disposed (both safely can be called: 
+the group is closed on the first action, the second one is ignored).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="CK_Core_ActivityMonitor_UnfilteredOpenGroup_CK_Core_ActivityMonitorGroupData__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>
+Opening a group does not change the current <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_MinimalFilter">MinimalFilter</a>, except when opening a <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_Fatal">Fatal</a> or <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_Error">Error</a> group:
+in such case, the MinimalFilter is automatically sets to <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Debug">Debug</a> to capture all potential information inside the error group.
+</p>
+<p>
+Changes to the monitor&#39;s current Filter or AutoTags that occur inside a group are automatically restored to their original values when the group is closed.
+This behavior guaranties that a local modification (deep inside unknown called code) does not impact caller code: groups are a way to easily isolate such 
+configuration changes.
+</p>
+<p>
+Note that this automatic configuration restoration works even if the group has been filtered.
+</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IDisposableGroup UnfilteredOpenGroup(ActivityMonitorGroupData data)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.ActivityMonitorGroupData.html#CK_Core_ActivityMonitorGroupData">ActivityMonitorGroupData</a></td>
+                    <td><em>data</em></td>
+                    <td><p>Data that describes the log. Can not be null.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="CK.Core.IDisposableGroup.html#CK_Core_IDisposableGroup">IDisposableGroup</a></td>
+                    <td><p>A disposable object that can be used to set a function that provides a conclusion text and/or close the group.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
