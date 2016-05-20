@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Struct DateTimeStamp
-   | CK.Core documentation </title>
+   | CK-Core 5.0.0-e</title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct DateTimeStamp
-   | CK.Core documentation ">
+   | CK-Core 5.0.0-e">
     <meta name="generator" content="docfx 1.8.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -32,8 +32,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../">
-                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              <a class="navbar-brand" href="../" style="padding: 15px 15px 15px 0;">
+                <!--<span><img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;"></span>-->
+        		CK-Core 5.0.0-e
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -74,8 +75,8 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content">
               
-              <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
-              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L11" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L15" class="btn btn-primary pull-right mobile-hide">View Source</a>
               <h1 id="CK_Core_DateTimeStamp" data-uid="CK.Core.DateTimeStamp">Struct DateTimeStamp
               </h1>
               <div class="markdown level0 summary"><p>A date and time stamp encapsulates a <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp_TimeUtc">TimeUtc</a> (<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">System.DateTime</a> guaranteed to be in Utc) and a <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp_Uniquifier">Uniquifier</a>.</p>
@@ -88,14 +89,18 @@
                 <pre><code class="lang-csharp hljs">[Serializable]
 public struct DateTimeStamp : IComparable&lt;DateTimeStamp&gt;, IEquatable&lt;DateTimeStamp&gt;</code></pre>
               </div>
+              <h5 id="CK_Core_DateTimeStamp_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>Simply use <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp_ToString">ToString()</a> and <a class="xref" href="CK.Core.DateTimeStampExtension.html#CK_Core_DateTimeStampExtension_MatchDateTimeStamp_CK_Text_StringMatcher_CK_Core_DateTimeStamp__">MatchDateTimeStamp(StringMatcher, out DateTimeStamp)</a>
+to serialize it.</p>
+</div>
               <h3 id="constructors">Constructors
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp__ctor_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.%23ctor(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp__ctor_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.%23ctor(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L101">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L105">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp__ctor_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_" data-uid="CK.Core.DateTimeStamp.#ctor(CK.Core.DateTimeStamp,CK.Core.DateTimeStamp)">DateTimeStamp(DateTimeStamp, DateTimeStamp)</h4>
               <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a> that is that is guaranteed to be unique and ascending regarding <em>lastOne</em>.</p>
@@ -134,10 +139,10 @@ public struct DateTimeStamp : IComparable&lt;DateTimeStamp&gt;, IEquatable&lt;Da
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp__ctor_CK_Core_DateTimeStamp_System_DateTime_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.%23ctor(CK.Core.DateTimeStamp%2CSystem.DateTime%2CSystem.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp__ctor_CK_Core_DateTimeStamp_System_DateTime_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.%23ctor(CK.Core.DateTimeStamp%2CSystem.DateTime%2CSystem.Boolean)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L70">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L74">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp__ctor_CK_Core_DateTimeStamp_System_DateTime_System_Boolean_" data-uid="CK.Core.DateTimeStamp.#ctor(CK.Core.DateTimeStamp,System.DateTime,System.Boolean)">DateTimeStamp(DateTimeStamp, DateTime, Boolean)</h4>
               <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a> that is that is guaranteed to be unique and ascending (unless <em>ensureGreaterThanLastOne</em> 
@@ -180,10 +185,10 @@ is false) regarding <em>lastOne</em>.</p>
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp__ctor_System_DateTime_System_Byte_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.%23ctor(System.DateTime%2CSystem.Byte)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp__ctor_System_DateTime_System_Byte_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.%23ctor(System.DateTime%2CSystem.Byte)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L56">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L60">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp__ctor_System_DateTime_System_Byte_" data-uid="CK.Core.DateTimeStamp.#ctor(System.DateTime,System.Byte)">DateTimeStamp(DateTime, Byte)</h4>
               <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a>.</p>
@@ -221,10 +226,10 @@ is false) regarding <em>lastOne</em>.</p>
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_FormatWhenUniquifier.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.FormatWhenUniquifier%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_FormatWhenUniquifier.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.FormatWhenUniquifier%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L190">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L194">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_FormatWhenUniquifier" data-uid="CK.Core.DateTimeStamp.FormatWhenUniquifier">FormatWhenUniquifier</h4>
               <div class="markdown level1 summary"><p>@&quot;{0:yyyy-MM-dd HH\hmm.ss.fffffff}({1})&quot; is the format that will be used to format log time when the <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp_Uniquifier">Uniquifier</a> is not zero.
@@ -252,10 +257,10 @@ It is based on <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_File
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_Invalid.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.Invalid%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_Invalid.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.Invalid%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L33">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L37">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_Invalid" data-uid="CK.Core.DateTimeStamp.Invalid">Invalid</h4>
               <div class="markdown level1 summary"><p>Represents an invalid DateTimeStamp object. See <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp_IsInvalid">IsInvalid</a>.</p>
@@ -282,10 +287,10 @@ It is based on <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_File
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_MaxValue.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.MaxValue%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_MaxValue.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.MaxValue%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L28">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L32">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_MaxValue" data-uid="CK.Core.DateTimeStamp.MaxValue">MaxValue</h4>
               <div class="markdown level1 summary"><p>Represents the largest possible value for a DateTimeStamp object.         </p>
@@ -312,10 +317,10 @@ It is based on <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_File
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_MinValue.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.MinValue%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_MinValue.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.MinValue%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L17">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L21">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_MinValue" data-uid="CK.Core.DateTimeStamp.MinValue">MinValue</h4>
               <div class="markdown level1 summary"><p>Represents the smallest possible value for a DateTimeStamp object.         </p>
@@ -342,10 +347,10 @@ It is based on <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_File
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_TimeUtc.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.TimeUtc%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_TimeUtc.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.TimeUtc%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L38">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L42">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_TimeUtc" data-uid="CK.Core.DateTimeStamp.TimeUtc">TimeUtc</h4>
               <div class="markdown level1 summary"><p>DateTime in Utc.</p>
@@ -372,10 +377,10 @@ It is based on <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_File
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_Uniquifier.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.Uniquifier%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_Uniquifier.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.Uniquifier%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L43">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L47">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_Uniquifier" data-uid="CK.Core.DateTimeStamp.Uniquifier">Uniquifier</h4>
               <div class="markdown level1 summary"><p>Uniquifier: non zero when <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp_TimeUtc">TimeUtc</a> collides.</p>
@@ -402,10 +407,10 @@ It is based on <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_File
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_Unknown.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.Unknown%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_Unknown.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.Unknown%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L23">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L27">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_Unknown" data-uid="CK.Core.DateTimeStamp.Unknown">Unknown</h4>
               <div class="markdown level1 summary"><p>Represents an unknown, default, DateTimeStamp object.
@@ -435,10 +440,10 @@ This is available to have a more expressive code than <code>new DateTimeStamp()<
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_IsInvalid.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.IsInvalid%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_IsInvalid.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.IsInvalid%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L120">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L124">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_IsInvalid" data-uid="CK.Core.DateTimeStamp.IsInvalid">IsInvalid</h4>
               <div class="markdown level1 summary"><p>Gets whether this <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a> is the <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp_Invalid">Invalid</a> one.</p>
@@ -469,10 +474,10 @@ This is available to have a more expressive code than <code>new DateTimeStamp()<
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_IsKnown.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.IsKnown%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_IsKnown.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.IsKnown%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L111">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L115">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_IsKnown" data-uid="CK.Core.DateTimeStamp.IsKnown">IsKnown</h4>
               <div class="markdown level1 summary"><p>Gets whether this <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a> is initialized.
@@ -504,10 +509,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_UtcNow.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.UtcNow%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_UtcNow.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.UtcNow%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L128">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L132">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_UtcNow" data-uid="CK.Core.DateTimeStamp.UtcNow">UtcNow</h4>
               <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="https://msdn.microsoft.com/en-us/library/89w2e3y3(v=vs.110).aspx">System.DateTime.UtcNow</a> as a DateTimeStamp.</p>
@@ -539,10 +544,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_CompareTo_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.CompareTo(CK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_CompareTo_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.CompareTo(CK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L138">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L142">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_CompareTo_CK_Core_DateTimeStamp_" data-uid="CK.Core.DateTimeStamp.CompareTo(CK.Core.DateTimeStamp)">CompareTo(DateTimeStamp)</h4>
               <div class="markdown level1 summary"><p>Compares this <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a> to another one.</p>
@@ -588,10 +593,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_CompareTo_System_Object_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.CompareTo(System.Object)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_CompareTo_System_Object_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.CompareTo(System.Object)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L160">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L164">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_CompareTo_System_Object_" data-uid="CK.Core.DateTimeStamp.CompareTo(System.Object)">CompareTo(Object)</h4>
               <div class="markdown level1 summary"><p>Compares this DateTimeStamp to another object that must also be a stamp.</p>
@@ -637,10 +642,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_Equals_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.Equals(CK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_Equals_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.Equals(CK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L150">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L154">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_Equals_CK_Core_DateTimeStamp_" data-uid="CK.Core.DateTimeStamp.Equals(CK.Core.DateTimeStamp)">Equals(DateTimeStamp)</h4>
               <div class="markdown level1 summary"><p>Checks equality.</p>
@@ -686,10 +691,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_Equals_System_Object_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.Equals(System.Object)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_Equals_System_Object_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.Equals(System.Object)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L172">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L176">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_Equals_System_Object_" data-uid="CK.Core.DateTimeStamp.Equals(System.Object)">Equals(Object)</h4>
               <div class="markdown level1 summary"><p>Overridden to check equality.</p>
@@ -735,10 +740,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_GetHashCode.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.GetHashCode%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_GetHashCode.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.GetHashCode%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L181">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L185">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_GetHashCode" data-uid="CK.Core.DateTimeStamp.GetHashCode">GetHashCode()</h4>
               <div class="markdown level1 summary"><p>Overridden to match <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp_Equals_CK_Core_DateTimeStamp_">Equals(DateTimeStamp)</a>.</p>
@@ -766,10 +771,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_ToString.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.ToString%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_ToString.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.ToString%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L196">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L200">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_ToString" data-uid="CK.Core.DateTimeStamp.ToString">ToString()</h4>
               <div class="markdown level1 summary"><p>Overridden to return a string based on <a class="xref" href="CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp_FormatWhenUniquifier">FormatWhenUniquifier</a> or <a class="xref" href="CK.Core.FileUtil.html#CK_Core_FileUtil_FileNameUniqueTimeUtcFormat">FileNameUniqueTimeUtcFormat</a>.</p>
@@ -799,10 +804,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_Equality_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_Equality(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_Equality_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_Equality(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L207">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L211">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_op_Equality_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_" data-uid="CK.Core.DateTimeStamp.op_Equality(CK.Core.DateTimeStamp,CK.Core.DateTimeStamp)">Equality(DateTimeStamp, DateTimeStamp)</h4>
               <div class="markdown level1 summary"><p>Checks equality.</p>
@@ -854,10 +859,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_GreaterThan_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_GreaterThan(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_GreaterThan_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_GreaterThan(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L229">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L233">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_op_GreaterThan_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_" data-uid="CK.Core.DateTimeStamp.op_GreaterThan(CK.Core.DateTimeStamp,CK.Core.DateTimeStamp)">GreaterThan(DateTimeStamp, DateTimeStamp)</h4>
               <div class="markdown level1 summary"><p>Strict greater than operator.</p>
@@ -909,10 +914,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_GreaterThanOrEqual_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_GreaterThanOrEqual(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_GreaterThanOrEqual_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_GreaterThanOrEqual(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L240">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L244">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_op_GreaterThanOrEqual_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_" data-uid="CK.Core.DateTimeStamp.op_GreaterThanOrEqual(CK.Core.DateTimeStamp,CK.Core.DateTimeStamp)">GreaterThanOrEqual(DateTimeStamp, DateTimeStamp)</h4>
               <div class="markdown level1 summary"><p>Large greater than operator.</p>
@@ -964,10 +969,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_Inequality_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_Inequality(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_Inequality_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_Inequality(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L218">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L222">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_op_Inequality_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_" data-uid="CK.Core.DateTimeStamp.op_Inequality(CK.Core.DateTimeStamp,CK.Core.DateTimeStamp)">Inequality(DateTimeStamp, DateTimeStamp)</h4>
               <div class="markdown level1 summary"><p>Checks inequality.</p>
@@ -1019,10 +1024,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_LessThan_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_LessThan(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_LessThan_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_LessThan(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L251">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L255">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_op_LessThan_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_" data-uid="CK.Core.DateTimeStamp.op_LessThan(CK.Core.DateTimeStamp,CK.Core.DateTimeStamp)">LessThan(DateTimeStamp, DateTimeStamp)</h4>
               <div class="markdown level1 summary"><p>Strict lower than operator.</p>
@@ -1074,10 +1079,10 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/bcrosnier/ck-core/new/feature/docfx-init/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_LessThanOrEqual_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_LessThanOrEqual(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/bcrosnier/ck-core/new/documentation/DocFX/apispec/new?filename=CK_Core_DateTimeStamp_op_LessThanOrEqual_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_.md&amp;value=---%0Auid%3A%20CK.Core.DateTimeStamp.op_LessThanOrEqual(CK.Core.DateTimeStamp%2CCK.Core.DateTimeStamp)%0Aremarks%3A%20'*THIS*%20is%20remarks%20overriden%20in%20*MARKDOWN*%20file'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/CK.Core/DateTimeStamp.cs/#L262">View Source</a>
+                <a href="https://github.com/bcrosnier/ck-core/blob/documentation/CK.Core/DateTimeStamp.cs/#L266">View Source</a>
               </span>
               <h4 id="CK_Core_DateTimeStamp_op_LessThanOrEqual_CK_Core_DateTimeStamp_CK_Core_DateTimeStamp_" data-uid="CK.Core.DateTimeStamp.op_LessThanOrEqual(CK.Core.DateTimeStamp,CK.Core.DateTimeStamp)">LessThanOrEqual(DateTimeStamp, DateTimeStamp)</h4>
               <div class="markdown level1 summary"><p>Large lower than operator.</p>
@@ -1144,7 +1149,7 @@ with a <a class="xref" href="https://msdn.microsoft.com/en-us/library/e3t6hfy5(v
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+            <span>CK-Core 5.0.0-e | Copyright © 2007-2016 Invenietis, IN'TECH<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong> 1.8.1.0</a></span>
           </div>
         </div>
       </footer>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CK.Core | CK.Core documentation </title>
+    <title>CK.Core | CK-Core 5.0.0-e</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CK.Core | CK.Core documentation ">
+    <meta name="title" content="CK.Core | CK-Core 5.0.0-e">
     <meta name="generator" content="docfx 1.8.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -30,8 +30,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../">
-                <img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;">
+              <a class="navbar-brand" href="../" style="padding: 15px 15px 15px 0;">
+                <!--<span><img id="logo" class="svg" src="../images/logo.png" alt="" style="max-height: 100%;"></span>-->
+        		CK-Core 5.0.0-e
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -71,11 +72,121 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="articles-ck-core">
-              <a href="https://github.com/bcrosnier/ck-core/blob/feature/docfx-init/DocFX/articles/ck-core.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/bcrosnier/ck-core/blob/documentation/DocFX/articles/ck-core.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
               <h1 id="ck-core">CK.Core</h1>
               
-<div class="alert alert-danger"><p>This documentation is not written yet. Help us by submitting your own!</p>
+<p>The <strong>CK.Core assembly</strong> (NuGet package: <a href="https://www.nuget.org/packages/CK.Core/">CK.Core</a>)
+contains core utility classes and interfaces, both static and non-static, used by other components.</p>
+<div class="alert alert-warning"><p><strong><em>CK-Core</em></strong> (with a dash) is the name of the <em>complete set of components</em> containing CK.Core, CK.ActivityMonitor, CK.Monitoring, etc.<br>
+<strong><em>CK.Core</em></strong> (with a dot) is the name of <em>this particular assembly and package</em>.</p>
 </div>
+<h2 id="installing-ck-core">Installing CK.Core</h2>
+<p>To install CK.Core, install the NuGet package <a href="https://www.nuget.org/packages/CK.Core/">CK.Core</a> in your .NET library or application.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p>CK.Core is compatible with projects targeting the <strong>.NET framework 4.5.1</strong> or above.</p>
+<h2 id="using-ck-core">Using CK.Core</h2>
+<p>This package contains a number of various utilities used in other components and libraries, grouped in coincidental cohesion, and does not come with one primary usage or purpose.</p>
+<p>See below for the detailed contents of the package.</p>
+<h2 id="contents">Contents</h2>
+<h3 id="configuration-and-application-settings">Configuration and application settings</h3>
+<h4 id="-appsettings-xref-ck-core-appsettings-"><a class="xref" href="../api/CK.Core.AppSettings.html#CK_Core_AppSettings">AppSettings</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.AppSettings.html#CK_Core_AppSettings">AppSettings</a> class is a simple front to access AppSettings through <attr title="Dependency injection">DI</attr>-like calls,
+with eg. an <a class="xref" href="../api/CK.Core.AppSettings.html#CK_Core_AppSettings_Default">AppSettings.Default</a> singleton and methods like <a class="xref" href="../api/CK.Core.AppSettings.html#CK_Core_AppSettings_GetRequired__1_System_String_">T GetRequired&lt;T&gt;(string key)</a>.</p>
+<h3 id="binary-reading-writing">Binary reading/writing</h3>
+<h4 id="-ckbinaryreader-xref-ck-core-ckbinaryreader-"><a class="xref" href="../api/CK.Core.CKBinaryReader.html#CK_Core_CKBinaryReader">CKBinaryReader</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKBinaryReader.html#CK_Core_CKBinaryReader">CKBinaryReader</a> class specializes <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.binaryreader(v=vs.110).aspx">System.IO.BinaryReader</a> with helper methods supporting nullable strings and compressed integers.</p>
+<h4 id="-ckbinarywriter-xref-ck-core-ckbinarywriter-"><a class="xref" href="../api/CK.Core.CKBinaryWriter.html#CK_Core_CKBinaryWriter">CKBinaryWriter</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKBinaryWriter.html#CK_Core_CKBinaryWriter">CKBinaryWriter</a> class specializes <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.binarywriter(v=vs.110).aspx">System.IO.BinaryWriter</a> with helper methods supporting nullable strings and compressed integers.</p>
+<h3 id="exception-handling-and-formatting">Exception handling and formatting</h3>
+<h4 id="-ckexception-xref-ck-core-ckexception-"><a class="xref" href="../api/CK.Core.CKException.html#CK_Core_CKException">CKException</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKException.html#CK_Core_CKException">CKException</a> class specializes <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.exception(v=vs.110).aspx">System.Exception</a> with serialization and helpers for text formatting and display.</p>
+<h4 id="-ckexceptiondata-xref-ck-core-ckexceptiondata-"><a class="xref" href="../api/CK.Core.CKExceptionData.html#CK_Core_CKExceptionData">CKExceptionData</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKExceptionData.html#CK_Core_CKExceptionData">CKExceptionData</a> class is an immutable, serializable representation of another <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.exception(v=vs.110).aspx">System.Exception</a>. Used by <a class="xref" href="../api/CK.Core.CKException.html#CK_Core_CKException">CKException</a>.</p>
+<h4 id="-criticalerrorcollector-xref-ck-core-criticalerrorcollector-"><a class="xref" href="../api/CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector">CriticalErrorCollector</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CriticalErrorCollector.html#CK_Core_CriticalErrorCollector">CriticalErrorCollector</a> class is a thread-safe collector of <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.exception(v=vs.110).aspx">System.Exception</a> instances, raising events when errors are added.</p>
+<h3 id="collections">Collections</h3>
+<p>CK.Core defines the following collection-related interfaces:</p>
+<ul>
+<li><a class="xref" href="../api/CK.Core.ICKReadOnlyCollection%601.html#CK_Core_ICKReadOnlyCollection_1">ICKReadOnlyCollection&lt;T&gt;</a> - Contravariant interface inheriting <a class="xref" href="https://msdn.microsoft.com/en-us/library/hh881542(v=vs.110).aspx">IReadOnlyCollection&lt;T&gt;</a></li>
+<li><a class="xref" href="../api/CK.Core.ICKReadOnlyList%601.html#CK_Core_ICKReadOnlyList_1">ICKReadOnlyList&lt;T&gt;</a> - Covariant interface inheriting <a class="xref" href="https://msdn.microsoft.com/en-us/library/hh192385(v=vs.110).aspx">IReadOnlyList&lt;T&gt;</a></li>
+<li><a class="xref" href="../api/CK.Core.ICKReadOnlyUniqueKeyedCollection%602.html#CK_Core_ICKReadOnlyUniqueKeyedCollection_2">ICKReadOnlyUniqueKeyedCollection&lt;T, TKey&gt;</a> - Read-only, keyed collection of covariant items with a contravariant key</li>
+<li><a class="xref" href="../api/CK.Core.ICKReadOnlyMultiKeyedCollection%602.html#CK_Core_ICKReadOnlyMultiKeyedCollection_2">ICKReadOnlyMultiKeyedCollection&lt;T, TKey&gt;</a> - Read-only, keyed collection of covariant items with a contravariant key, supporting multiple items having the same key</li>
+<li><a class="xref" href="../api/CK.Core.ICKWritableCollection%601.html#CK_Core_ICKWritableCollection_1">ICKWritableCollection&lt;T&gt;</a> - Contravariant interface of a writable collection of items (with Add(), Remove(), Clear(), Count)</li>
+<li><a class="xref" href="../api/CK.Core.ICKWritableCollector%601.html#CK_Core_ICKWritableCollector_1">ICKWritableCollector&lt;T&gt;</a> - Contravariant interface of an item collector (with Add(), Count)</li>
+</ul>
+<h4 id="-ckenumeratormono-lt-t-gt-xref-ck-core-ckenumeratormono-1-"><a class="xref" href="../api/CK.Core.CKEnumeratorMono%601.html#CK_Core_CKEnumeratorMono_1">CKEnumeratorMono&lt;T&gt;</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKEnumeratorMono%601.html#CK_Core_CKEnumeratorMono_1">CKEnumeratorMono&lt;T&gt;</a> class is an implementation of <a class="xref" href="https://msdn.microsoft.com/en-us/library/78dfe2yb(v=vs.110).aspx">IEnumerator&lt;T&gt;</a> containing and optimized for a single element.</p>
+<h4 id="-ckreadonlycollectiononicollection-lt-t-gt-xref-ck-core-ckreadonlycollectiononicollection-1-"><a class="xref" href="../api/CK.Core.CKReadOnlyCollectionOnICollection%601.html#CK_Core_CKReadOnlyCollectionOnICollection_1">CKReadOnlyCollectionOnICollection&lt;T&gt;</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKReadOnlyCollectionOnICollection%601.html#CK_Core_CKReadOnlyCollectionOnICollection_1">CKReadOnlyCollectionOnICollection&lt;T&gt;</a> class is an adapter class exposing an <a class="xref" href="https://msdn.microsoft.com/en-us/library/hh881542(v=vs.110).aspx">IReadOnlyCollection&lt;T&gt;</a> from an <a class="xref" href="https://msdn.microsoft.com/en-us/library/92t2ye13(v=vs.110).aspx">ICollection&lt;T&gt;</a>.</p>
+<h4 id="-ckreadonlylistonilist-lt-t-gt-xref-ck-core-ckreadonlylistonilist-1-"><a class="xref" href="../api/CK.Core.CKReadOnlyListOnIList%601.html#CK_Core_CKReadOnlyListOnIList_1">CKReadOnlyListOnIList&lt;T&gt;</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKReadOnlyListOnIList%601.html#CK_Core_CKReadOnlyListOnIList_1">CKReadOnlyListOnIList&lt;T&gt;</a> class is an adapter class exposing an <a class="xref" href="https://msdn.microsoft.com/en-us/library/hh192385(v=vs.110).aspx">IReadOnlyList&lt;T&gt;</a> from an <a class="xref" href="https://msdn.microsoft.com/en-us/library/5y536ey6(v=vs.110).aspx">IList&lt;T&gt;</a>.</p>
+<h4 id="-cksortedarraylist-lt-t-gt-xref-ck-core-cksortedarraylist-1-"><a class="xref" href="../api/CK.Core.CKSortedArrayList%601.html#CK_Core_CKSortedArrayList_1">CKSortedArrayList&lt;T&gt;</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKSortedArrayList%601.html#CK_Core_CKSortedArrayList_1">CKSortedArrayList&lt;T&gt;</a> class is a collection class keeping the order given by an <a class="xref" href="https://msdn.microsoft.com/en-us/library/8ehhxeaf(v=vs.110).aspx">IComparer&lt;T&gt;</a>.</p>
+<h4 id="-cksortedarraykeylist-lt-t-tkey-gt-xref-ck-core-cksortedarraykeylist-2-"><a class="xref" href="../api/CK.Core.CKSortedArrayKeyList%602.html#CK_Core_CKSortedArrayKeyList_2">CKSortedArrayKeyList&lt;T, TKey&gt;</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKSortedArrayKeyList%602.html#CK_Core_CKSortedArrayKeyList_2">CKSortedArrayKeyList&lt;T, TKey&gt;</a> class is a collection class keeping the order given by an <a class="xref" href="https://msdn.microsoft.com/en-us/library/8ehhxeaf(v=vs.110).aspx">IComparer&lt;T&gt;</a>, where the order is not given from the item itself.</p>
+<h4 id="-fifobuffer-lt-t-gt-xref-ck-core-fifobuffer-1-"><a class="xref" href="../api/CK.Core.FIFOBuffer%601.html#CK_Core_FIFOBuffer_1">FIFOBuffer&lt;T&gt;</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.FIFOBuffer%601.html#CK_Core_FIFOBuffer_1">FIFOBuffer&lt;T&gt;</a> class is a queue with a fixed maximum size. Its oldest items are dropped when its maximum size is reached.</p>
+<h4 id="extensions">Extensions</h4>
+<p>CK.Core defines the following collection-related extension classes in namespace <code>CK.Core</code>:</p>
+<ul>
+<li><a class="xref" href="../api/CK.Core.CKReadOnlyExtension.html#CK_Core_CKReadOnlyExtension">CKReadOnlyExtension</a> </li>
+<li><a class="xref" href="../api/CK.Core.CollectionExtension.html#CK_Core_CollectionExtension">CollectionExtension</a> </li>
+<li><a class="xref" href="../api/CK.Core.DictionaryExtension.html#CK_Core_DictionaryExtension">DictionaryExtension</a> </li>
+<li><a class="xref" href="../api/CK.Core.EnumerableExtension.html#CK_Core_EnumerableExtension">EnumerableExtension</a> </li>
+</ul>
+<h3 id="logging-related-utilities-cktrait-datetimestamp-">Logging-related utilities (CKTrait, DateTimeStamp)</h3>
+<h4 id="-cktrait-xref-ck-core-cktrait-"><a class="xref" href="../api/CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a> class is an immutable object associated to a string, which can be <em>atomic</em> (eg. &quot;Alt&quot;), or <em>combined</em> (eg. &quot;Alt|Ctrl|Shift&quot;). It is unique within a <a class="xref" href="../api/CK.Core.CKTraitContext.html#CK_Core_CKTraitContext">CKTraitContext</a>.</p>
+<p>Used as log entry tags in logging utilities, or when describing key combinations.</p>
+<h4 id="-cktraitcontext-xref-ck-core-cktraitcontext-"><a class="xref" href="../api/CK.Core.CKTraitContext.html#CK_Core_CKTraitContext">CKTraitContext</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.CKTraitContext.html#CK_Core_CKTraitContext">CKTraitContext</a> class is a context containing <a class="xref" href="../api/CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a> instances, used to register and make use of <a class="xref" href="../api/CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a> instances.</p>
+<h4 id="-setoperation-xref-ck-core-setoperation-"><a class="xref" href="../api/CK.Core.SetOperation.html#CK_Core_SetOperation">SetOperation</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.SetOperation.html#CK_Core_SetOperation">SetOperation</a> enum describes the various operations possible on a set of items (Union, Intersect, etc.). Can be used on eg. <a class="xref" href="../api/CK.Core.CKTrait.html#CK_Core_CKTrait">CKTrait</a> instances to perform combination operations.</p>
+<h4 id="-datetimestamp-xref-ck-core-datetimestamp-"><a class="xref" href="../api/CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a> class encapsulates a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a> value with another value, unique per <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a> value, called a Uniquifier.</p>
+<p>In logging, this safeguards the logging order for multiple log entries with the same <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx">DateTime</a>, giving the entry a unique key and making it potentially addressable.</p>
+<p>CK.Core defines a <a class="xref" href="../api/CK.Core.DateTimeStamp.html#CK_Core_DateTimeStamp">DateTimeStamp</a>-related extension class in namespace <code>CK.Core</code>: <a class="xref" href="../api/CK.Core.DateTimeStampExtension.html#CK_Core_DateTimeStampExtension">DateTimeStampExtension</a></p>
+<h3 id="files-and-input-output">Files and input/output</h3>
+<h4 id="-fileutil-xref-ck-core-fileutil-"><a class="xref" href="../api/CK.Core.FileUtil.html#CK_Core_FileUtil">FileUtil</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.FileUtil.html#CK_Core_FileUtil">FileUtil</a> static utility class contains file-related static properties and methods, such as:</p>
+<ul>
+<li>CompressFileToGzipFile(...) and CompressFileToGzipFileAsync(...)</li>
+<li>CheckForWriteAccess(...)</li>
+<li>CopyDirectory(...), supporting file filters</li>
+<li>NormalizePathSeparator(...)</li>
+<li>Utilities to create and make use of <em>uniquely-timed files</em>, when creating timestamped files (eg. logs), ensuring they can be created.</li>
+</ul>
+<h4 id="-temporaryfile-xref-ck-core-temporaryfile-"><a class="xref" href="../api/CK.Core.TemporaryFile.html#CK_Core_TemporaryFile">TemporaryFile</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.TemporaryFile.html#CK_Core_TemporaryFile">TemporaryFile</a> class is a disposable class, which creates a temporary file when instanciated, and deletes it when disposed.</p>
+<h3 id="access-control">Access control</h3>
+<h4 id="-grantlevel-xref-ck-core-grantlevel-"><a class="xref" href="../api/CK.Core.GrantLevel.html#CK_Core_GrantLevel">GrantLevel</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.GrantLevel.html#CK_Core_GrantLevel">GrantLevel</a> enum describes generic access levels of any actor on any resource. Intended for use in access control systems.</p>
+<h3 id="reflection-and-debugging">Reflection and debugging</h3>
+<h4 id="-simpletypefinder-xref-ck-core-simpletypefinder-"><a class="xref" href="../api/CK.Core.SimpleTypeFinder.html#CK_Core_SimpleTypeFinder">SimpleTypeFinder</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.SimpleTypeFinder.html#CK_Core_SimpleTypeFinder">SimpleTypeFinder</a> class is a static utility class to resolve <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx">Type</a>s from their namespace and name, but without the complete <a class="xref" href="https://msdn.microsoft.com/en-us/library/30wyt9tk(v=vs.110).aspx">AssemblyQualifiedName</a> of their assembly.</p>
+<h3 id="dependency-injection">Dependency injection</h3>
+<h4 id="-isimpleservicecontainer-xref-ck-core-isimpleservicecontainer-"><a class="xref" href="../api/CK.Core.ISimpleServiceContainer.html#CK_Core_ISimpleServiceContainer">ISimpleServiceContainer</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.ISimpleServiceContainer.html#CK_Core_ISimpleServiceContainer">ISimpleServiceContainer</a> interface describes a dependency injection container with the ability to add and remove services.</p>
+<p>CK.Core defines an <a class="xref" href="../api/CK.Core.ISimpleServiceContainer.html#CK_Core_ISimpleServiceContainer">ISimpleServiceContainer</a>-related extension class in namespace <code>CK.Core</code>: <a class="xref" href="../api/CK.Core.ServiceContainerExtension.html#CK_Core_ServiceContainerExtension">ServiceContainerExtension</a>.</p>
+<h4 id="-simpleservicecontainer-xref-ck-core-simpleservicecontainer-"><a class="xref" href="../api/CK.Core.SimpleServiceContainer.html#CK_Core_SimpleServiceContainer">SimpleServiceContainer</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.SimpleServiceContainer.html#CK_Core_SimpleServiceContainer">SimpleServiceContainer</a> class is a disposable implementation of <a class="xref" href="../api/CK.Core.ISimpleServiceContainer.html#CK_Core_ISimpleServiceContainer">ISimpleServiceContainer</a>.</p>
+<h3 id="xml">XML</h3>
+<p>CK.Core defines an XML-related extension class in namespace <code>CK.Core</code>: <a class="xref" href="../api/CK.Core.XmlExtension.html#CK_Core_XmlExtension">XmlExtension</a>.</p>
+<h3 id="miscellaneous-interfaces-and-static-utilities">Miscellaneous interfaces and static utilities</h3>
+<h4 id="-imergeable-xref-ck-core-imergeable-"><a class="xref" href="../api/CK.Core.IMergeable.html#CK_Core_IMergeable">IMergeable</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.IMergeable.html#CK_Core_IMergeable">IMergeable</a> interface describes an object supporting merging with another object.</p>
+<h4 id="-iuniqueid-xref-ck-core-iuniqueid-"><a class="xref" href="../api/CK.Core.IUniqueId.html#CK_Core_IUniqueId">IUniqueId</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.IUniqueId.html#CK_Core_IUniqueId">IUniqueId</a> interface describes an object having a unique <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110).aspx">Guid</a>.</p>
+<h4 id="-util-xref-ck-core-util-"><a class="xref" href="../api/CK.Core.Util.html#CK_Core_Util">Util</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.Util.html#CK_Core_Util">Util</a> static utility class contains miscellaneous static methods and properties:</p>
+<ul>
+<li>Empty singletons for Enumerable, Array (pre-.NET 4.6), IDisposable, Action</li>
+<li>Binary search (<a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">Wikipedia: Binary search algorithm</a>) implementation methods</li>
+<li>Thread-safe (Interlocked) utility methods to perform Add, Remove, RemoveAll and Set operations on an Array</li>
+<li>Thread-safe (Interlocked) utility method to set a reference type to a variable</li>
+</ul>
+<h4 id="-util-hash-xref-ck-core-util-hash-"><a class="xref" href="../api/CK.Core.Util.Hash.html#CK_Core_Util_Hash">Util.Hash</a></h4>
+<p>The <a class="xref" href="../api/CK.Core.Util.Hash.html#CK_Core_Util_Hash">Util.Hash</a> contains static utility methods to combine hash values.</p>
 
             </article>
           </div>
@@ -94,7 +205,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            <span>Copyright © 2015-2016 Invenietis<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong></a></span>
+            <span>CK-Core 5.0.0-e | Copyright © 2007-2016 Invenietis, IN'TECH<br>Generated by <a href="https://dotnet.github.io/docfx/" target="_blank"><strong>DocFX</strong> 1.8.1.0</a></span>
           </div>
         </div>
       </footer>
